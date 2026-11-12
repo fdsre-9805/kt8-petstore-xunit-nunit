@@ -37,4 +37,3 @@ C#, .NET 10, xUnit 2.9.3, NUnit 4.3.2. API: https://petstore.swagger.io/v2.
 ![xUnit](screenshots/xunit.png)
 
 ![NUnit](screenshots/nunit.png)
-
