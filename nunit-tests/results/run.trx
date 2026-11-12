@@ -1,0 +1,1235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="4f2c0775-b083-405c-b09c-5a963e090bea" name="@antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ 2026-11-13 02:16:20" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-13T02:16:20.2008391+03:00" queuing="2026-11-13T02:16:20.2008392+03:00" start="2026-11-13T02:16:16.6645393+03:00" finish="2026-11-13T02:17:05.6638417+03:00" />
+  <TestSettings name="default" id="f3689ab9-ce7e-4efb-be28-ffe843f1bd57">
+    <Deployment runDeploymentRoot="_antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ_2026-11-13_02_16_20" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="9c086949-6763-45a1-9a59-36301386760b" testId="022d8953-8ddd-1f8a-f46d-361169b22ea8" testName="CreateUser(True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.5388010" startTime="2026-11-13T02:16:51.3311660+03:00" endTime="2026-11-13T02:16:51.8699669+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9c086949-6763-45a1-9a59-36301386760b">
+      <Output>
+        <StdOut>POST user -&gt; 500
+GET user/kt8_3bbba3fec152 -&gt; 404</StdOut>
+        <ErrorInfo>
+          <Message>  {"code":500,"type":"unknown","message":"something bad happened"}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  500
+</Message>
+          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.UserTests.CreateUser(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 14
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.&lt;&gt;c__DisplayClass1_0.&lt;Execute&gt;b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.UserTests.CreateUser(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 14
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="21d69f5a-97f2-4a71-b125-22df2ba5c298" testId="d9149257-150d-c68e-94b2-fc1516f2d4bc" testName="CreateUser(False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.0791100" startTime="2026-11-13T02:16:50.2519982+03:00" endTime="2026-11-13T02:16:51.3311069+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="21d69f5a-97f2-4a71-b125-22df2ba5c298">
+      <Output>
+        <StdOut>POST user -&gt; 200
+GET user/kt8_15f97768e958 -&gt; 200
+GET user/kt8_15f97768e958 -&gt; 200
+DELETE user/kt8_15f97768e958 -&gt; 200
+GET user/kt8_15f97768e958 -&gt; 404</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1e533428-8d13-4c88-8570-685e6c5cd415" testId="f8a5755c-74ad-5acc-469a-1cc2b50068c4" testName="Login(True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.2735740" startTime="2026-11-13T02:17:01.3382969+03:00" endTime="2026-11-13T02:17:02.6118710+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1e533428-8d13-4c88-8570-685e6c5cd415">
+      <Output>
+        <StdOut>POST user -&gt; 200
+GET user/kt8_804e135df4b0 -&gt; 200
+GET user/login?username=kt8_804e135df4b0&amp;password=wrong_password -&gt; 200
+GET user/kt8_804e135df4b0 -&gt; 200
+DELETE user/kt8_804e135df4b0 -&gt; 200
+GET user/kt8_804e135df4b0 -&gt; 404</StdOut>
+        <ErrorInfo>
+          <Message>  {"code":200,"type":"unknown","message":"logged in user session:1794525422083"}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  200
+</Message>
+          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.UserTests.Login(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 106
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.&lt;&gt;c__DisplayClass1_0.&lt;Execute&gt;b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.UserTests.Login(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 106
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="57e06d48-f92e-48e2-aa60-07bbc8913bd5" testId="079cf8d8-2683-5d6b-5c58-7045d9e7e349" testName="DeleteOrder(True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:02.2039350" startTime="2026-11-13T02:16:43.2335208+03:00" endTime="2026-11-13T02:16:45.4374549+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="57e06d48-f92e-48e2-aa60-07bbc8913bd5">
+      <Output>
+        <StdOut>POST pet -&gt; 200
+GET pet/263728724930843 -&gt; 200
+GET store/order/1 -&gt; 200
+GET store/order/2 -&gt; 200
+GET store/order/3 -&gt; 404
+POST store/order -&gt; 200
+GET store/order/3 -&gt; 200
+DELETE store/order/wrong_id -&gt; 404
+GET store/order/3 -&gt; 200
+DELETE store/order/3 -&gt; 200
+GET store/order/3 -&gt; 404
+GET pet/263728724930843 -&gt; 200
+DELETE pet/263728724930843 -&gt; 200
+GET pet/263728724930843 -&gt; 404</StdOut>
+        <ErrorInfo>
+          <Message>  {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  404
+</Message>
+          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.StoreTests.DeleteOrder(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/StoreTests.cs:line 51
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.&lt;&gt;c__DisplayClass1_0.&lt;Execute&gt;b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.StoreTests.DeleteOrder(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/StoreTests.cs:line 51
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f9756cad-4d81-461a-8397-52120bcee4ca" testId="5a9c6bdf-a577-a1b5-97a9-8bd5e23f8140" testName="CreateUsersList(True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.6035490" startTime="2026-11-13T02:16:54.5784862+03:00" endTime="2026-11-13T02:16:55.1820344+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f9756cad-4d81-461a-8397-52120bcee4ca">
+      <Output>
+        <StdOut>POST user/createWithList -&gt; 500
+GET user/kt8_fb2c92a73246 -&gt; 404</StdOut>
+        <ErrorInfo>
+          <Message>  {"code":500,"type":"unknown","message":"something bad happened"}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  500
+</Message>
+          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.UserTests.CreateUsersList(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 30
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.&lt;&gt;c__DisplayClass1_0.&lt;Execute&gt;b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.UserTests.CreateUsersList(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 30
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fb5ee34e-1945-48bf-a748-c0149c60b669" testId="74fc7e73-920f-177e-d72d-9c2c7bd9861b" testName="CreatePet(True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.5479490" startTime="2026-11-13T02:16:18.8052738+03:00" endTime="2026-11-13T02:16:19.3532231+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fb5ee34e-1945-48bf-a748-c0149c60b669">
+      <Output>
+        <StdOut>POST pet -&gt; 500
+GET pet/33786342458394 -&gt; 404</StdOut>
+        <ErrorInfo>
+          <Message>  {"code":500,"type":"unknown","message":"something bad happened"}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 405
+  But was:  500
+</Message>
+          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.CreatePet(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 14
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.&lt;&gt;c__DisplayClass1_0.&lt;Execute&gt;b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.CreatePet(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 14
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a8066f1a-e7e1-47a0-a9c4-e0259b0ce026" testId="bdef27aa-734e-50c9-0477-40a3c0d63b4a" testName="UpdatePetForm(True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.1356139" startTime="2026-11-13T02:16:33.0623958+03:00" endTime="2026-11-13T02:16:34.1980090+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a8066f1a-e7e1-47a0-a9c4-e0259b0ce026">
+      <Output>
+        <StdOut>POST pet -&gt; 200
+GET pet/131674225897902 -&gt; 200
+POST pet/wrong_id -&gt; 404
+GET pet/131674225897902 -&gt; 200
+DELETE pet/131674225897902 -&gt; 200
+GET pet/131674225897902 -&gt; 404</StdOut>
+        <ErrorInfo>
+          <Message>  {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 405
+  But was:  404
+</Message>
+          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.UpdatePetForm(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 92
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.&lt;&gt;c__DisplayClass1_0.&lt;Execute&gt;b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.UpdatePetForm(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 92
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4f22a123-6f74-4ea3-ba92-33afd75dd635" testId="ce26990b-f9f3-7de6-7282-5efe23293b24" testName="GetOrder(True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:02.2014510" startTime="2026-11-13T02:16:47.6644047+03:00" endTime="2026-11-13T02:16:49.8658550+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4f22a123-6f74-4ea3-ba92-33afd75dd635">
+      <Output>
+        <StdOut>POST pet -&gt; 200
+GET pet/279379577163959 -&gt; 200
+GET store/order/1 -&gt; 200
+GET store/order/2 -&gt; 200
+GET store/order/3 -&gt; 404
+POST store/order -&gt; 200
+GET store/order/3 -&gt; 200
+GET store/order/wrong_id -&gt; 404
+GET store/order/3 -&gt; 200
+DELETE store/order/3 -&gt; 200
+GET store/order/3 -&gt; 404
+GET pet/279379577163959 -&gt; 200
+DELETE pet/279379577163959 -&gt; 200
+GET pet/279379577163959 -&gt; 404</StdOut>
+        <ErrorInfo>
+          <Message>  {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  404
+</Message>
+          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.StoreTests.GetOrder(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/StoreTests.cs:line 40
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.&lt;&gt;c__DisplayClass1_0.&lt;Execute&gt;b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.StoreTests.GetOrder(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/StoreTests.cs:line 40
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f9f18e6f-53e9-4f06-a17c-1a08c8880739" testId="9ceb51fe-1a88-aa47-fdba-06a37e43fb8f" testName="Login(False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.2684430" startTime="2026-11-13T02:17:00.0698094+03:00" endTime="2026-11-13T02:17:01.3382519+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f9f18e6f-53e9-4f06-a17c-1a08c8880739">
+      <Output>
+        <StdOut>POST user -&gt; 200
+GET user/kt8_14edcf712280 -&gt; 200
+GET user/login?username=kt8_14edcf712280&amp;password=Kt8Password -&gt; 200
+GET user/kt8_14edcf712280 -&gt; 200
+DELETE user/kt8_14edcf712280 -&gt; 200
+GET user/kt8_14edcf712280 -&gt; 404</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="dc93abf0-77be-4763-ba0d-9c9741cce16c" testId="61e7cc41-14a3-642b-e874-dc5e9f4a43a5" testName="CreateUsersArray(True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.5227290" startTime="2026-11-13T02:16:52.9179092+03:00" endTime="2026-11-13T02:16:53.4406373+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dc93abf0-77be-4763-ba0d-9c9741cce16c">
+      <Output>
+        <StdOut>POST user/createWithArray -&gt; 500
+GET user/kt8_91ed7b239b5a -&gt; 404</StdOut>
+        <ErrorInfo>
+          <Message>  {"code":500,"type":"unknown","message":"something bad happened"}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  500
+</Message>
+          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.UserTests.CreateUsersArray(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 46
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.&lt;&gt;c__DisplayClass1_0.&lt;Execute&gt;b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.UserTests.CreateUsersArray(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 46
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c9485d21-fd16-4dca-a71e-63c94d395414" testId="f2db95e6-cff4-2512-bd15-9d831062e0e3" testName="FindByTags(True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.3680550" startTime="2026-11-13T02:16:25.0660950+03:00" endTime="2026-11-13T02:16:26.4341489+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c9485d21-fd16-4dca-a71e-63c94d395414">
+      <Output>
+        <StdOut>POST pet -&gt; 200
+GET pet/208057703611170 -&gt; 200
+GET pet/findByTags -&gt; 200
+GET pet/208057703611170 -&gt; 200
+DELETE pet/208057703611170 -&gt; 200
+GET pet/208057703611170 -&gt; 404</StdOut>
+        <ErrorInfo>
+          <Message>  []
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  200
+</Message>
+          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.FindByTags(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 65
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.&lt;&gt;c__DisplayClass1_0.&lt;Execute&gt;b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.FindByTags(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 65
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="47895b73-0633-4556-8f6c-7f12c3fd3b92" testId="86c0d912-48a2-b7a6-666a-6434fb6c10f4" testName="CreateUsersList(False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.1376380" startTime="2026-11-13T02:16:53.4408019+03:00" endTime="2026-11-13T02:16:54.5784392+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="47895b73-0633-4556-8f6c-7f12c3fd3b92">
+      <Output>
+        <StdOut>POST user/createWithList -&gt; 200
+GET user/kt8_f63eed2b5be2 -&gt; 200
+GET user/kt8_f63eed2b5be2 -&gt; 200
+DELETE user/kt8_f63eed2b5be2 -&gt; 200
+GET user/kt8_f63eed2b5be2 -&gt; 404</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2bec4827-7d51-44d8-ae0e-82e183a5aa62" testId="49b2e88d-2a01-3da6-d2de-1c32b4affe37" testName="FindByStatus(False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.2661350" startTime="2026-11-13T02:16:21.5170037+03:00" endTime="2026-11-13T02:16:22.7831380+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2bec4827-7d51-44d8-ae0e-82e183a5aa62">
+      <Output>
+        <StdOut>POST pet -&gt; 200
+GET pet/196391892064633 -&gt; 200
+GET pet/findByStatus?status=available -&gt; 200
+GET pet/196391892064633 -&gt; 200
+DELETE pet/196391892064633 -&gt; 200
+GET pet/196391892064633 -&gt; 404</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="66abf207-910a-422c-b269-9e13ea7a1951" testId="9e0258fe-9c2b-d866-06ff-911bfae35714" testName="CreateUsersArray(False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.0477430" startTime="2026-11-13T02:16:51.8701163+03:00" endTime="2026-11-13T02:16:52.9178588+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="66abf207-910a-422c-b269-9e13ea7a1951">
+      <Output>
+        <StdOut>POST user/createWithArray -&gt; 200
+GET user/kt8_63eccbd53c34 -&gt; 200
+GET user/kt8_63eccbd53c34 -&gt; 200
+DELETE user/kt8_63eccbd53c34 -&gt; 200
+GET user/kt8_63eccbd53c34 -&gt; 404</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2646b317-e93b-4646-a70f-e86147de4a25" testId="be2476e8-290a-1da4-2652-a06028f29fb3" testName="DeleteUser(False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.9394670" startTime="2026-11-13T02:16:55.1821989+03:00" endTime="2026-11-13T02:16:56.1216653+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2646b317-e93b-4646-a70f-e86147de4a25">
+      <Output>
+        <StdOut>POST user -&gt; 200
+GET user/kt8_bea5fb3cf6ad -&gt; 200
+DELETE user/kt8_bea5fb3cf6ad -&gt; 200
+GET user/kt8_bea5fb3cf6ad -&gt; 404
+GET user/kt8_bea5fb3cf6ad -&gt; 404</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d53be705-19f5-4d7c-89d0-557e1c481f88" testId="74d16f94-ce88-764a-53d7-72fdfcfe7702" testName="FindByStatus(True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.2082599" startTime="2026-11-13T02:16:22.7832012+03:00" endTime="2026-11-13T02:16:23.9914603+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d53be705-19f5-4d7c-89d0-557e1c481f88">
+      <Output>
+        <StdOut>POST pet -&gt; 200
+GET pet/197928656640226 -&gt; 200
+GET pet/findByStatus?status=wrong_status -&gt; 200
+GET pet/197928656640226 -&gt; 200
+DELETE pet/197928656640226 -&gt; 200
+GET pet/197928656640226 -&gt; 404</StdOut>
+        <ErrorInfo>
+          <Message>  []
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  200
+</Message>
+          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.FindByStatus(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 48
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.&lt;&gt;c__DisplayClass1_0.&lt;Execute&gt;b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.FindByStatus(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 48
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="991231e3-60c1-440e-bf66-696eb32818c5" testId="07aac00d-b5a1-ec85-0cdc-67a1c25d6e45" testName="UploadImage(True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.2502640" startTime="2026-11-13T02:16:35.2760964+03:00" endTime="2026-11-13T02:16:36.5263600+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="991231e3-60c1-440e-bf66-696eb32818c5">
+      <Output>
+        <StdOut>POST pet -&gt; 200
+GET pet/192134119497521 -&gt; 200
+POST pet/wrong_id/uploadImage -&gt; 404
+GET pet/192134119497521 -&gt; 200
+DELETE pet/192134119497521 -&gt; 200
+GET pet/192134119497521 -&gt; 404</StdOut>
+        <ErrorInfo>
+          <Message>  {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  404
+</Message>
+          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.UploadImage(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 124
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.&lt;&gt;c__DisplayClass1_0.&lt;Execute&gt;b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.UploadImage(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 124
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7287b2fd-c50e-4189-b82e-8d2f7eaecd02" testId="2329d957-de81-62a5-e979-d8e196988f31" testName="DeleteOrder(False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:02.4474830" startTime="2026-11-13T02:16:40.7859717+03:00" endTime="2026-11-13T02:16:43.2334546+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7287b2fd-c50e-4189-b82e-8d2f7eaecd02">
+      <Output>
+        <StdOut>POST pet -&gt; 200
+GET pet/17848710368038 -&gt; 200
+GET store/order/1 -&gt; 200
+GET store/order/2 -&gt; 200
+GET store/order/3 -&gt; 404
+POST store/order -&gt; 200
+GET store/order/3 -&gt; 200
+DELETE store/order/3 -&gt; 200
+GET store/order/3 -&gt; 404
+GET store/order/3 -&gt; 404
+GET pet/17848710368038 -&gt; 200
+DELETE pet/17848710368038 -&gt; 200
+GET pet/17848710368038 -&gt; 404</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5d578442-7ce6-4cde-a8b6-a9f2c17640ab" testId="203216f4-0944-1793-0746-87e91768d6f1" testName="UpdatePet(True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.0834240" startTime="2026-11-13T02:16:30.1526329+03:00" endTime="2026-11-13T02:16:31.2360561+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5d578442-7ce6-4cde-a8b6-a9f2c17640ab">
+      <Output>
+        <StdOut>POST pet -&gt; 200
+GET pet/164851876338714 -&gt; 200
+PUT pet -&gt; 500
+GET pet/164851876338714 -&gt; 200
+DELETE pet/164851876338714 -&gt; 200
+GET pet/164851876338714 -&gt; 404</StdOut>
+        <ErrorInfo>
+          <Message>  {"code":500,"type":"unknown","message":"something bad happened"}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  500
+</Message>
+          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.UpdatePet(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 32
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.&lt;&gt;c__DisplayClass1_0.&lt;Execute&gt;b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.UpdatePet(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 32
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="30760ca6-005a-4502-8434-efc713ac93c1" testId="5d48e997-f2ae-142e-2760-25751d5e9d1b" testName="UpdatePet(False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.3496180" startTime="2026-11-13T02:16:28.8029433+03:00" endTime="2026-11-13T02:16:30.1525616+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="30760ca6-005a-4502-8434-efc713ac93c1">
+      <Output>
+        <StdOut>POST pet -&gt; 200
+GET pet/275061865552832 -&gt; 200
+PUT pet -&gt; 200
+GET pet/275061865552832 -&gt; 200
+GET pet/275061865552832 -&gt; 200
+DELETE pet/275061865552832 -&gt; 200
+GET pet/275061865552832 -&gt; 404</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="df4e95b0-1058-4934-a41b-063dd43cc40c" testId="eba4c373-c084-d02c-1402-3ca045d0d065" testName="Logout" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.3845700" startTime="2026-11-13T02:17:02.6119700+03:00" endTime="2026-11-13T02:17:02.9965396+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="df4e95b0-1058-4934-a41b-063dd43cc40c">
+      <Output>
+        <StdOut>GET user/logout -&gt; 200</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="edaadd94-e812-415d-93a1-a48f784b106b" testId="eb1624c0-c328-d0e9-1306-856815506dc3" testName="GetPet(True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.1281440" startTime="2026-11-13T02:16:27.6746240+03:00" endTime="2026-11-13T02:16:28.8027665+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="edaadd94-e812-415d-93a1-a48f784b106b">
+      <Output>
+        <StdOut>POST pet -&gt; 200
+GET pet/240632859885232 -&gt; 200
+GET pet/wrong_id -&gt; 404
+GET pet/240632859885232 -&gt; 200
+DELETE pet/240632859885232 -&gt; 200
+GET pet/240632859885232 -&gt; 404</StdOut>
+        <ErrorInfo>
+          <Message>  {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  404
+</Message>
+          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.GetPet(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 80
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.&lt;&gt;c__DisplayClass1_0.&lt;Execute&gt;b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.GetPet(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 80
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5ab0c307-a25a-464a-ade2-fa85d9427d77" testId="042d73c8-5920-8291-0be3-1bb28afc04fd" testName="CreateOrder(True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.6202800" startTime="2026-11-13T02:16:39.1655153+03:00" endTime="2026-11-13T02:16:40.7857943+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5ab0c307-a25a-464a-ade2-fa85d9427d77">
+      <Output>
+        <StdOut>POST pet -&gt; 200
+GET pet/237698008947444 -&gt; 200
+GET store/order/1 -&gt; 200
+GET store/order/2 -&gt; 200
+GET store/order/3 -&gt; 404
+POST store/order -&gt; 500
+GET store/order/3 -&gt; 404
+GET pet/237698008947444 -&gt; 200
+DELETE pet/237698008947444 -&gt; 200
+GET pet/237698008947444 -&gt; 404</StdOut>
+        <ErrorInfo>
+          <Message>  {"code":500,"type":"unknown","message":"something bad happened"}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  500
+</Message>
+          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.StoreTests.CreateOrder(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/StoreTests.cs:line 23
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.&lt;&gt;c__DisplayClass1_0.&lt;Execute&gt;b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.StoreTests.CreateOrder(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/StoreTests.cs:line 23
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="aa574103-f3ea-4583-8f89-60e125db687a" testId="23d13559-654a-a813-279d-b5178116230a" testName="GetUser(False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.6681540" startTime="2026-11-13T02:16:57.3271224+03:00" endTime="2026-11-13T02:16:58.9952757+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aa574103-f3ea-4583-8f89-60e125db687a">
+      <Output>
+        <StdOut>POST user -&gt; 200
+GET user/kt8_a7e0d0870186 -&gt; 200
+GET user/kt8_a7e0d0870186 -&gt; 200
+GET user/kt8_a7e0d0870186 -&gt; 200
+DELETE user/kt8_a7e0d0870186 -&gt; 200
+GET user/kt8_a7e0d0870186 -&gt; 404</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9226b46c-9233-404f-a2d9-31a57a606d10" testId="2f29e208-bcb0-0140-07f0-4c8212da4026" testName="GetUser(True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.0743480" startTime="2026-11-13T02:16:58.9953239+03:00" endTime="2026-11-13T02:17:00.0696713+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9226b46c-9233-404f-a2d9-31a57a606d10">
+      <Output>
+        <StdOut>POST user -&gt; 200
+GET user/kt8_d4f17be356a6 -&gt; 200
+GET user/missing_596aedfe928942fa9a5f8b179f4dc1c4 -&gt; 404
+GET user/kt8_d4f17be356a6 -&gt; 200
+DELETE user/kt8_d4f17be356a6 -&gt; 200
+GET user/kt8_d4f17be356a6 -&gt; 404</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a5a27d8b-5c43-4a6e-80d5-fb08cfdb8681" testId="60f40cb2-b87e-5586-1282-86b62f0ac9df" testName="UpdateUser(True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.2065530" startTime="2026-11-13T02:17:04.3625448+03:00" endTime="2026-11-13T02:17:05.5690971+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a5a27d8b-5c43-4a6e-80d5-fb08cfdb8681">
+      <Output>
+        <StdOut>POST user -&gt; 200
+GET user/kt8_b8c9b4f65102 -&gt; 200
+PUT user/kt8_b8c9b4f65102 -&gt; 500
+GET user/kt8_b8c9b4f65102 -&gt; 200
+DELETE user/kt8_b8c9b4f65102 -&gt; 200
+GET user/kt8_b8c9b4f65102 -&gt; 404</StdOut>
+        <ErrorInfo>
+          <Message>  {"code":500,"type":"unknown","message":"something bad happened"}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  500
+</Message>
+          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.UserTests.UpdateUser(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 77
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.&lt;&gt;c__DisplayClass1_0.&lt;Execute&gt;b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.UserTests.UpdateUser(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 77
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c208dfd7-f27a-4783-9fbc-e20b2868197c" testId="f1d48c3e-028f-ea1f-84bf-bf4a0d0f20b5" testName="UploadImage(False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.0778720" startTime="2026-11-13T02:16:34.1981640+03:00" endTime="2026-11-13T02:16:35.2760357+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c208dfd7-f27a-4783-9fbc-e20b2868197c">
+      <Output>
+        <StdOut>POST pet -&gt; 200
+GET pet/95094685980177 -&gt; 200
+POST pet/95094685980177/uploadImage -&gt; 200
+GET pet/95094685980177 -&gt; 200
+DELETE pet/95094685980177 -&gt; 200
+GET pet/95094685980177 -&gt; 404</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8e88a350-13ed-4055-9f93-784cfd55046d" testId="58f9e3f6-14c3-63d2-c2f8-d1e9b95fd2be" testName="CreateOrder(False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:02.6369740" startTime="2026-11-13T02:16:36.5284667+03:00" endTime="2026-11-13T02:16:39.1654394+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8e88a350-13ed-4055-9f93-784cfd55046d">
+      <Output>
+        <StdOut>POST pet -&gt; 200
+GET pet/264085551331859 -&gt; 200
+GET store/order/1 -&gt; 200
+GET store/order/2 -&gt; 200
+GET store/order/3 -&gt; 404
+POST store/order -&gt; 200
+GET store/order/3 -&gt; 200
+GET store/order/3 -&gt; 200
+DELETE store/order/3 -&gt; 200
+GET store/order/3 -&gt; 404
+GET pet/264085551331859 -&gt; 200
+DELETE pet/264085551331859 -&gt; 200
+GET pet/264085551331859 -&gt; 404</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5eaa4dac-5d5b-4761-9140-29704e131041" testId="1e8dd8d1-17fa-df7e-3b12-a3f3e8976484" testName="Inventory" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.3856770" startTime="2026-11-13T02:16:49.8659430+03:00" endTime="2026-11-13T02:16:50.2516192+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5eaa4dac-5d5b-4761-9140-29704e131041">
+      <Output>
+        <StdOut>GET store/inventory -&gt; 200</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cb04bee7-046b-4764-ad31-6af4820b5c44" testId="f8110875-932f-f252-8a05-2f231bc0bc5a" testName="DeletePet(True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.0794100" startTime="2026-11-13T02:16:20.4373410+03:00" endTime="2026-11-13T02:16:21.5167496+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cb04bee7-046b-4764-ad31-6af4820b5c44">
+      <Output>
+        <StdOut>POST pet -&gt; 200
+GET pet/114291666693658 -&gt; 200
+DELETE pet/wrong_id -&gt; 404
+GET pet/114291666693658 -&gt; 200
+DELETE pet/114291666693658 -&gt; 200
+GET pet/114291666693658 -&gt; 404</StdOut>
+        <ErrorInfo>
+          <Message>  {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  404
+</Message>
+          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.DeletePet(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 108
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.&lt;&gt;c__DisplayClass1_0.&lt;Execute&gt;b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.DeletePet(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 108
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="45692779-536b-455e-95ee-47ec279d7998" testId="7de9bb5b-c0b4-1b08-889a-fbe7a24955e7" testName="GetOrder(False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:02.2266350" startTime="2026-11-13T02:16:45.4376865+03:00" endTime="2026-11-13T02:16:47.6643209+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="45692779-536b-455e-95ee-47ec279d7998">
+      <Output>
+        <StdOut>POST pet -&gt; 200
+GET pet/100796182195498 -&gt; 200
+GET store/order/1 -&gt; 200
+GET store/order/2 -&gt; 200
+GET store/order/3 -&gt; 404
+POST store/order -&gt; 200
+GET store/order/3 -&gt; 200
+GET store/order/3 -&gt; 200
+GET store/order/3 -&gt; 200
+DELETE store/order/3 -&gt; 200
+GET store/order/3 -&gt; 404
+GET pet/100796182195498 -&gt; 200
+DELETE pet/100796182195498 -&gt; 200
+GET pet/100796182195498 -&gt; 404</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a712f892-7acf-45e6-ab5c-b02f96f2aaff" testId="ce352d38-bf7d-9fb0-2d9a-4567bce0bbb4" testName="GetPet(False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.2402340" startTime="2026-11-13T02:16:26.4343138+03:00" endTime="2026-11-13T02:16:27.6745467+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a712f892-7acf-45e6-ab5c-b02f96f2aaff">
+      <Output>
+        <StdOut>POST pet -&gt; 200
+GET pet/82847218730305 -&gt; 200
+GET pet/82847218730305 -&gt; 200
+GET pet/82847218730305 -&gt; 200
+DELETE pet/82847218730305 -&gt; 200
+GET pet/82847218730305 -&gt; 404</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="00a703ac-0244-4d03-bffc-a8fa831669b2" testId="43045a0d-63aa-e150-ba68-989fe5d0d118" testName="UpdateUser(False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.3658650" startTime="2026-11-13T02:17:02.9966194+03:00" endTime="2026-11-13T02:17:04.3624839+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="00a703ac-0244-4d03-bffc-a8fa831669b2">
+      <Output>
+        <StdOut>POST user -&gt; 200
+GET user/kt8_21efd73e6b25 -&gt; 200
+PUT user/kt8_21efd73e6b25 -&gt; 200
+GET user/kt8_21efd73e6b25 -&gt; 200
+GET user/kt8_21efd73e6b25 -&gt; 200
+DELETE user/kt8_21efd73e6b25 -&gt; 200
+GET user/kt8_21efd73e6b25 -&gt; 404</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4ee5eec2-591e-4cc2-a42b-b9da25e8b811" testId="bc4d0563-94dc-1439-c886-361211280c49" testName="CreatePet(False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.3946289" startTime="2026-11-13T02:16:17.4082395+03:00" endTime="2026-11-13T02:16:18.8027612+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4ee5eec2-591e-4cc2-a42b-b9da25e8b811">
+      <Output>
+        <StdOut>POST pet -&gt; 200
+GET pet/119670881903861 -&gt; 200
+GET pet/119670881903861 -&gt; 200
+DELETE pet/119670881903861 -&gt; 200
+GET pet/119670881903861 -&gt; 404</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7e4f23c4-4b98-4317-89fe-481cf01045e7" testId="e3fd7457-f467-9ad9-4eb7-2bf9cb53801c" testName="DeletePet(False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.0806840" startTime="2026-11-13T02:16:19.3565953+03:00" endTime="2026-11-13T02:16:20.4372787+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7e4f23c4-4b98-4317-89fe-481cf01045e7">
+      <Output>
+        <StdOut>POST pet -&gt; 200
+GET pet/150067491947039 -&gt; 200
+DELETE pet/150067491947039 -&gt; 200
+GET pet/150067491947039 -&gt; 404
+GET pet/150067491947039 -&gt; 404</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1659c215-0ab7-4261-be79-c45ae69f794b" testId="f1726975-eaf0-4075-7db8-813af1d09dff" testName="DeleteUser(True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.2052230" startTime="2026-11-13T02:16:56.1217144+03:00" endTime="2026-11-13T02:16:57.3269371+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1659c215-0ab7-4261-be79-c45ae69f794b">
+      <Output>
+        <StdOut>POST user -&gt; 200
+GET user/kt8_9c00b0c9364b -&gt; 200
+DELETE user/missing_c1e9eb000a14453cb42e3d089cc44ad1 -&gt; 404
+GET user/kt8_9c00b0c9364b -&gt; 200
+DELETE user/kt8_9c00b0c9364b -&gt; 200
+GET user/kt8_9c00b0c9364b -&gt; 404</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="78a702f3-bbdf-44bf-ac4e-a1ed011f5dfe" testId="fb15cdfb-a3c6-3751-ffd3-3b48c890d032" testName="UpdatePetForm(False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.8260040" startTime="2026-11-13T02:16:31.2363260+03:00" endTime="2026-11-13T02:16:33.0623292+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="78a702f3-bbdf-44bf-ac4e-a1ed011f5dfe">
+      <Output>
+        <StdOut>POST pet -&gt; 200
+GET pet/58556569507860 -&gt; 200
+POST pet/58556569507860 -&gt; 200
+GET pet/58556569507860 -&gt; 200
+GET pet/58556569507860 -&gt; 200
+DELETE pet/58556569507860 -&gt; 200
+GET pet/58556569507860 -&gt; 404</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5044cdaa-6927-40a5-a106-8d83950735d8" testId="b8c2d96f-0b91-9e2e-9423-de3bf6d6b900" testName="FindByTags(False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.0743609" startTime="2026-11-13T02:16:23.9916495+03:00" endTime="2026-11-13T02:16:25.0660085+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5044cdaa-6927-40a5-a106-8d83950735d8">
+      <Output>
+        <StdOut>POST pet -&gt; 200
+GET pet/23123433171453 -&gt; 200
+GET pet/findByTags?tags=1507d80529fd -&gt; 200
+GET pet/23123433171453 -&gt; 200
+DELETE pet/23123433171453 -&gt; 200
+GET pet/23123433171453 -&gt; 404</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="CreateUser(False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="d9149257-150d-c68e-94b2-fc1516f2d4bc">
+      <Execution id="21d69f5a-97f2-4a71-b125-22df2ba5c298" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.UserTests" name="CreateUser(False)" />
+    </UnitTest>
+    <UnitTest name="UpdatePet(False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="5d48e997-f2ae-142e-2760-25751d5e9d1b">
+      <Execution id="30760ca6-005a-4502-8434-efc713ac93c1" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.PetTests" name="UpdatePet(False)" />
+    </UnitTest>
+    <UnitTest name="FindByStatus(False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="49b2e88d-2a01-3da6-d2de-1c32b4affe37">
+      <Execution id="2bec4827-7d51-44d8-ae0e-82e183a5aa62" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.PetTests" name="FindByStatus(False)" />
+    </UnitTest>
+    <UnitTest name="Login(False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="9ceb51fe-1a88-aa47-fdba-06a37e43fb8f">
+      <Execution id="f9f18e6f-53e9-4f06-a17c-1a08c8880739" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.UserTests" name="Login(False)" />
+    </UnitTest>
+    <UnitTest name="DeletePet(False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="e3fd7457-f467-9ad9-4eb7-2bf9cb53801c">
+      <Execution id="7e4f23c4-4b98-4317-89fe-481cf01045e7" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.PetTests" name="DeletePet(False)" />
+    </UnitTest>
+    <UnitTest name="GetUser(True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="2f29e208-bcb0-0140-07f0-4c8212da4026">
+      <Execution id="9226b46c-9233-404f-a2d9-31a57a606d10" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.UserTests" name="GetUser(True)" />
+    </UnitTest>
+    <UnitTest name="CreateUsersList(True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="5a9c6bdf-a577-a1b5-97a9-8bd5e23f8140">
+      <Execution id="f9756cad-4d81-461a-8397-52120bcee4ca" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.UserTests" name="CreateUsersList(True)" />
+    </UnitTest>
+    <UnitTest name="CreateUsersList(False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="86c0d912-48a2-b7a6-666a-6434fb6c10f4">
+      <Execution id="47895b73-0633-4556-8f6c-7f12c3fd3b92" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.UserTests" name="CreateUsersList(False)" />
+    </UnitTest>
+    <UnitTest name="UpdatePet(True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="203216f4-0944-1793-0746-87e91768d6f1">
+      <Execution id="5d578442-7ce6-4cde-a8b6-a9f2c17640ab" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.PetTests" name="UpdatePet(True)" />
+    </UnitTest>
+    <UnitTest name="CreateUser(True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="022d8953-8ddd-1f8a-f46d-361169b22ea8">
+      <Execution id="9c086949-6763-45a1-9a59-36301386760b" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.UserTests" name="CreateUser(True)" />
+    </UnitTest>
+    <UnitTest name="FindByTags(False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="b8c2d96f-0b91-9e2e-9423-de3bf6d6b900">
+      <Execution id="5044cdaa-6927-40a5-a106-8d83950735d8" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.PetTests" name="FindByTags(False)" />
+    </UnitTest>
+    <UnitTest name="CreateOrder(False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="58f9e3f6-14c3-63d2-c2f8-d1e9b95fd2be">
+      <Execution id="8e88a350-13ed-4055-9f93-784cfd55046d" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.StoreTests" name="CreateOrder(False)" />
+    </UnitTest>
+    <UnitTest name="CreateOrder(True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="042d73c8-5920-8291-0be3-1bb28afc04fd">
+      <Execution id="5ab0c307-a25a-464a-ade2-fa85d9427d77" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.StoreTests" name="CreateOrder(True)" />
+    </UnitTest>
+    <UnitTest name="UploadImage(True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="07aac00d-b5a1-ec85-0cdc-67a1c25d6e45">
+      <Execution id="991231e3-60c1-440e-bf66-696eb32818c5" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.PetTests" name="UploadImage(True)" />
+    </UnitTest>
+    <UnitTest name="CreateUsersArray(False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="9e0258fe-9c2b-d866-06ff-911bfae35714">
+      <Execution id="66abf207-910a-422c-b269-9e13ea7a1951" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.UserTests" name="CreateUsersArray(False)" />
+    </UnitTest>
+    <UnitTest name="DeleteOrder(True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="079cf8d8-2683-5d6b-5c58-7045d9e7e349">
+      <Execution id="57e06d48-f92e-48e2-aa60-07bbc8913bd5" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.StoreTests" name="DeleteOrder(True)" />
+    </UnitTest>
+    <UnitTest name="CreatePet(False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="bc4d0563-94dc-1439-c886-361211280c49">
+      <Execution id="4ee5eec2-591e-4cc2-a42b-b9da25e8b811" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.PetTests" name="CreatePet(False)" />
+    </UnitTest>
+    <UnitTest name="UpdateUser(True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="60f40cb2-b87e-5586-1282-86b62f0ac9df">
+      <Execution id="a5a27d8b-5c43-4a6e-80d5-fb08cfdb8681" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.UserTests" name="UpdateUser(True)" />
+    </UnitTest>
+    <UnitTest name="FindByStatus(True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="74d16f94-ce88-764a-53d7-72fdfcfe7702">
+      <Execution id="d53be705-19f5-4d7c-89d0-557e1c481f88" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.PetTests" name="FindByStatus(True)" />
+    </UnitTest>
+    <UnitTest name="Logout" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="eba4c373-c084-d02c-1402-3ca045d0d065">
+      <Execution id="df4e95b0-1058-4934-a41b-063dd43cc40c" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.UserTests" name="Logout" />
+    </UnitTest>
+    <UnitTest name="UploadImage(False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="f1d48c3e-028f-ea1f-84bf-bf4a0d0f20b5">
+      <Execution id="c208dfd7-f27a-4783-9fbc-e20b2868197c" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.PetTests" name="UploadImage(False)" />
+    </UnitTest>
+    <UnitTest name="GetOrder(False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="7de9bb5b-c0b4-1b08-889a-fbe7a24955e7">
+      <Execution id="45692779-536b-455e-95ee-47ec279d7998" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.StoreTests" name="GetOrder(False)" />
+    </UnitTest>
+    <UnitTest name="CreateUsersArray(True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="61e7cc41-14a3-642b-e874-dc5e9f4a43a5">
+      <Execution id="dc93abf0-77be-4763-ba0d-9c9741cce16c" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.UserTests" name="CreateUsersArray(True)" />
+    </UnitTest>
+    <UnitTest name="Inventory" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="1e8dd8d1-17fa-df7e-3b12-a3f3e8976484">
+      <Execution id="5eaa4dac-5d5b-4761-9140-29704e131041" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.StoreTests" name="Inventory" />
+    </UnitTest>
+    <UnitTest name="FindByTags(True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="f2db95e6-cff4-2512-bd15-9d831062e0e3">
+      <Execution id="c9485d21-fd16-4dca-a71e-63c94d395414" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.PetTests" name="FindByTags(True)" />
+    </UnitTest>
+    <UnitTest name="GetPet(True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="eb1624c0-c328-d0e9-1306-856815506dc3">
+      <Execution id="edaadd94-e812-415d-93a1-a48f784b106b" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.PetTests" name="GetPet(True)" />
+    </UnitTest>
+    <UnitTest name="DeletePet(True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="f8110875-932f-f252-8a05-2f231bc0bc5a">
+      <Execution id="cb04bee7-046b-4764-ad31-6af4820b5c44" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.PetTests" name="DeletePet(True)" />
+    </UnitTest>
+    <UnitTest name="UpdatePetForm(False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="fb15cdfb-a3c6-3751-ffd3-3b48c890d032">
+      <Execution id="78a702f3-bbdf-44bf-ac4e-a1ed011f5dfe" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.PetTests" name="UpdatePetForm(False)" />
+    </UnitTest>
+    <UnitTest name="Login(True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="f8a5755c-74ad-5acc-469a-1cc2b50068c4">
+      <Execution id="1e533428-8d13-4c88-8570-685e6c5cd415" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.UserTests" name="Login(True)" />
+    </UnitTest>
+    <UnitTest name="UpdatePetForm(True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="bdef27aa-734e-50c9-0477-40a3c0d63b4a">
+      <Execution id="a8066f1a-e7e1-47a0-a9c4-e0259b0ce026" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.PetTests" name="UpdatePetForm(True)" />
+    </UnitTest>
+    <UnitTest name="DeleteOrder(False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="2329d957-de81-62a5-e979-d8e196988f31">
+      <Execution id="7287b2fd-c50e-4189-b82e-8d2f7eaecd02" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.StoreTests" name="DeleteOrder(False)" />
+    </UnitTest>
+    <UnitTest name="GetPet(False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="ce352d38-bf7d-9fb0-2d9a-4567bce0bbb4">
+      <Execution id="a712f892-7acf-45e6-ab5c-b02f96f2aaff" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.PetTests" name="GetPet(False)" />
+    </UnitTest>
+    <UnitTest name="CreatePet(True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="74fc7e73-920f-177e-d72d-9c2c7bd9861b">
+      <Execution id="fb5ee34e-1945-48bf-a748-c0149c60b669" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.PetTests" name="CreatePet(True)" />
+    </UnitTest>
+    <UnitTest name="DeleteUser(False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="be2476e8-290a-1da4-2652-a06028f29fb3">
+      <Execution id="2646b317-e93b-4646-a70f-e86147de4a25" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.UserTests" name="DeleteUser(False)" />
+    </UnitTest>
+    <UnitTest name="GetOrder(True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="ce26990b-f9f3-7de6-7282-5efe23293b24">
+      <Execution id="4f22a123-6f74-4ea3-ba92-33afd75dd635" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.StoreTests" name="GetOrder(True)" />
+    </UnitTest>
+    <UnitTest name="GetUser(False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="23d13559-654a-a813-279d-b5178116230a">
+      <Execution id="aa574103-f3ea-4583-8f89-60e125db687a" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.UserTests" name="GetUser(False)" />
+    </UnitTest>
+    <UnitTest name="UpdateUser(False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="43045a0d-63aa-e150-ba68-989fe5d0d118">
+      <Execution id="00a703ac-0244-4d03-bffc-a8fa831669b2" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.UserTests" name="UpdateUser(False)" />
+    </UnitTest>
+    <UnitTest name="DeleteUser(True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/nunit-tests/bin/debug/net10.0/petstore.nunit.dll" id="f1726975-eaf0-4075-7db8-813af1d09dff">
+      <Execution id="1659c215-0ab7-4261-be79-c45ae69f794b" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll" adapterTypeName="executor://nunit3testexecutor/" className="PetstoreTests.UserTests" name="DeleteUser(True)" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="022d8953-8ddd-1f8a-f46d-361169b22ea8" executionId="9c086949-6763-45a1-9a59-36301386760b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d9149257-150d-c68e-94b2-fc1516f2d4bc" executionId="21d69f5a-97f2-4a71-b125-22df2ba5c298" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f8a5755c-74ad-5acc-469a-1cc2b50068c4" executionId="1e533428-8d13-4c88-8570-685e6c5cd415" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="079cf8d8-2683-5d6b-5c58-7045d9e7e349" executionId="57e06d48-f92e-48e2-aa60-07bbc8913bd5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5a9c6bdf-a577-a1b5-97a9-8bd5e23f8140" executionId="f9756cad-4d81-461a-8397-52120bcee4ca" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="74fc7e73-920f-177e-d72d-9c2c7bd9861b" executionId="fb5ee34e-1945-48bf-a748-c0149c60b669" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bdef27aa-734e-50c9-0477-40a3c0d63b4a" executionId="a8066f1a-e7e1-47a0-a9c4-e0259b0ce026" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ce26990b-f9f3-7de6-7282-5efe23293b24" executionId="4f22a123-6f74-4ea3-ba92-33afd75dd635" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9ceb51fe-1a88-aa47-fdba-06a37e43fb8f" executionId="f9f18e6f-53e9-4f06-a17c-1a08c8880739" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="61e7cc41-14a3-642b-e874-dc5e9f4a43a5" executionId="dc93abf0-77be-4763-ba0d-9c9741cce16c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f2db95e6-cff4-2512-bd15-9d831062e0e3" executionId="c9485d21-fd16-4dca-a71e-63c94d395414" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="86c0d912-48a2-b7a6-666a-6434fb6c10f4" executionId="47895b73-0633-4556-8f6c-7f12c3fd3b92" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="49b2e88d-2a01-3da6-d2de-1c32b4affe37" executionId="2bec4827-7d51-44d8-ae0e-82e183a5aa62" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9e0258fe-9c2b-d866-06ff-911bfae35714" executionId="66abf207-910a-422c-b269-9e13ea7a1951" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="be2476e8-290a-1da4-2652-a06028f29fb3" executionId="2646b317-e93b-4646-a70f-e86147de4a25" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="74d16f94-ce88-764a-53d7-72fdfcfe7702" executionId="d53be705-19f5-4d7c-89d0-557e1c481f88" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="07aac00d-b5a1-ec85-0cdc-67a1c25d6e45" executionId="991231e3-60c1-440e-bf66-696eb32818c5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2329d957-de81-62a5-e979-d8e196988f31" executionId="7287b2fd-c50e-4189-b82e-8d2f7eaecd02" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="203216f4-0944-1793-0746-87e91768d6f1" executionId="5d578442-7ce6-4cde-a8b6-a9f2c17640ab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5d48e997-f2ae-142e-2760-25751d5e9d1b" executionId="30760ca6-005a-4502-8434-efc713ac93c1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eba4c373-c084-d02c-1402-3ca045d0d065" executionId="df4e95b0-1058-4934-a41b-063dd43cc40c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eb1624c0-c328-d0e9-1306-856815506dc3" executionId="edaadd94-e812-415d-93a1-a48f784b106b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="042d73c8-5920-8291-0be3-1bb28afc04fd" executionId="5ab0c307-a25a-464a-ade2-fa85d9427d77" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="23d13559-654a-a813-279d-b5178116230a" executionId="aa574103-f3ea-4583-8f89-60e125db687a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2f29e208-bcb0-0140-07f0-4c8212da4026" executionId="9226b46c-9233-404f-a2d9-31a57a606d10" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="60f40cb2-b87e-5586-1282-86b62f0ac9df" executionId="a5a27d8b-5c43-4a6e-80d5-fb08cfdb8681" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f1d48c3e-028f-ea1f-84bf-bf4a0d0f20b5" executionId="c208dfd7-f27a-4783-9fbc-e20b2868197c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="58f9e3f6-14c3-63d2-c2f8-d1e9b95fd2be" executionId="8e88a350-13ed-4055-9f93-784cfd55046d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1e8dd8d1-17fa-df7e-3b12-a3f3e8976484" executionId="5eaa4dac-5d5b-4761-9140-29704e131041" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f8110875-932f-f252-8a05-2f231bc0bc5a" executionId="cb04bee7-046b-4764-ad31-6af4820b5c44" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7de9bb5b-c0b4-1b08-889a-fbe7a24955e7" executionId="45692779-536b-455e-95ee-47ec279d7998" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ce352d38-bf7d-9fb0-2d9a-4567bce0bbb4" executionId="a712f892-7acf-45e6-ab5c-b02f96f2aaff" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="43045a0d-63aa-e150-ba68-989fe5d0d118" executionId="00a703ac-0244-4d03-bffc-a8fa831669b2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bc4d0563-94dc-1439-c886-361211280c49" executionId="4ee5eec2-591e-4cc2-a42b-b9da25e8b811" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e3fd7457-f467-9ad9-4eb7-2bf9cb53801c" executionId="7e4f23c4-4b98-4317-89fe-481cf01045e7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f1726975-eaf0-4075-7db8-813af1d09dff" executionId="1659c215-0ab7-4261-be79-c45ae69f794b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fb15cdfb-a3c6-3751-ffd3-3b48c890d032" executionId="78a702f3-bbdf-44bf-ac4e-a1ed011f5dfe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b8c2d96f-0b91-9e2e-9423-de3bf6d6b900" executionId="5044cdaa-6927-40a5-a106-8d83950735d8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="38" executed="38" passed="22" failed="16" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 5.0.0.0: Test execution started
+Running all tests in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll
+   NUnit3TestExecutor discovered 38 of 38 NUnit test cases using Current Discovery mode, Non-Explicit run
+POST pet -&gt; 200
+GET pet/119670881903861 -&gt; 200
+GET pet/119670881903861 -&gt; 200
+DELETE pet/119670881903861 -&gt; 200
+GET pet/119670881903861 -&gt; 404
+
+POST pet -&gt; 500
+GET pet/33786342458394 -&gt; 404
+
+POST pet -&gt; 200
+GET pet/150067491947039 -&gt; 200
+DELETE pet/150067491947039 -&gt; 200
+GET pet/150067491947039 -&gt; 404
+GET pet/150067491947039 -&gt; 404
+
+POST pet -&gt; 200
+GET pet/114291666693658 -&gt; 200
+DELETE pet/wrong_id -&gt; 404
+GET pet/114291666693658 -&gt; 200
+DELETE pet/114291666693658 -&gt; 200
+GET pet/114291666693658 -&gt; 404
+
+POST pet -&gt; 200
+GET pet/196391892064633 -&gt; 200
+GET pet/findByStatus?status=available -&gt; 200
+GET pet/196391892064633 -&gt; 200
+DELETE pet/196391892064633 -&gt; 200
+GET pet/196391892064633 -&gt; 404
+
+POST pet -&gt; 200
+GET pet/197928656640226 -&gt; 200
+GET pet/findByStatus?status=wrong_status -&gt; 200
+GET pet/197928656640226 -&gt; 200
+DELETE pet/197928656640226 -&gt; 200
+GET pet/197928656640226 -&gt; 404
+
+POST pet -&gt; 200
+GET pet/23123433171453 -&gt; 200
+GET pet/findByTags?tags=1507d80529fd -&gt; 200
+GET pet/23123433171453 -&gt; 200
+DELETE pet/23123433171453 -&gt; 200
+GET pet/23123433171453 -&gt; 404
+
+POST pet -&gt; 200
+GET pet/208057703611170 -&gt; 200
+GET pet/findByTags -&gt; 200
+GET pet/208057703611170 -&gt; 200
+DELETE pet/208057703611170 -&gt; 200
+GET pet/208057703611170 -&gt; 404
+
+POST pet -&gt; 200
+GET pet/82847218730305 -&gt; 200
+GET pet/82847218730305 -&gt; 200
+GET pet/82847218730305 -&gt; 200
+DELETE pet/82847218730305 -&gt; 200
+GET pet/82847218730305 -&gt; 404
+
+POST pet -&gt; 200
+GET pet/240632859885232 -&gt; 200
+GET pet/wrong_id -&gt; 404
+GET pet/240632859885232 -&gt; 200
+DELETE pet/240632859885232 -&gt; 200
+GET pet/240632859885232 -&gt; 404
+
+POST pet -&gt; 200
+GET pet/275061865552832 -&gt; 200
+PUT pet -&gt; 200
+GET pet/275061865552832 -&gt; 200
+GET pet/275061865552832 -&gt; 200
+DELETE pet/275061865552832 -&gt; 200
+GET pet/275061865552832 -&gt; 404
+
+POST pet -&gt; 200
+GET pet/164851876338714 -&gt; 200
+PUT pet -&gt; 500
+GET pet/164851876338714 -&gt; 200
+DELETE pet/164851876338714 -&gt; 200
+GET pet/164851876338714 -&gt; 404
+
+POST pet -&gt; 200
+GET pet/58556569507860 -&gt; 200
+POST pet/58556569507860 -&gt; 200
+GET pet/58556569507860 -&gt; 200
+GET pet/58556569507860 -&gt; 200
+DELETE pet/58556569507860 -&gt; 200
+GET pet/58556569507860 -&gt; 404
+
+POST pet -&gt; 200
+GET pet/131674225897902 -&gt; 200
+POST pet/wrong_id -&gt; 404
+GET pet/131674225897902 -&gt; 200
+DELETE pet/131674225897902 -&gt; 200
+GET pet/131674225897902 -&gt; 404
+
+POST pet -&gt; 200
+GET pet/95094685980177 -&gt; 200
+POST pet/95094685980177/uploadImage -&gt; 200
+GET pet/95094685980177 -&gt; 200
+DELETE pet/95094685980177 -&gt; 200
+GET pet/95094685980177 -&gt; 404
+
+POST pet -&gt; 200
+GET pet/192134119497521 -&gt; 200
+POST pet/wrong_id/uploadImage -&gt; 404
+GET pet/192134119497521 -&gt; 200
+DELETE pet/192134119497521 -&gt; 200
+GET pet/192134119497521 -&gt; 404
+
+POST pet -&gt; 200
+GET pet/264085551331859 -&gt; 200
+GET store/order/1 -&gt; 200
+GET store/order/2 -&gt; 200
+GET store/order/3 -&gt; 404
+POST store/order -&gt; 200
+GET store/order/3 -&gt; 200
+GET store/order/3 -&gt; 200
+DELETE store/order/3 -&gt; 200
+GET store/order/3 -&gt; 404
+GET pet/264085551331859 -&gt; 200
+DELETE pet/264085551331859 -&gt; 200
+GET pet/264085551331859 -&gt; 404
+
+POST pet -&gt; 200
+GET pet/237698008947444 -&gt; 200
+GET store/order/1 -&gt; 200
+GET store/order/2 -&gt; 200
+GET store/order/3 -&gt; 404
+POST store/order -&gt; 500
+GET store/order/3 -&gt; 404
+GET pet/237698008947444 -&gt; 200
+DELETE pet/237698008947444 -&gt; 200
+GET pet/237698008947444 -&gt; 404
+
+POST pet -&gt; 200
+GET pet/17848710368038 -&gt; 200
+GET store/order/1 -&gt; 200
+GET store/order/2 -&gt; 200
+GET store/order/3 -&gt; 404
+POST store/order -&gt; 200
+GET store/order/3 -&gt; 200
+DELETE store/order/3 -&gt; 200
+GET store/order/3 -&gt; 404
+GET store/order/3 -&gt; 404
+GET pet/17848710368038 -&gt; 200
+DELETE pet/17848710368038 -&gt; 200
+GET pet/17848710368038 -&gt; 404
+
+POST pet -&gt; 200
+GET pet/263728724930843 -&gt; 200
+GET store/order/1 -&gt; 200
+GET store/order/2 -&gt; 200
+GET store/order/3 -&gt; 404
+POST store/order -&gt; 200
+GET store/order/3 -&gt; 200
+DELETE store/order/wrong_id -&gt; 404
+GET store/order/3 -&gt; 200
+DELETE store/order/3 -&gt; 200
+GET store/order/3 -&gt; 404
+GET pet/263728724930843 -&gt; 200
+DELETE pet/263728724930843 -&gt; 200
+GET pet/263728724930843 -&gt; 404
+
+POST pet -&gt; 200
+GET pet/100796182195498 -&gt; 200
+GET store/order/1 -&gt; 200
+GET store/order/2 -&gt; 200
+GET store/order/3 -&gt; 404
+POST store/order -&gt; 200
+GET store/order/3 -&gt; 200
+GET store/order/3 -&gt; 200
+GET store/order/3 -&gt; 200
+DELETE store/order/3 -&gt; 200
+GET store/order/3 -&gt; 404
+GET pet/100796182195498 -&gt; 200
+DELETE pet/100796182195498 -&gt; 200
+GET pet/100796182195498 -&gt; 404
+
+POST pet -&gt; 200
+GET pet/279379577163959 -&gt; 200
+GET store/order/1 -&gt; 200
+GET store/order/2 -&gt; 200
+GET store/order/3 -&gt; 404
+POST store/order -&gt; 200
+GET store/order/3 -&gt; 200
+GET store/order/wrong_id -&gt; 404
+GET store/order/3 -&gt; 200
+DELETE store/order/3 -&gt; 200
+GET store/order/3 -&gt; 404
+GET pet/279379577163959 -&gt; 200
+DELETE pet/279379577163959 -&gt; 200
+GET pet/279379577163959 -&gt; 404
+
+GET store/inventory -&gt; 200
+
+POST user -&gt; 200
+GET user/kt8_15f97768e958 -&gt; 200
+GET user/kt8_15f97768e958 -&gt; 200
+DELETE user/kt8_15f97768e958 -&gt; 200
+GET user/kt8_15f97768e958 -&gt; 404
+
+POST user -&gt; 500
+GET user/kt8_3bbba3fec152 -&gt; 404
+
+POST user/createWithArray -&gt; 200
+GET user/kt8_63eccbd53c34 -&gt; 200
+GET user/kt8_63eccbd53c34 -&gt; 200
+DELETE user/kt8_63eccbd53c34 -&gt; 200
+GET user/kt8_63eccbd53c34 -&gt; 404
+
+POST user/createWithArray -&gt; 500
+GET user/kt8_91ed7b239b5a -&gt; 404
+
+POST user/createWithList -&gt; 200
+GET user/kt8_f63eed2b5be2 -&gt; 200
+GET user/kt8_f63eed2b5be2 -&gt; 200
+DELETE user/kt8_f63eed2b5be2 -&gt; 200
+GET user/kt8_f63eed2b5be2 -&gt; 404
+
+POST user/createWithList -&gt; 500
+GET user/kt8_fb2c92a73246 -&gt; 404
+
+POST user -&gt; 200
+GET user/kt8_bea5fb3cf6ad -&gt; 200
+DELETE user/kt8_bea5fb3cf6ad -&gt; 200
+GET user/kt8_bea5fb3cf6ad -&gt; 404
+GET user/kt8_bea5fb3cf6ad -&gt; 404
+
+POST user -&gt; 200
+GET user/kt8_9c00b0c9364b -&gt; 200
+DELETE user/missing_c1e9eb000a14453cb42e3d089cc44ad1 -&gt; 404
+GET user/kt8_9c00b0c9364b -&gt; 200
+DELETE user/kt8_9c00b0c9364b -&gt; 200
+GET user/kt8_9c00b0c9364b -&gt; 404
+
+POST user -&gt; 200
+GET user/kt8_a7e0d0870186 -&gt; 200
+GET user/kt8_a7e0d0870186 -&gt; 200
+GET user/kt8_a7e0d0870186 -&gt; 200
+DELETE user/kt8_a7e0d0870186 -&gt; 200
+GET user/kt8_a7e0d0870186 -&gt; 404
+
+POST user -&gt; 200
+GET user/kt8_d4f17be356a6 -&gt; 200
+GET user/missing_596aedfe928942fa9a5f8b179f4dc1c4 -&gt; 404
+GET user/kt8_d4f17be356a6 -&gt; 200
+DELETE user/kt8_d4f17be356a6 -&gt; 200
+GET user/kt8_d4f17be356a6 -&gt; 404
+
+POST user -&gt; 200
+GET user/kt8_14edcf712280 -&gt; 200
+GET user/login?username=kt8_14edcf712280&amp;password=Kt8Password -&gt; 200
+GET user/kt8_14edcf712280 -&gt; 200
+DELETE user/kt8_14edcf712280 -&gt; 200
+GET user/kt8_14edcf712280 -&gt; 404
+
+POST user -&gt; 200
+GET user/kt8_804e135df4b0 -&gt; 200
+GET user/login?username=kt8_804e135df4b0&amp;password=wrong_password -&gt; 200
+GET user/kt8_804e135df4b0 -&gt; 200
+DELETE user/kt8_804e135df4b0 -&gt; 200
+GET user/kt8_804e135df4b0 -&gt; 404
+
+GET user/logout -&gt; 200
+
+POST user -&gt; 200
+GET user/kt8_21efd73e6b25 -&gt; 200
+PUT user/kt8_21efd73e6b25 -&gt; 200
+GET user/kt8_21efd73e6b25 -&gt; 200
+GET user/kt8_21efd73e6b25 -&gt; 200
+DELETE user/kt8_21efd73e6b25 -&gt; 200
+GET user/kt8_21efd73e6b25 -&gt; 404
+
+POST user -&gt; 200
+GET user/kt8_b8c9b4f65102 -&gt; 200
+PUT user/kt8_b8c9b4f65102 -&gt; 500
+GET user/kt8_b8c9b4f65102 -&gt; 200
+DELETE user/kt8_b8c9b4f65102 -&gt; 200
+GET user/kt8_b8c9b4f65102 -&gt; 404
+
+NUnit Adapter 5.0.0.0: Test execution complete
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

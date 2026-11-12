@@ -1,0 +1,827 @@
+Test run for /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll (.NETCoreApp,Version=v10.0)
+VSTest version 18.0.2 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+NUnit Adapter 5.0.0.0: Test execution started
+Running all tests in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll
+   NUnit3TestExecutor discovered 38 of 38 NUnit test cases using Current Discovery mode, Non-Explicit run
+POST pet -> 200
+GET pet/119670881903861 -> 200
+GET pet/119670881903861 -> 200
+DELETE pet/119670881903861 -> 200
+GET pet/119670881903861 -> 404
+
+POST pet -> 500
+GET pet/33786342458394 -> 404
+
+  Passed CreatePet(False) [1 s]
+  Failed CreatePet(True) [547 ms]
+  Error Message:
+     {"code":500,"type":"unknown","message":"something bad happened"}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 405
+  But was:  500
+
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.CreatePet(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 14
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.CreatePet(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 14
+
+
+  Standard Output Messages:
+ POST pet -> 500
+ GET pet/33786342458394 -> 404
+
+
+POST pet -> 200
+GET pet/150067491947039 -> 200
+DELETE pet/150067491947039 -> 200
+GET pet/150067491947039 -> 404
+GET pet/150067491947039 -> 404
+
+POST pet -> 200
+GET pet/114291666693658 -> 200
+DELETE pet/wrong_id -> 404
+GET pet/114291666693658 -> 200
+DELETE pet/114291666693658 -> 200
+GET pet/114291666693658 -> 404
+
+  Passed DeletePet(False) [1 s]
+  Failed DeletePet(True) [1 s]
+  Error Message:
+     {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  404
+
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.DeletePet(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 108
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.DeletePet(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 108
+
+
+  Standard Output Messages:
+ POST pet -> 200
+ GET pet/114291666693658 -> 200
+ DELETE pet/wrong_id -> 404
+ GET pet/114291666693658 -> 200
+ DELETE pet/114291666693658 -> 200
+ GET pet/114291666693658 -> 404
+
+
+POST pet -> 200
+GET pet/196391892064633 -> 200
+GET pet/findByStatus?status=available -> 200
+GET pet/196391892064633 -> 200
+DELETE pet/196391892064633 -> 200
+GET pet/196391892064633 -> 404
+
+  Passed FindByStatus(False) [1 s]
+POST pet -> 200
+GET pet/197928656640226 -> 200
+GET pet/findByStatus?status=wrong_status -> 200
+GET pet/197928656640226 -> 200
+DELETE pet/197928656640226 -> 200
+GET pet/197928656640226 -> 404
+
+  Failed FindByStatus(True) [1 s]
+  Error Message:
+     []
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  200
+
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.FindByStatus(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 48
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.FindByStatus(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 48
+
+
+  Standard Output Messages:
+ POST pet -> 200
+ GET pet/197928656640226 -> 200
+ GET pet/findByStatus?status=wrong_status -> 200
+ GET pet/197928656640226 -> 200
+ DELETE pet/197928656640226 -> 200
+ GET pet/197928656640226 -> 404
+
+
+POST pet -> 200
+GET pet/23123433171453 -> 200
+GET pet/findByTags?tags=1507d80529fd -> 200
+GET pet/23123433171453 -> 200
+DELETE pet/23123433171453 -> 200
+GET pet/23123433171453 -> 404
+
+  Passed FindByTags(False) [1 s]
+POST pet -> 200
+GET pet/208057703611170 -> 200
+GET pet/findByTags -> 200
+GET pet/208057703611170 -> 200
+DELETE pet/208057703611170 -> 200
+GET pet/208057703611170 -> 404
+
+POST pet -> 200
+GET pet/82847218730305 -> 200
+GET pet/82847218730305 -> 200
+GET pet/82847218730305 -> 200
+DELETE pet/82847218730305 -> 200
+GET pet/82847218730305 -> 404
+
+  Failed FindByTags(True) [1 s]
+  Error Message:
+     []
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  200
+
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.FindByTags(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 65
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.FindByTags(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 65
+
+
+  Standard Output Messages:
+ POST pet -> 200
+ GET pet/208057703611170 -> 200
+ GET pet/findByTags -> 200
+ GET pet/208057703611170 -> 200
+ DELETE pet/208057703611170 -> 200
+ GET pet/208057703611170 -> 404
+
+
+  Passed GetPet(False) [1 s]
+POST pet -> 200
+GET pet/240632859885232 -> 200
+GET pet/wrong_id -> 404
+GET pet/240632859885232 -> 200
+DELETE pet/240632859885232 -> 200
+GET pet/240632859885232 -> 404
+
+  Failed GetPet(True) [1 s]
+  Error Message:
+     {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  404
+
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.GetPet(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 80
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.GetPet(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 80
+
+
+  Standard Output Messages:
+ POST pet -> 200
+ GET pet/240632859885232 -> 200
+ GET pet/wrong_id -> 404
+ GET pet/240632859885232 -> 200
+ DELETE pet/240632859885232 -> 200
+ GET pet/240632859885232 -> 404
+
+
+POST pet -> 200
+GET pet/275061865552832 -> 200
+PUT pet -> 200
+GET pet/275061865552832 -> 200
+GET pet/275061865552832 -> 200
+DELETE pet/275061865552832 -> 200
+GET pet/275061865552832 -> 404
+
+  Passed UpdatePet(False) [1 s]
+POST pet -> 200
+GET pet/164851876338714 -> 200
+PUT pet -> 500
+GET pet/164851876338714 -> 200
+DELETE pet/164851876338714 -> 200
+GET pet/164851876338714 -> 404
+
+  Failed UpdatePet(True) [1 s]
+  Error Message:
+     {"code":500,"type":"unknown","message":"something bad happened"}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  500
+
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.UpdatePet(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 32
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.UpdatePet(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 32
+
+
+  Standard Output Messages:
+ POST pet -> 200
+ GET pet/164851876338714 -> 200
+ PUT pet -> 500
+ GET pet/164851876338714 -> 200
+ DELETE pet/164851876338714 -> 200
+ GET pet/164851876338714 -> 404
+
+
+POST pet -> 200
+GET pet/58556569507860 -> 200
+POST pet/58556569507860 -> 200
+GET pet/58556569507860 -> 200
+GET pet/58556569507860 -> 200
+DELETE pet/58556569507860 -> 200
+GET pet/58556569507860 -> 404
+
+  Passed UpdatePetForm(False) [1 s]
+POST pet -> 200
+GET pet/131674225897902 -> 200
+POST pet/wrong_id -> 404
+GET pet/131674225897902 -> 200
+DELETE pet/131674225897902 -> 200
+GET pet/131674225897902 -> 404
+
+  Failed UpdatePetForm(True) [1 s]
+  Error Message:
+     {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 405
+  But was:  404
+
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.UpdatePetForm(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 92
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.UpdatePetForm(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 92
+
+
+  Standard Output Messages:
+ POST pet -> 200
+ GET pet/131674225897902 -> 200
+ POST pet/wrong_id -> 404
+ GET pet/131674225897902 -> 200
+ DELETE pet/131674225897902 -> 200
+ GET pet/131674225897902 -> 404
+
+
+POST pet -> 200
+GET pet/95094685980177 -> 200
+POST pet/95094685980177/uploadImage -> 200
+GET pet/95094685980177 -> 200
+DELETE pet/95094685980177 -> 200
+GET pet/95094685980177 -> 404
+
+POST pet -> 200
+GET pet/192134119497521 -> 200
+POST pet/wrong_id/uploadImage -> 404
+GET pet/192134119497521 -> 200
+DELETE pet/192134119497521 -> 200
+GET pet/192134119497521 -> 404
+
+  Passed UploadImage(False) [1 s]
+  Failed UploadImage(True) [1 s]
+  Error Message:
+     {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  404
+
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.UploadImage(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 124
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.PetTests.UploadImage(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 124
+
+
+  Standard Output Messages:
+ POST pet -> 200
+ GET pet/192134119497521 -> 200
+ POST pet/wrong_id/uploadImage -> 404
+ GET pet/192134119497521 -> 200
+ DELETE pet/192134119497521 -> 200
+ GET pet/192134119497521 -> 404
+
+
+POST pet -> 200
+GET pet/264085551331859 -> 200
+GET store/order/1 -> 200
+GET store/order/2 -> 200
+GET store/order/3 -> 404
+POST store/order -> 200
+GET store/order/3 -> 200
+GET store/order/3 -> 200
+DELETE store/order/3 -> 200
+GET store/order/3 -> 404
+GET pet/264085551331859 -> 200
+DELETE pet/264085551331859 -> 200
+GET pet/264085551331859 -> 404
+
+  Passed CreateOrder(False) [2 s]
+POST pet -> 200
+GET pet/237698008947444 -> 200
+GET store/order/1 -> 200
+GET store/order/2 -> 200
+GET store/order/3 -> 404
+POST store/order -> 500
+GET store/order/3 -> 404
+GET pet/237698008947444 -> 200
+DELETE pet/237698008947444 -> 200
+GET pet/237698008947444 -> 404
+
+  Failed CreateOrder(True) [1 s]
+  Error Message:
+     {"code":500,"type":"unknown","message":"something bad happened"}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  500
+
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.StoreTests.CreateOrder(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/StoreTests.cs:line 23
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.StoreTests.CreateOrder(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/StoreTests.cs:line 23
+
+
+  Standard Output Messages:
+ POST pet -> 200
+ GET pet/237698008947444 -> 200
+ GET store/order/1 -> 200
+ GET store/order/2 -> 200
+ GET store/order/3 -> 404
+ POST store/order -> 500
+ GET store/order/3 -> 404
+ GET pet/237698008947444 -> 200
+ DELETE pet/237698008947444 -> 200
+ GET pet/237698008947444 -> 404
+
+
+POST pet -> 200
+GET pet/17848710368038 -> 200
+GET store/order/1 -> 200
+GET store/order/2 -> 200
+GET store/order/3 -> 404
+POST store/order -> 200
+GET store/order/3 -> 200
+DELETE store/order/3 -> 200
+GET store/order/3 -> 404
+GET store/order/3 -> 404
+GET pet/17848710368038 -> 200
+DELETE pet/17848710368038 -> 200
+GET pet/17848710368038 -> 404
+
+  Passed DeleteOrder(False) [2 s]
+POST pet -> 200
+GET pet/263728724930843 -> 200
+GET store/order/1 -> 200
+GET store/order/2 -> 200
+GET store/order/3 -> 404
+POST store/order -> 200
+GET store/order/3 -> 200
+DELETE store/order/wrong_id -> 404
+GET store/order/3 -> 200
+DELETE store/order/3 -> 200
+GET store/order/3 -> 404
+GET pet/263728724930843 -> 200
+DELETE pet/263728724930843 -> 200
+GET pet/263728724930843 -> 404
+
+  Failed DeleteOrder(True) [2 s]
+  Error Message:
+     {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  404
+
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.StoreTests.DeleteOrder(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/StoreTests.cs:line 51
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.StoreTests.DeleteOrder(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/StoreTests.cs:line 51
+
+
+  Standard Output Messages:
+ POST pet -> 200
+ GET pet/263728724930843 -> 200
+ GET store/order/1 -> 200
+ GET store/order/2 -> 200
+ GET store/order/3 -> 404
+ POST store/order -> 200
+ GET store/order/3 -> 200
+ DELETE store/order/wrong_id -> 404
+ GET store/order/3 -> 200
+ DELETE store/order/3 -> 200
+ GET store/order/3 -> 404
+ GET pet/263728724930843 -> 200
+ DELETE pet/263728724930843 -> 200
+ GET pet/263728724930843 -> 404
+
+
+POST pet -> 200
+GET pet/100796182195498 -> 200
+GET store/order/1 -> 200
+GET store/order/2 -> 200
+GET store/order/3 -> 404
+POST store/order -> 200
+GET store/order/3 -> 200
+GET store/order/3 -> 200
+GET store/order/3 -> 200
+DELETE store/order/3 -> 200
+GET store/order/3 -> 404
+GET pet/100796182195498 -> 200
+DELETE pet/100796182195498 -> 200
+GET pet/100796182195498 -> 404
+
+  Passed GetOrder(False) [2 s]
+POST pet -> 200
+GET pet/279379577163959 -> 200
+GET store/order/1 -> 200
+GET store/order/2 -> 200
+GET store/order/3 -> 404
+POST store/order -> 200
+GET store/order/3 -> 200
+GET store/order/wrong_id -> 404
+GET store/order/3 -> 200
+DELETE store/order/3 -> 200
+GET store/order/3 -> 404
+GET pet/279379577163959 -> 200
+DELETE pet/279379577163959 -> 200
+GET pet/279379577163959 -> 404
+
+  Failed GetOrder(True) [2 s]
+  Error Message:
+     {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  404
+
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.StoreTests.GetOrder(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/StoreTests.cs:line 40
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.StoreTests.GetOrder(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/StoreTests.cs:line 40
+
+
+  Standard Output Messages:
+ POST pet -> 200
+ GET pet/279379577163959 -> 200
+ GET store/order/1 -> 200
+ GET store/order/2 -> 200
+ GET store/order/3 -> 404
+ POST store/order -> 200
+ GET store/order/3 -> 200
+ GET store/order/wrong_id -> 404
+ GET store/order/3 -> 200
+ DELETE store/order/3 -> 200
+ GET store/order/3 -> 404
+ GET pet/279379577163959 -> 200
+ DELETE pet/279379577163959 -> 200
+ GET pet/279379577163959 -> 404
+
+
+GET store/inventory -> 200
+
+POST user -> 200
+GET user/kt8_15f97768e958 -> 200
+GET user/kt8_15f97768e958 -> 200
+DELETE user/kt8_15f97768e958 -> 200
+GET user/kt8_15f97768e958 -> 404
+
+  Passed Inventory [385 ms]
+  Passed CreateUser(False) [1 s]
+POST user -> 500
+GET user/kt8_3bbba3fec152 -> 404
+
+  Failed CreateUser(True) [538 ms]
+  Error Message:
+     {"code":500,"type":"unknown","message":"something bad happened"}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  500
+
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.UserTests.CreateUser(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 14
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.UserTests.CreateUser(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 14
+
+
+  Standard Output Messages:
+ POST user -> 500
+ GET user/kt8_3bbba3fec152 -> 404
+
+
+POST user/createWithArray -> 200
+GET user/kt8_63eccbd53c34 -> 200
+GET user/kt8_63eccbd53c34 -> 200
+DELETE user/kt8_63eccbd53c34 -> 200
+GET user/kt8_63eccbd53c34 -> 404
+
+POST user/createWithArray -> 500
+GET user/kt8_91ed7b239b5a -> 404
+
+  Passed CreateUsersArray(False) [1 s]
+  Failed CreateUsersArray(True) [522 ms]
+  Error Message:
+     {"code":500,"type":"unknown","message":"something bad happened"}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  500
+
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.UserTests.CreateUsersArray(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 46
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.UserTests.CreateUsersArray(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 46
+
+
+  Standard Output Messages:
+ POST user/createWithArray -> 500
+ GET user/kt8_91ed7b239b5a -> 404
+
+
+POST user/createWithList -> 200
+GET user/kt8_f63eed2b5be2 -> 200
+GET user/kt8_f63eed2b5be2 -> 200
+DELETE user/kt8_f63eed2b5be2 -> 200
+GET user/kt8_f63eed2b5be2 -> 404
+
+POST user/createWithList -> 500
+GET user/kt8_fb2c92a73246 -> 404
+
+  Passed CreateUsersList(False) [1 s]
+  Failed CreateUsersList(True) [603 ms]
+  Error Message:
+     {"code":500,"type":"unknown","message":"something bad happened"}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  500
+
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.UserTests.CreateUsersList(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 30
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.UserTests.CreateUsersList(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 30
+
+
+  Standard Output Messages:
+ POST user/createWithList -> 500
+ GET user/kt8_fb2c92a73246 -> 404
+
+
+POST user -> 200
+GET user/kt8_bea5fb3cf6ad -> 200
+DELETE user/kt8_bea5fb3cf6ad -> 200
+GET user/kt8_bea5fb3cf6ad -> 404
+GET user/kt8_bea5fb3cf6ad -> 404
+
+POST user -> 200
+GET user/kt8_9c00b0c9364b -> 200
+DELETE user/missing_c1e9eb000a14453cb42e3d089cc44ad1 -> 404
+GET user/kt8_9c00b0c9364b -> 200
+DELETE user/kt8_9c00b0c9364b -> 200
+GET user/kt8_9c00b0c9364b -> 404
+
+  Passed DeleteUser(False) [939 ms]
+  Passed DeleteUser(True) [1 s]
+POST user -> 200
+GET user/kt8_a7e0d0870186 -> 200
+GET user/kt8_a7e0d0870186 -> 200
+GET user/kt8_a7e0d0870186 -> 200
+DELETE user/kt8_a7e0d0870186 -> 200
+GET user/kt8_a7e0d0870186 -> 404
+
+  Passed GetUser(False) [1 s]
+POST user -> 200
+GET user/kt8_d4f17be356a6 -> 200
+GET user/missing_596aedfe928942fa9a5f8b179f4dc1c4 -> 404
+GET user/kt8_d4f17be356a6 -> 200
+DELETE user/kt8_d4f17be356a6 -> 200
+GET user/kt8_d4f17be356a6 -> 404
+
+  Passed GetUser(True) [1 s]
+POST user -> 200
+GET user/kt8_14edcf712280 -> 200
+GET user/login?username=kt8_14edcf712280&password=Kt8Password -> 200
+GET user/kt8_14edcf712280 -> 200
+DELETE user/kt8_14edcf712280 -> 200
+GET user/kt8_14edcf712280 -> 404
+
+  Passed Login(False) [1 s]
+POST user -> 200
+GET user/kt8_804e135df4b0 -> 200
+GET user/login?username=kt8_804e135df4b0&password=wrong_password -> 200
+GET user/kt8_804e135df4b0 -> 200
+DELETE user/kt8_804e135df4b0 -> 200
+GET user/kt8_804e135df4b0 -> 404
+
+GET user/logout -> 200
+
+  Failed Login(True) [1 s]
+  Error Message:
+     {"code":200,"type":"unknown","message":"logged in user session:1794525422083"}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  200
+
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.UserTests.Login(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 106
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.UserTests.Login(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 106
+
+
+  Standard Output Messages:
+ POST user -> 200
+ GET user/kt8_804e135df4b0 -> 200
+ GET user/login?username=kt8_804e135df4b0&password=wrong_password -> 200
+ GET user/kt8_804e135df4b0 -> 200
+ DELETE user/kt8_804e135df4b0 -> 200
+ GET user/kt8_804e135df4b0 -> 404
+
+
+  Passed Logout [384 ms]
+POST user -> 200
+GET user/kt8_21efd73e6b25 -> 200
+PUT user/kt8_21efd73e6b25 -> 200
+GET user/kt8_21efd73e6b25 -> 200
+GET user/kt8_21efd73e6b25 -> 200
+DELETE user/kt8_21efd73e6b25 -> 200
+GET user/kt8_21efd73e6b25 -> 404
+
+  Passed UpdateUser(False) [1 s]
+POST user -> 200
+GET user/kt8_b8c9b4f65102 -> 200
+PUT user/kt8_b8c9b4f65102 -> 500
+GET user/kt8_b8c9b4f65102 -> 200
+DELETE user/kt8_b8c9b4f65102 -> 200
+GET user/kt8_b8c9b4f65102 -> 404
+
+NUnit Adapter 5.0.0.0: Test execution complete
+  Failed UpdateUser(True) [1 s]
+  Error Message:
+     {"code":500,"type":"unknown","message":"something bad happened"}
+Assert.That(result.Status, Is.EqualTo(expected))
+  Expected: 400
+  But was:  500
+
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.UserTests.UpdateUser(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 77
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
+   at PetstoreTests.UserTests.UpdateUser(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 77
+
+
+  Standard Output Messages:
+ POST user -> 200
+ GET user/kt8_b8c9b4f65102 -> 200
+ PUT user/kt8_b8c9b4f65102 -> 500
+ GET user/kt8_b8c9b4f65102 -> 200
+ DELETE user/kt8_b8c9b4f65102 -> 200
+ GET user/kt8_b8c9b4f65102 -> 404
+
+
+Results File: /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/results/run.trx
+
+Total tests: 38
+     Passed: 22
+     Failed: 16
+ Total time: 48.9765 Seconds
+Test Run Failed.

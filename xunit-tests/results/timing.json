@@ -1,0 +1,16 @@
+{
+  "command": [
+    "dotnet",
+    "test",
+    "--no-build",
+    "--no-restore",
+    "--logger",
+    "trx;LogFileName=run.trx",
+    "--logger",
+    "console;verbosity=normal",
+    "--results-directory",
+    "results"
+  ],
+  "seconds": 50.156,
+  "exit_code": 1
+}

@@ -1,0 +1,488 @@
+Test run for /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll (.NETCoreApp,Version=v10.0)
+VSTest version 18.0.2 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.4+50e68bbb8b (64-bit .NET 10.0.14)
+[xUnit.net 00:00:00.12]   Discovering: Petstore.XUnit
+[xUnit.net 00:00:00.21]   Discovered:  Petstore.XUnit
+[xUnit.net 00:00:00.26]   Starting:    Petstore.XUnit
+POST pet -> 200
+GET pet/137526807362847 -> 200
+GET store/order/1 -> 200
+GET store/order/2 -> 200
+GET store/order/3 -> 404
+POST store/order -> 200
+GET store/order/3 -> 200
+DELETE store/order/3 -> 200
+GET store/order/3 -> 404
+GET store/order/3 -> 404
+GET pet/137526807362847 -> 200
+DELETE pet/137526807362847 -> 200
+GET pet/137526807362847 -> 404
+  Passed PetstoreTests.StoreTests.DeleteOrder(negative: False) [2 s]
+POST pet -> 200
+GET pet/111497066107235 -> 200
+GET store/order/1 -> 200
+GET store/order/2 -> 200
+GET store/order/3 -> 404
+POST store/order -> 200
+GET store/order/3 -> 200
+DELETE store/order/wrong_id -> 404
+GET store/order/3 -> 200
+DELETE store/order/3 -> 200
+GET store/order/3 -> 404
+GET pet/111497066107235 -> 200
+DELETE pet/111497066107235 -> 200
+GET pet/111497066107235 -> 404
+[xUnit.net 00:00:05.66]       Ожидалось 400, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+[xUnit.net 00:00:05.66]       Stack Trace:
+[xUnit.net 00:00:05.66]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:05.66]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/StoreTests.cs(54,0): at PetstoreTests.StoreTests.DeleteOrder(Boolean negative)
+[xUnit.net 00:00:05.66]         --- End of stack trace from previous location ---
+  Failed PetstoreTests.StoreTests.DeleteOrder(negative: True) [1 s]
+  Error Message:
+   Ожидалось 400, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
+   at PetstoreTests.StoreTests.DeleteOrder(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/StoreTests.cs:line 54
+--- End of stack trace from previous location ---
+POST pet -> 200
+GET pet/264846319046858 -> 200
+GET store/order/1 -> 200
+GET store/order/2 -> 200
+GET store/order/3 -> 404
+POST store/order -> 200
+GET store/order/3 -> 200
+GET store/order/3 -> 200
+GET store/order/3 -> 200
+DELETE store/order/3 -> 200
+GET store/order/3 -> 404
+GET pet/264846319046858 -> 200
+DELETE pet/264846319046858 -> 200
+GET pet/264846319046858 -> 404
+  Passed PetstoreTests.StoreTests.GetOrder(negative: False) [1 s]
+POST pet -> 200
+GET pet/168963244178055 -> 200
+GET store/order/1 -> 200
+GET store/order/2 -> 200
+GET store/order/3 -> 404
+POST store/order -> 200
+GET store/order/3 -> 200
+GET store/order/wrong_id -> 404
+GET store/order/3 -> 200
+DELETE store/order/3 -> 200
+GET store/order/3 -> 404
+GET pet/168963244178055 -> 200
+DELETE pet/168963244178055 -> 200
+GET pet/168963244178055 -> 404
+[xUnit.net 00:00:10.62]       Ожидалось 400, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+[xUnit.net 00:00:10.62]       Stack Trace:
+[xUnit.net 00:00:10.62]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:10.62]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/StoreTests.cs(42,0): at PetstoreTests.StoreTests.GetOrder(Boolean negative)
+[xUnit.net 00:00:10.62]         --- End of stack trace from previous location ---
+  Failed PetstoreTests.StoreTests.GetOrder(negative: True) [1 s]
+  Error Message:
+   Ожидалось 400, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
+   at PetstoreTests.StoreTests.GetOrder(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/StoreTests.cs:line 42
+--- End of stack trace from previous location ---
+GET store/inventory -> 200
+POST pet -> 200
+GET pet/215947178718771 -> 200
+GET store/order/1 -> 200
+GET store/order/2 -> 200
+GET store/order/3 -> 404
+  Passed PetstoreTests.StoreTests.Inventory [477 ms]
+POST store/order -> 500
+GET store/order/3 -> 404
+GET pet/215947178718771 -> 200
+DELETE pet/215947178718771 -> 200
+GET pet/215947178718771 -> 404
+[xUnit.net 00:00:12.65]       Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}
+[xUnit.net 00:00:12.65]       Stack Trace:
+[xUnit.net 00:00:12.65]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:12.65]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/StoreTests.cs(24,0): at PetstoreTests.StoreTests.CreateOrder(Boolean negative)
+[xUnit.net 00:00:12.65]         --- End of stack trace from previous location ---
+POST pet -> 200
+GET pet/213809587608264 -> 200
+GET store/order/1 -> 200
+GET store/order/2 -> 200
+GET store/order/3 -> 404
+  Failed PetstoreTests.StoreTests.CreateOrder(negative: True) [1 s]
+  Error Message:
+   Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
+   at PetstoreTests.StoreTests.CreateOrder(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/StoreTests.cs:line 24
+--- End of stack trace from previous location ---
+POST store/order -> 200
+GET store/order/3 -> 200
+GET store/order/3 -> 200
+DELETE store/order/3 -> 200
+GET store/order/3 -> 404
+GET pet/213809587608264 -> 200
+DELETE pet/213809587608264 -> 200
+GET pet/213809587608264 -> 404
+POST user -> 200
+  Passed PetstoreTests.StoreTests.CreateOrder(negative: False) [1 s]
+GET user/kt8_a1d5bb88a7cd -> 200
+GET user/missing_938998690eb949f59d33c57eb5baf8f1 -> 404
+GET user/kt8_a1d5bb88a7cd -> 200
+DELETE user/kt8_a1d5bb88a7cd -> 200
+GET user/kt8_a1d5bb88a7cd -> 404
+POST user -> 200
+GET user/kt8_f46a54a4391b -> 200
+GET user/kt8_f46a54a4391b -> 200
+  Passed PetstoreTests.UserTests.GetUser(negative: True) [690 ms]
+GET user/kt8_f46a54a4391b -> 200
+DELETE user/kt8_f46a54a4391b -> 200
+GET user/kt8_f46a54a4391b -> 404
+POST user -> 200
+GET user/kt8_dce9d6b44a11 -> 200
+GET user/login?username=kt8_dce9d6b44a11&password=wrong_password -> 200
+GET user/kt8_dce9d6b44a11 -> 200
+DELETE user/kt8_dce9d6b44a11 -> 200
+  Passed PetstoreTests.UserTests.GetUser(negative: False) [668 ms]
+GET user/kt8_dce9d6b44a11 -> 404
+[xUnit.net 00:00:18.19]       Ожидалось 400, получено 200: {"code":200,"type":"unknown","message":"logged in user session:1794525344723"}
+[xUnit.net 00:00:18.19]       Stack Trace:
+[xUnit.net 00:00:18.19]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:18.19]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/UserTests.cs(113,0): at PetstoreTests.UserTests.Login(Boolean negative)
+[xUnit.net 00:00:18.19]         --- End of stack trace from previous location ---
+POST user -> 200
+GET user/kt8_751d0a4d62be -> 200
+GET user/login?username=kt8_751d0a4d62be&password=Kt8Password -> 200
+GET user/kt8_751d0a4d62be -> 200
+DELETE user/kt8_751d0a4d62be -> 200
+GET user/kt8_751d0a4d62be -> 404
+  Failed PetstoreTests.UserTests.Login(negative: True) [816 ms]
+  Error Message:
+   Ожидалось 400, получено 200: {"code":200,"type":"unknown","message":"logged in user session:1794525344723"}
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
+   at PetstoreTests.UserTests.Login(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/UserTests.cs:line 113
+--- End of stack trace from previous location ---
+  Passed PetstoreTests.UserTests.Login(negative: False) [826 ms]
+POST user -> 200
+GET user/kt8_35cbe3bca8ae -> 200
+GET user/kt8_35cbe3bca8ae -> 200
+DELETE user/kt8_35cbe3bca8ae -> 200
+GET user/kt8_35cbe3bca8ae -> 404
+POST user -> 500
+GET user/kt8_3a186d0e4602 -> 404
+[xUnit.net 00:00:21.06]       Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}
+[xUnit.net 00:00:21.06]       Stack Trace:
+[xUnit.net 00:00:21.06]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:21.06]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/UserTests.cs(15,0): at PetstoreTests.UserTests.CreateUser(Boolean negative)
+[xUnit.net 00:00:21.06]         --- End of stack trace from previous location ---
+  Passed PetstoreTests.UserTests.CreateUser(negative: False) [513 ms]
+  Failed PetstoreTests.UserTests.CreateUser(negative: True) [530 ms]
+  Error Message:
+   Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
+   at PetstoreTests.UserTests.CreateUser(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/UserTests.cs:line 15
+--- End of stack trace from previous location ---
+POST user/createWithArray -> 500
+GET user/kt8_62cccd6044dc -> 404
+[xUnit.net 00:00:21.69]       Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}
+[xUnit.net 00:00:21.69]       Stack Trace:
+[xUnit.net 00:00:21.69]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:21.69]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/UserTests.cs(49,0): at PetstoreTests.UserTests.CreateUsersArray(Boolean negative)
+[xUnit.net 00:00:21.69]         --- End of stack trace from previous location ---
+POST user/createWithArray -> 200
+GET user/kt8_18ac3967fe17 -> 200
+GET user/kt8_18ac3967fe17 -> 200
+  Failed PetstoreTests.UserTests.CreateUsersArray(negative: True) [475 ms]
+  Error Message:
+   Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
+   at PetstoreTests.UserTests.CreateUsersArray(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/UserTests.cs:line 49
+--- End of stack trace from previous location ---
+DELETE user/kt8_18ac3967fe17 -> 200
+GET user/kt8_18ac3967fe17 -> 404
+POST user -> 200
+GET user/kt8_d6adeeeb16bb -> 200
+PUT user/kt8_d6adeeeb16bb -> 200
+GET user/kt8_d6adeeeb16bb -> 200
+GET user/kt8_d6adeeeb16bb -> 200
+DELETE user/kt8_d6adeeeb16bb -> 200
+GET user/kt8_d6adeeeb16bb -> 404
+  Passed PetstoreTests.UserTests.CreateUsersArray(negative: False) [693 ms]
+  Passed PetstoreTests.UserTests.UpdateUser(negative: False) [804 ms]
+POST user -> 200
+GET user/kt8_a7a0ca38678b -> 200
+PUT user/kt8_a7a0ca38678b -> 500
+GET user/kt8_a7a0ca38678b -> 200
+DELETE user/kt8_a7a0ca38678b -> 200
+GET user/kt8_a7a0ca38678b -> 404
+[xUnit.net 00:00:25.28]       Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}
+[xUnit.net 00:00:25.28]       Stack Trace:
+[xUnit.net 00:00:25.28]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:25.28]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/UserTests.cs(82,0): at PetstoreTests.UserTests.UpdateUser(Boolean negative)
+[xUnit.net 00:00:25.28]         --- End of stack trace from previous location ---
+  Failed PetstoreTests.UserTests.UpdateUser(negative: True) [807 ms]
+  Error Message:
+   Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
+   at PetstoreTests.UserTests.UpdateUser(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/UserTests.cs:line 82
+--- End of stack trace from previous location ---
+POST user -> 200
+GET user/kt8_e926f7a94833 -> 200
+DELETE user/kt8_e926f7a94833 -> 200
+GET user/kt8_e926f7a94833 -> 404
+GET user/kt8_e926f7a94833 -> 404
+POST user -> 200
+GET user/kt8_fb448a937d90 -> 200
+  Passed PetstoreTests.UserTests.DeleteUser(negative: False) [935 ms]
+DELETE user/missing_7bcbf703c83c401bbea215d410da5ad9 -> 404
+GET user/kt8_fb448a937d90 -> 200
+DELETE user/kt8_fb448a937d90 -> 200
+GET user/kt8_fb448a937d90 -> 404
+GET user/logout -> 200
+  Passed PetstoreTests.UserTests.DeleteUser(negative: True) [853 ms]
+  Passed PetstoreTests.UserTests.Logout [515 ms]
+POST user/createWithList -> 500
+GET user/kt8_83c080295fc7 -> 404
+[xUnit.net 00:00:28.87]       Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}
+[xUnit.net 00:00:28.87]       Stack Trace:
+[xUnit.net 00:00:28.87]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:28.87]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/UserTests.cs(32,0): at PetstoreTests.UserTests.CreateUsersList(Boolean negative)
+[xUnit.net 00:00:28.87]         --- End of stack trace from previous location ---
+POST user/createWithList -> 200
+GET user/kt8_381d1ee42014 -> 200
+GET user/kt8_381d1ee42014 -> 200
+DELETE user/kt8_381d1ee42014 -> 200
+GET user/kt8_381d1ee42014 -> 404
+  Failed PetstoreTests.UserTests.CreateUsersList(negative: True) [547 ms]
+  Error Message:
+   Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
+   at PetstoreTests.UserTests.CreateUsersList(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/UserTests.cs:line 32
+--- End of stack trace from previous location ---
+  Passed PetstoreTests.UserTests.CreateUsersList(negative: False) [556 ms]
+POST pet -> 200
+GET pet/115294629802779 -> 200
+GET pet/findByStatus?status=available -> 200
+GET pet/115294629802779 -> 200
+DELETE pet/115294629802779 -> 200
+GET pet/115294629802779 -> 404
+  Passed PetstoreTests.PetTests.FindByStatus(negative: False) [873 ms]
+POST pet -> 200
+GET pet/2717658544852 -> 200
+GET pet/findByStatus?status=wrong_status -> 200
+GET pet/2717658544852 -> 200
+DELETE pet/2717658544852 -> 200
+GET pet/2717658544852 -> 404
+[xUnit.net 00:00:32.39]       Ожидалось 400, получено 200: []
+[xUnit.net 00:00:32.39]       Stack Trace:
+[xUnit.net 00:00:32.39]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:32.39]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs(51,0): at PetstoreTests.PetTests.FindByStatus(Boolean negative)
+[xUnit.net 00:00:32.39]         --- End of stack trace from previous location ---
+POST pet -> 200
+GET pet/185397702345317 -> 200
+PUT pet -> 500
+  Failed PetstoreTests.PetTests.FindByStatus(negative: True) [792 ms]
+  Error Message:
+   Ожидалось 400, получено 200: []
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
+   at PetstoreTests.PetTests.FindByStatus(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs:line 51
+--- End of stack trace from previous location ---
+GET pet/185397702345317 -> 200
+DELETE pet/185397702345317 -> 200
+GET pet/185397702345317 -> 404
+[xUnit.net 00:00:33.48]       Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}
+[xUnit.net 00:00:33.48]       Stack Trace:
+[xUnit.net 00:00:33.48]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:33.48]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs(34,0): at PetstoreTests.PetTests.UpdatePet(Boolean negative)
+[xUnit.net 00:00:33.48]         --- End of stack trace from previous location ---
+POST pet -> 200
+GET pet/119994900431590 -> 200
+PUT pet -> 200
+GET pet/119994900431590 -> 200
+GET pet/119994900431590 -> 200
+  Failed PetstoreTests.PetTests.UpdatePet(negative: True) [661 ms]
+  Error Message:
+   Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
+   at PetstoreTests.PetTests.UpdatePet(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs:line 34
+--- End of stack trace from previous location ---
+DELETE pet/119994900431590 -> 200
+GET pet/119994900431590 -> 404
+POST pet -> 200
+GET pet/263748303962169 -> 200
+POST pet/263748303962169/uploadImage -> 200
+GET pet/263748303962169 -> 200
+DELETE pet/263748303962169 -> 200
+  Passed PetstoreTests.PetTests.UpdatePet(negative: False) [939 ms]
+GET pet/263748303962169 -> 404
+POST pet -> 200
+GET pet/197392250725635 -> 200
+POST pet/wrong_id/uploadImage -> 404
+GET pet/197392250725635 -> 200
+DELETE pet/197392250725635 -> 200
+GET pet/197392250725635 -> 404
+[xUnit.net 00:00:37.44]       Ожидалось 400, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+[xUnit.net 00:00:37.44]       Stack Trace:
+[xUnit.net 00:00:37.44]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:37.44]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs(132,0): at PetstoreTests.PetTests.UploadImage(Boolean negative)
+[xUnit.net 00:00:37.44]         --- End of stack trace from previous location ---
+  Passed PetstoreTests.PetTests.UploadImage(negative: False) [934 ms]
+  Failed PetstoreTests.PetTests.UploadImage(negative: True) [832 ms]
+  Error Message:
+   Ожидалось 400, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
+   at PetstoreTests.PetTests.UploadImage(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs:line 132
+--- End of stack trace from previous location ---
+POST pet -> 200
+GET pet/240468485321080 -> 200
+DELETE pet/240468485321080 -> 200
+GET pet/240468485321080 -> 404
+GET pet/240468485321080 -> 404
+POST pet -> 200
+  Passed PetstoreTests.PetTests.DeletePet(negative: False) [942 ms]
+GET pet/266572329044692 -> 200
+DELETE pet/wrong_id -> 404
+GET pet/266572329044692 -> 200
+DELETE pet/266572329044692 -> 200
+GET pet/266572329044692 -> 404
+[xUnit.net 00:00:39.74]       Ожидалось 400, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+[xUnit.net 00:00:39.74]       Stack Trace:
+[xUnit.net 00:00:39.74]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:39.74]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs(115,0): at PetstoreTests.PetTests.DeletePet(Boolean negative)
+[xUnit.net 00:00:39.74]         --- End of stack trace from previous location ---
+POST pet -> 200
+GET pet/202516869360298 -> 200
+POST pet/202516869360298 -> 200
+GET pet/202516869360298 -> 200
+  Failed PetstoreTests.PetTests.DeletePet(negative: True) [793 ms]
+  Error Message:
+   Ожидалось 400, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
+   at PetstoreTests.PetTests.DeletePet(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs:line 115
+--- End of stack trace from previous location ---
+GET pet/202516869360298 -> 200
+DELETE pet/202516869360298 -> 200
+GET pet/202516869360298 -> 404
+POST pet -> 200
+GET pet/7695734583909 -> 200
+POST pet/wrong_id -> 404
+GET pet/7695734583909 -> 200
+DELETE pet/7695734583909 -> 200
+GET pet/7695734583909 -> 404
+[xUnit.net 00:00:42.07]       Ожидалось 405, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+[xUnit.net 00:00:42.07]       Stack Trace:
+[xUnit.net 00:00:42.07]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:42.07]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs(98,0): at PetstoreTests.PetTests.UpdatePetForm(Boolean negative)
+[xUnit.net 00:00:42.07]         --- End of stack trace from previous location ---
+  Passed PetstoreTests.PetTests.UpdatePetForm(negative: False) [813 ms]
+  Failed PetstoreTests.PetTests.UpdatePetForm(negative: True) [668 ms]
+  Error Message:
+   Ожидалось 405, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
+   at PetstoreTests.PetTests.UpdatePetForm(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs:line 98
+--- End of stack trace from previous location ---
+POST pet -> 200
+GET pet/39245203512823 -> 200
+GET pet/39245203512823 -> 200
+DELETE pet/39245203512823 -> 200
+GET pet/39245203512823 -> 404
+  Passed PetstoreTests.PetTests.CreatePet(negative: False) [732 ms]
+POST pet -> 500
+GET pet/193737485998971 -> 404
+[xUnit.net 00:00:43.86]       Ожидалось 405, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}
+[xUnit.net 00:00:43.86]       Stack Trace:
+[xUnit.net 00:00:43.86]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:43.86]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs(15,0): at PetstoreTests.PetTests.CreatePet(Boolean negative)
+[xUnit.net 00:00:43.86]         --- End of stack trace from previous location ---
+POST pet -> 200
+GET pet/135756338041441 -> 200
+GET pet/135756338041441 -> 200
+GET pet/135756338041441 -> 200
+DELETE pet/135756338041441 -> 200
+GET pet/135756338041441 -> 404
+  Failed PetstoreTests.PetTests.CreatePet(negative: True) [518 ms]
+  Error Message:
+   Ожидалось 405, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
+   at PetstoreTests.PetTests.CreatePet(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs:line 15
+--- End of stack trace from previous location ---
+  Passed PetstoreTests.PetTests.GetPet(negative: False) [656 ms]
+POST pet -> 200
+GET pet/61935902054115 -> 200
+GET pet/wrong_id -> 404
+GET pet/61935902054115 -> 200
+DELETE pet/61935902054115 -> 200
+GET pet/61935902054115 -> 404
+[xUnit.net 00:00:46.15]       Ожидалось 400, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+[xUnit.net 00:00:46.15]       Stack Trace:
+[xUnit.net 00:00:46.16]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:46.16]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs(85,0): at PetstoreTests.PetTests.GetPet(Boolean negative)
+[xUnit.net 00:00:46.16]         --- End of stack trace from previous location ---
+POST pet -> 200
+  Failed PetstoreTests.PetTests.GetPet(negative: True) [693 ms]
+  Error Message:
+   Ожидалось 400, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
+   at PetstoreTests.PetTests.GetPet(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs:line 85
+--- End of stack trace from previous location ---
+GET pet/144982540699057 -> 200
+GET pet/findByTags?tags=83dc60d645b1 -> 200
+GET pet/144982540699057 -> 200
+DELETE pet/144982540699057 -> 200
+GET pet/144982540699057 -> 404
+POST pet -> 200
+GET pet/154259779360572 -> 200
+GET pet/findByTags -> 200
+  Passed PetstoreTests.PetTests.FindByTags(negative: False) [688 ms]
+GET pet/154259779360572 -> 200
+DELETE pet/154259779360572 -> 200
+GET pet/154259779360572 -> 404
+[xUnit.net 00:00:48.49]       Ожидалось 400, получено 200: []
+[xUnit.net 00:00:48.49]       Stack Trace:
+[xUnit.net 00:00:48.49]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:48.49]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs(69,0): at PetstoreTests.PetTests.FindByTags(Boolean negative)
+[xUnit.net 00:00:48.49]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:48.50]   Finished:    Petstore.XUnit
+  Failed PetstoreTests.PetTests.FindByTags(negative: True) [766 ms]
+  Error Message:
+   Ожидалось 400, получено 200: []
+  Stack Trace:
+     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
+   at PetstoreTests.PetTests.FindByTags(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs:line 69
+--- End of stack trace from previous location ---
+Results File: /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/results/run.trx
+
+Total tests: 38
+     Passed: 22
+     Failed: 16
+ Total time: 49.1447 Seconds
+[xUnit.net 00:00:05.66]     PetstoreTests.StoreTests.DeleteOrder(negative: True) [FAIL]
+[xUnit.net 00:00:10.62]     PetstoreTests.StoreTests.GetOrder(negative: True) [FAIL]
+[xUnit.net 00:00:12.65]     PetstoreTests.StoreTests.CreateOrder(negative: True) [FAIL]
+[xUnit.net 00:00:18.19]     PetstoreTests.UserTests.Login(negative: True) [FAIL]
+[xUnit.net 00:00:21.06]     PetstoreTests.UserTests.CreateUser(negative: True) [FAIL]
+[xUnit.net 00:00:21.69]     PetstoreTests.UserTests.CreateUsersArray(negative: True) [FAIL]
+[xUnit.net 00:00:25.28]     PetstoreTests.UserTests.UpdateUser(negative: True) [FAIL]
+[xUnit.net 00:00:28.87]     PetstoreTests.UserTests.CreateUsersList(negative: True) [FAIL]
+[xUnit.net 00:00:32.39]     PetstoreTests.PetTests.FindByStatus(negative: True) [FAIL]
+[xUnit.net 00:00:33.48]     PetstoreTests.PetTests.UpdatePet(negative: True) [FAIL]
+[xUnit.net 00:00:37.44]     PetstoreTests.PetTests.UploadImage(negative: True) [FAIL]
+[xUnit.net 00:00:39.74]     PetstoreTests.PetTests.DeletePet(negative: True) [FAIL]
+[xUnit.net 00:00:42.07]     PetstoreTests.PetTests.UpdatePetForm(negative: True) [FAIL]
+[xUnit.net 00:00:43.86]     PetstoreTests.PetTests.CreatePet(negative: True) [FAIL]
+[xUnit.net 00:00:46.15]     PetstoreTests.PetTests.GetPet(negative: True) [FAIL]
+[xUnit.net 00:00:48.49]     PetstoreTests.PetTests.FindByTags(negative: True) [FAIL]
+Test Run Failed.
