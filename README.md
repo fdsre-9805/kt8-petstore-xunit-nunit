@@ -1,46 +1,43 @@
 # КТ №8. Анализ результатов тестирования
 
-Григорьев Лаврентий Андреевич, группа 3П3.24.NET. Вариант .NET: xUnit и NUnit.
+Григорьев Лаврентий Андреевич, группа 3П3.24.NET.
 
-Проверяется Swagger Petstore v2: https://petstore.swagger.io/v2. В каждом проекте 38 API-тестов для pet, store и user: 20 позитивных и 18 негативных. Для каждой операции с позитивным и негативным случаем используется параметризация.
+## 1. Задание
 
-## Запуск
+Сравнить тестирование Petstore с помощью xUnit и NUnit. В каждом проекте — 38 проверок. Составить таблицы количественного и качественного анализа.
 
-Нужен .NET SDK 10. Из корня репозитория:
+## 2. Средства выполнения
 
-```bash
-dotnet test xunit-tests/Petstore.XUnit.csproj
-dotnet test nunit-tests/Petstore.NUnit.csproj
-```
+C#, .NET 10, xUnit 2.9.3, NUnit 4.3.2. API: https://petstore.swagger.io/v2.
 
-Команды запускают по очереди: проекты используют общий публичный сервер. Для повторения замера сначала выполнить dotnet build каждого проекта, затем из соответствующей папки:
+## 3. Клиент API
 
-```bash
-dotnet test --no-build --no-restore --logger "trx;LogFileName=run.trx" --logger "console;verbosity=normal" --results-directory results
-```
+Класс PetstoreApi отправляет HTTP-запросы и возвращает статус и JSON ответа. Один и тот же клиент используется в обоих проектах.
 
-API-тесты создают уникальные имена пользователей и ID питомцев. Заказы используют свободные ID 1–10. После теста свои записи удаляются; перед удалением проверяются ID и имя пользователя, имя питомца или petId заказа. Чужая запись не удаляется. Публичный сервер может быть изменён другими пользователями между проверкой свободного ID и созданием заказа; результаты повторного запуска могут отличаться.
+[PetstoreApi.cs](xunit-tests/PetstoreApi.cs)
 
-## Результаты
+## 4. Подготовка данных
 
-Запуск 13.11.2026: xUnit — 22 passed, 16 failed; NUnit — 22 passed, 16 failed. Все 20 позитивных сценариев прошли в каждом наборе. Пропусков нет. Код завершения dotnet test — 1, поскольку часть проверок не прошла. Ожидаемые и полученные статусы приведены в анализе.
+Каждый тест получает отдельного клиента и свои записи. После проверки записи удаляются. В xUnit подготовка и очистка оформлены через IAsyncLifetime, в NUnit — через SetUp и TearDown.
 
-Скриншоты ниже сделаны в браузере: показана сводка из настоящих TRX-файлов и фрагмент консольного вывода dotnet test. Полные журналы приложены в папках results; изображения не являются снимками окна терминала.
+[Фикстура xUnit](xunit-tests/ApiTests.cs) · [Фикстура NUnit](nunit-tests/ApiTests.cs)
 
-### xUnit
+## 5. Тесты
 
-![Результаты xUnit](screenshots/xunit.png)
+Для pet, store и user проверяются статус ответа и поля JSON. Параметр negative выбирает позитивный или негативный сценарий. В xUnit используются Theory и InlineData, в NUnit — TestCase.
 
-### NUnit
+| Сущность | xUnit | NUnit |
+|---|---|---|
+| pet | [PetTests.cs](xunit-tests/PetTests.cs) | [PetTests.cs](nunit-tests/PetTests.cs) |
+| store | [StoreTests.cs](xunit-tests/StoreTests.cs) | [StoreTests.cs](nunit-tests/StoreTests.cs) |
+| user | [UserTests.cs](xunit-tests/UserTests.cs) | [UserTests.cs](nunit-tests/UserTests.cs) |
 
-![Результаты NUnit](screenshots/nunit.png)
+## 6. Результаты
 
-## Файлы
+![xUnit](screenshots/xunit.png)
 
-- xunit-tests/ — клиент, фикстура и тесты xUnit.
-- nunit-tests/ — такой же набор для NUnit.
-- [Анализ №1 и №2](Анализ.md).
-- [Ответы на контрольные вопросы](<Контрольные вопросы.md>).
-- screenshots/ — изображения результатов.
+![NUnit](screenshots/nunit.png)
 
-В проектах используется один и тот же HTTP-клиент и одинаковые тела тестов. Различаются атрибуты, assert и подготовка/очистка. Утилиты повторения запросов до успешного ответа, xfail и скрытые пропуски не используются.
+## 7. Анализ
+
+[Таблицы анализа №1 и №2](Анализ.md)
