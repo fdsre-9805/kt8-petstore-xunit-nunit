@@ -38,6 +38,3 @@ C#, .NET 10, xUnit 2.9.3, NUnit 4.3.2. API: https://petstore.swagger.io/v2.
 
 ![NUnit](screenshots/nunit.png)
 
-## 7. Анализ
-
-[Таблицы анализа №1 и №2](Анализ.md)
