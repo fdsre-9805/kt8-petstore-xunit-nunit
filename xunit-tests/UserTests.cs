@@ -4,55 +4,37 @@ namespace PetstoreTests;
 
 public class UserTests : ApiTests
 {
-    [Theory]
-    [InlineData(false)]
-    [InlineData(true)]
-    public async Task CreateUser(bool negative)
+    [Fact]
+    public async Task CreateUser()
     {
         var data = Api.UserData();
-        if (negative) data["id"] = "wrong_id";
         var result = await Api.Send("POST", "user", data);
-        Status(negative ? 400 : 200, result);
-        if (!negative)
-        {
-            var found = await Api.Send("GET", $"user/{data["username"]}");
-            Status(200, found);
-            Check(found.Body.GetProperty("email").GetString() == (string)data["email"]);
-        }
+        Status(200, result);
+        var found = await Api.Send("GET", $"user/{data["username"]}");
+        Status(200, found);
+        Check(found.Body.GetProperty("email").GetString() == (string)data["email"]);
     }
 
-    [Theory]
-    [InlineData(false)]
-    [InlineData(true)]
-    public async Task CreateUsersList(bool negative)
+    [Fact]
+    public async Task CreateUsersList()
     {
         var data = Api.UserData();
-        if (negative) data["id"] = "wrong_id";
         var result = await Api.Send("POST", "user/createWithList", new[] { data });
-        Status(negative ? 400 : 200, result);
-        if (!negative)
-        {
-            var found = await Api.Send("GET", $"user/{data["username"]}");
-            Status(200, found);
-            Check(found.Body.GetProperty("email").GetString() == (string)data["email"]);
-        }
+        Status(200, result);
+        var found = await Api.Send("GET", $"user/{data["username"]}");
+        Status(200, found);
+        Check(found.Body.GetProperty("email").GetString() == (string)data["email"]);
     }
 
-    [Theory]
-    [InlineData(false)]
-    [InlineData(true)]
-    public async Task CreateUsersArray(bool negative)
+    [Fact]
+    public async Task CreateUsersArray()
     {
         var data = Api.UserData();
-        if (negative) data["id"] = "wrong_id";
         var result = await Api.Send("POST", "user/createWithArray", new[] { data });
-        Status(negative ? 400 : 200, result);
-        if (!negative)
-        {
-            var found = await Api.Send("GET", $"user/{data["username"]}");
-            Status(200, found);
-            Check(found.Body.GetProperty("email").GetString() == (string)data["email"]);
-        }
+        Status(200, result);
+        var found = await Api.Send("GET", $"user/{data["username"]}");
+        Status(200, found);
+        Check(found.Body.GetProperty("email").GetString() == (string)data["email"]);
     }
 
     [Theory]

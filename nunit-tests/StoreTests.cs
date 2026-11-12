@@ -52,4 +52,26 @@ public class StoreTests : ApiTests
         if (!negative) Status(404, await Api.Send("GET", $"store/order/{data["id"]}"));
     }
 
+    [Test]
+    public async Task GetMissingOrder()
+    {
+        var data = await Api.OrderData();
+        await Api.Create("store/order", data);
+        var path = $"store/order/{data["id"]}";
+        Status(200, await Api.Send("DELETE", path));
+        Status(404, await Api.Send("GET", path));
+        Status(404, await Api.Send("GET", path));
+    }
+
+    [Test]
+    public async Task DeleteMissingOrder()
+    {
+        var data = await Api.OrderData();
+        await Api.Create("store/order", data);
+        var path = $"store/order/{data["id"]}";
+        Status(200, await Api.Send("DELETE", path));
+        Status(404, await Api.Send("GET", path));
+        Status(404, await Api.Send("DELETE", path));
+    }
+
 }

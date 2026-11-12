@@ -24,7 +24,7 @@ C#, .NET 10, xUnit 2.9.3, NUnit 4.3.2. API: https://petstore.swagger.io/v2.
 
 ## 5. Тесты
 
-Для pet, store и user проверяются статус ответа и поля JSON. Параметр negative выбирает позитивный или негативный сценарий. В xUnit используются Theory и InlineData, в NUnit — TestCase.
+Для pet, store и user проверяются статус ответа и поля JSON. Параметр negative выбирает позитивный или негативный сценарий. Отдельные тесты проверяют получение и повторное удаление уже удалённых записей. В xUnit используются Theory и InlineData, в NUnit — TestCase.
 
 | Сущность | xUnit | NUnit |
 |---|---|---|
@@ -34,6 +34,6 @@ C#, .NET 10, xUnit 2.9.3, NUnit 4.3.2. API: https://petstore.swagger.io/v2.
 
 ## 6. Результаты
 
-![xUnit](screenshots/xunit.png)
+![Вывод dotnet test для xUnit, открыт в браузере](screenshots/xunit.png)
 
-![NUnit](screenshots/nunit.png)
+![Вывод dotnet test для NUnit, открыт в браузере](screenshots/nunit.png)

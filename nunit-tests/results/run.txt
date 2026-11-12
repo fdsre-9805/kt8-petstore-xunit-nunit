@@ -7,16 +7,16 @@ NUnit Adapter 5.0.0.0: Test execution started
 Running all tests in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/bin/Debug/net10.0/Petstore.NUnit.dll
    NUnit3TestExecutor discovered 38 of 38 NUnit test cases using Current Discovery mode, Non-Explicit run
 POST pet -> 200
-GET pet/119670881903861 -> 200
-GET pet/119670881903861 -> 200
-DELETE pet/119670881903861 -> 200
-GET pet/119670881903861 -> 404
+GET pet/65817646341999 -> 200
+GET pet/65817646341999 -> 200
+DELETE pet/65817646341999 -> 200
+GET pet/65817646341999 -> 404
 
 POST pet -> 500
-GET pet/33786342458394 -> 404
+GET pet/223703858435756 -> 404
 
   Passed CreatePet(False) [1 s]
-  Failed CreatePet(True) [547 ms]
+  Failed CreatePet(True) [557 ms]
   Error Message:
      {"code":500,"type":"unknown","message":"something bad happened"}
 Assert.That(result.Status, Is.EqualTo(expected))
@@ -41,21 +41,29 @@ Assert.That(result.Status, Is.EqualTo(expected))
 
   Standard Output Messages:
  POST pet -> 500
- GET pet/33786342458394 -> 404
+ GET pet/223703858435756 -> 404
 
 
 POST pet -> 200
-GET pet/150067491947039 -> 200
-DELETE pet/150067491947039 -> 200
-GET pet/150067491947039 -> 404
-GET pet/150067491947039 -> 404
+GET pet/51143277944236 -> 200
+DELETE pet/51143277944236 -> 200
+GET pet/51143277944236 -> 404
+DELETE pet/51143277944236 -> 404
+GET pet/51143277944236 -> 404
+
+  Passed DeleteMissingPet [1 s]
+POST pet -> 200
+GET pet/269521646177758 -> 200
+DELETE pet/269521646177758 -> 200
+GET pet/269521646177758 -> 404
+GET pet/269521646177758 -> 404
 
 POST pet -> 200
-GET pet/114291666693658 -> 200
+GET pet/125053694363825 -> 200
 DELETE pet/wrong_id -> 404
-GET pet/114291666693658 -> 200
-DELETE pet/114291666693658 -> 200
-GET pet/114291666693658 -> 404
+GET pet/125053694363825 -> 200
+DELETE pet/125053694363825 -> 200
+GET pet/125053694363825 -> 404
 
   Passed DeletePet(False) [1 s]
   Failed DeletePet(True) [1 s]
@@ -83,27 +91,27 @@ Assert.That(result.Status, Is.EqualTo(expected))
 
   Standard Output Messages:
  POST pet -> 200
- GET pet/114291666693658 -> 200
+ GET pet/125053694363825 -> 200
  DELETE pet/wrong_id -> 404
- GET pet/114291666693658 -> 200
- DELETE pet/114291666693658 -> 200
- GET pet/114291666693658 -> 404
+ GET pet/125053694363825 -> 200
+ DELETE pet/125053694363825 -> 200
+ GET pet/125053694363825 -> 404
 
 
 POST pet -> 200
-GET pet/196391892064633 -> 200
+GET pet/28249973638167 -> 200
 GET pet/findByStatus?status=available -> 200
-GET pet/196391892064633 -> 200
-DELETE pet/196391892064633 -> 200
-GET pet/196391892064633 -> 404
+GET pet/28249973638167 -> 200
+DELETE pet/28249973638167 -> 200
+GET pet/28249973638167 -> 404
 
   Passed FindByStatus(False) [1 s]
 POST pet -> 200
-GET pet/197928656640226 -> 200
+GET pet/226829373502637 -> 200
 GET pet/findByStatus?status=wrong_status -> 200
-GET pet/197928656640226 -> 200
-DELETE pet/197928656640226 -> 200
-GET pet/197928656640226 -> 404
+GET pet/226829373502637 -> 200
+DELETE pet/226829373502637 -> 200
+GET pet/226829373502637 -> 404
 
   Failed FindByStatus(True) [1 s]
   Error Message:
@@ -130,34 +138,27 @@ Assert.That(result.Status, Is.EqualTo(expected))
 
   Standard Output Messages:
  POST pet -> 200
- GET pet/197928656640226 -> 200
+ GET pet/226829373502637 -> 200
  GET pet/findByStatus?status=wrong_status -> 200
- GET pet/197928656640226 -> 200
- DELETE pet/197928656640226 -> 200
- GET pet/197928656640226 -> 404
+ GET pet/226829373502637 -> 200
+ DELETE pet/226829373502637 -> 200
+ GET pet/226829373502637 -> 404
 
 
 POST pet -> 200
-GET pet/23123433171453 -> 200
-GET pet/findByTags?tags=1507d80529fd -> 200
-GET pet/23123433171453 -> 200
-DELETE pet/23123433171453 -> 200
-GET pet/23123433171453 -> 404
+GET pet/129899194369788 -> 200
+GET pet/findByTags?tags=7624835646fc -> 200
+GET pet/129899194369788 -> 200
+DELETE pet/129899194369788 -> 200
+GET pet/129899194369788 -> 404
 
   Passed FindByTags(False) [1 s]
 POST pet -> 200
-GET pet/208057703611170 -> 200
+GET pet/102527815776939 -> 200
 GET pet/findByTags -> 200
-GET pet/208057703611170 -> 200
-DELETE pet/208057703611170 -> 200
-GET pet/208057703611170 -> 404
-
-POST pet -> 200
-GET pet/82847218730305 -> 200
-GET pet/82847218730305 -> 200
-GET pet/82847218730305 -> 200
-DELETE pet/82847218730305 -> 200
-GET pet/82847218730305 -> 404
+GET pet/102527815776939 -> 200
+DELETE pet/102527815776939 -> 200
+GET pet/102527815776939 -> 404
 
   Failed FindByTags(True) [1 s]
   Error Message:
@@ -184,21 +185,36 @@ Assert.That(result.Status, Is.EqualTo(expected))
 
   Standard Output Messages:
  POST pet -> 200
- GET pet/208057703611170 -> 200
+ GET pet/102527815776939 -> 200
  GET pet/findByTags -> 200
- GET pet/208057703611170 -> 200
- DELETE pet/208057703611170 -> 200
- GET pet/208057703611170 -> 404
+ GET pet/102527815776939 -> 200
+ DELETE pet/102527815776939 -> 200
+ GET pet/102527815776939 -> 404
 
+
+POST pet -> 200
+GET pet/148908912685095 -> 200
+DELETE pet/148908912685095 -> 200
+GET pet/148908912685095 -> 404
+GET pet/148908912685095 -> 404
+GET pet/148908912685095 -> 404
+
+  Passed GetMissingPet [1 s]
+POST pet -> 200
+GET pet/157454574608742 -> 200
+GET pet/157454574608742 -> 200
+GET pet/157454574608742 -> 200
+DELETE pet/157454574608742 -> 200
+GET pet/157454574608742 -> 404
+
+POST pet -> 200
+GET pet/164338915252633 -> 200
+GET pet/wrong_id -> 404
+GET pet/164338915252633 -> 200
+DELETE pet/164338915252633 -> 200
+GET pet/164338915252633 -> 404
 
   Passed GetPet(False) [1 s]
-POST pet -> 200
-GET pet/240632859885232 -> 200
-GET pet/wrong_id -> 404
-GET pet/240632859885232 -> 200
-DELETE pet/240632859885232 -> 200
-GET pet/240632859885232 -> 404
-
   Failed GetPet(True) [1 s]
   Error Message:
      {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
@@ -224,28 +240,28 @@ Assert.That(result.Status, Is.EqualTo(expected))
 
   Standard Output Messages:
  POST pet -> 200
- GET pet/240632859885232 -> 200
+ GET pet/164338915252633 -> 200
  GET pet/wrong_id -> 404
- GET pet/240632859885232 -> 200
- DELETE pet/240632859885232 -> 200
- GET pet/240632859885232 -> 404
+ GET pet/164338915252633 -> 200
+ DELETE pet/164338915252633 -> 200
+ GET pet/164338915252633 -> 404
 
 
 POST pet -> 200
-GET pet/275061865552832 -> 200
+GET pet/115404008213813 -> 200
 PUT pet -> 200
-GET pet/275061865552832 -> 200
-GET pet/275061865552832 -> 200
-DELETE pet/275061865552832 -> 200
-GET pet/275061865552832 -> 404
+GET pet/115404008213813 -> 200
+GET pet/115404008213813 -> 200
+DELETE pet/115404008213813 -> 200
+GET pet/115404008213813 -> 404
 
   Passed UpdatePet(False) [1 s]
 POST pet -> 200
-GET pet/164851876338714 -> 200
+GET pet/230250182508295 -> 200
 PUT pet -> 500
-GET pet/164851876338714 -> 200
-DELETE pet/164851876338714 -> 200
-GET pet/164851876338714 -> 404
+GET pet/230250182508295 -> 200
+DELETE pet/230250182508295 -> 200
+GET pet/230250182508295 -> 404
 
   Failed UpdatePet(True) [1 s]
   Error Message:
@@ -272,28 +288,35 @@ Assert.That(result.Status, Is.EqualTo(expected))
 
   Standard Output Messages:
  POST pet -> 200
- GET pet/164851876338714 -> 200
+ GET pet/230250182508295 -> 200
  PUT pet -> 500
- GET pet/164851876338714 -> 200
- DELETE pet/164851876338714 -> 200
- GET pet/164851876338714 -> 404
+ GET pet/230250182508295 -> 200
+ DELETE pet/230250182508295 -> 200
+ GET pet/230250182508295 -> 404
 
 
 POST pet -> 200
-GET pet/58556569507860 -> 200
-POST pet/58556569507860 -> 200
-GET pet/58556569507860 -> 200
-GET pet/58556569507860 -> 200
-DELETE pet/58556569507860 -> 200
-GET pet/58556569507860 -> 404
+GET pet/32687844930920 -> 200
+POST pet/32687844930920 -> 200
+GET pet/32687844930920 -> 200
+GET pet/32687844930920 -> 200
+DELETE pet/32687844930920 -> 200
+GET pet/32687844930920 -> 404
 
   Passed UpdatePetForm(False) [1 s]
 POST pet -> 200
-GET pet/131674225897902 -> 200
+GET pet/254327341665454 -> 200
 POST pet/wrong_id -> 404
-GET pet/131674225897902 -> 200
-DELETE pet/131674225897902 -> 200
-GET pet/131674225897902 -> 404
+GET pet/254327341665454 -> 200
+DELETE pet/254327341665454 -> 200
+GET pet/254327341665454 -> 404
+
+POST pet -> 200
+GET pet/31627617020595 -> 200
+POST pet/31627617020595/uploadImage -> 200
+GET pet/31627617020595 -> 200
+DELETE pet/31627617020595 -> 200
+GET pet/31627617020595 -> 404
 
   Failed UpdatePetForm(True) [1 s]
   Error Message:
@@ -320,62 +343,16 @@ Assert.That(result.Status, Is.EqualTo(expected))
 
   Standard Output Messages:
  POST pet -> 200
- GET pet/131674225897902 -> 200
+ GET pet/254327341665454 -> 200
  POST pet/wrong_id -> 404
- GET pet/131674225897902 -> 200
- DELETE pet/131674225897902 -> 200
- GET pet/131674225897902 -> 404
+ GET pet/254327341665454 -> 200
+ DELETE pet/254327341665454 -> 200
+ GET pet/254327341665454 -> 404
 
 
+  Passed UploadImage [1 s]
 POST pet -> 200
-GET pet/95094685980177 -> 200
-POST pet/95094685980177/uploadImage -> 200
-GET pet/95094685980177 -> 200
-DELETE pet/95094685980177 -> 200
-GET pet/95094685980177 -> 404
-
-POST pet -> 200
-GET pet/192134119497521 -> 200
-POST pet/wrong_id/uploadImage -> 404
-GET pet/192134119497521 -> 200
-DELETE pet/192134119497521 -> 200
-GET pet/192134119497521 -> 404
-
-  Passed UploadImage(False) [1 s]
-  Failed UploadImage(True) [1 s]
-  Error Message:
-     {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
-Assert.That(result.Status, Is.EqualTo(expected))
-  Expected: 400
-  But was:  404
-
-  Stack Trace:
-     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
-   at PetstoreTests.PetTests.UploadImage(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 124
-   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
-   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
-   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
-   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
-   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
-   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
-   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
-   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
-
-1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
-   at PetstoreTests.PetTests.UploadImage(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/PetTests.cs:line 124
-
-
-  Standard Output Messages:
- POST pet -> 200
- GET pet/192134119497521 -> 200
- POST pet/wrong_id/uploadImage -> 404
- GET pet/192134119497521 -> 200
- DELETE pet/192134119497521 -> 200
- GET pet/192134119497521 -> 404
-
-
-POST pet -> 200
-GET pet/264085551331859 -> 200
+GET pet/144720916020221 -> 200
 GET store/order/1 -> 200
 GET store/order/2 -> 200
 GET store/order/3 -> 404
@@ -384,23 +361,23 @@ GET store/order/3 -> 200
 GET store/order/3 -> 200
 DELETE store/order/3 -> 200
 GET store/order/3 -> 404
-GET pet/264085551331859 -> 200
-DELETE pet/264085551331859 -> 200
-GET pet/264085551331859 -> 404
+GET pet/144720916020221 -> 200
+DELETE pet/144720916020221 -> 200
+GET pet/144720916020221 -> 404
 
   Passed CreateOrder(False) [2 s]
 POST pet -> 200
-GET pet/237698008947444 -> 200
+GET pet/205450472444951 -> 200
 GET store/order/1 -> 200
 GET store/order/2 -> 200
 GET store/order/3 -> 404
 POST store/order -> 500
 GET store/order/3 -> 404
-GET pet/237698008947444 -> 200
-DELETE pet/237698008947444 -> 200
-GET pet/237698008947444 -> 404
+GET pet/205450472444951 -> 200
+DELETE pet/205450472444951 -> 200
+GET pet/205450472444951 -> 404
 
-  Failed CreateOrder(True) [1 s]
+  Failed CreateOrder(True) [2 s]
   Error Message:
      {"code":500,"type":"unknown","message":"something bad happened"}
 Assert.That(result.Status, Is.EqualTo(expected))
@@ -425,19 +402,35 @@ Assert.That(result.Status, Is.EqualTo(expected))
 
   Standard Output Messages:
  POST pet -> 200
- GET pet/237698008947444 -> 200
+ GET pet/205450472444951 -> 200
  GET store/order/1 -> 200
  GET store/order/2 -> 200
  GET store/order/3 -> 404
  POST store/order -> 500
  GET store/order/3 -> 404
- GET pet/237698008947444 -> 200
- DELETE pet/237698008947444 -> 200
- GET pet/237698008947444 -> 404
+ GET pet/205450472444951 -> 200
+ DELETE pet/205450472444951 -> 200
+ GET pet/205450472444951 -> 404
 
 
 POST pet -> 200
-GET pet/17848710368038 -> 200
+GET pet/206000383006888 -> 200
+GET store/order/1 -> 200
+GET store/order/2 -> 200
+GET store/order/3 -> 404
+POST store/order -> 200
+GET store/order/3 -> 200
+DELETE store/order/3 -> 200
+GET store/order/3 -> 404
+DELETE store/order/3 -> 404
+GET store/order/3 -> 404
+GET pet/206000383006888 -> 200
+DELETE pet/206000383006888 -> 200
+GET pet/206000383006888 -> 404
+
+  Passed DeleteMissingOrder [2 s]
+POST pet -> 200
+GET pet/161958339863159 -> 200
 GET store/order/1 -> 200
 GET store/order/2 -> 200
 GET store/order/3 -> 404
@@ -446,13 +439,13 @@ GET store/order/3 -> 200
 DELETE store/order/3 -> 200
 GET store/order/3 -> 404
 GET store/order/3 -> 404
-GET pet/17848710368038 -> 200
-DELETE pet/17848710368038 -> 200
-GET pet/17848710368038 -> 404
+GET pet/161958339863159 -> 200
+DELETE pet/161958339863159 -> 200
+GET pet/161958339863159 -> 404
 
   Passed DeleteOrder(False) [2 s]
 POST pet -> 200
-GET pet/263728724930843 -> 200
+GET pet/59720330472307 -> 200
 GET store/order/1 -> 200
 GET store/order/2 -> 200
 GET store/order/3 -> 404
@@ -462,9 +455,9 @@ DELETE store/order/wrong_id -> 404
 GET store/order/3 -> 200
 DELETE store/order/3 -> 200
 GET store/order/3 -> 404
-GET pet/263728724930843 -> 200
-DELETE pet/263728724930843 -> 200
-GET pet/263728724930843 -> 404
+GET pet/59720330472307 -> 200
+DELETE pet/59720330472307 -> 200
+GET pet/59720330472307 -> 404
 
   Failed DeleteOrder(True) [2 s]
   Error Message:
@@ -491,7 +484,7 @@ Assert.That(result.Status, Is.EqualTo(expected))
 
   Standard Output Messages:
  POST pet -> 200
- GET pet/263728724930843 -> 200
+ GET pet/59720330472307 -> 200
  GET store/order/1 -> 200
  GET store/order/2 -> 200
  GET store/order/3 -> 404
@@ -501,13 +494,29 @@ Assert.That(result.Status, Is.EqualTo(expected))
  GET store/order/3 -> 200
  DELETE store/order/3 -> 200
  GET store/order/3 -> 404
- GET pet/263728724930843 -> 200
- DELETE pet/263728724930843 -> 200
- GET pet/263728724930843 -> 404
+ GET pet/59720330472307 -> 200
+ DELETE pet/59720330472307 -> 200
+ GET pet/59720330472307 -> 404
 
 
 POST pet -> 200
-GET pet/100796182195498 -> 200
+GET pet/239893180770690 -> 200
+GET store/order/1 -> 200
+GET store/order/2 -> 200
+GET store/order/3 -> 404
+POST store/order -> 200
+GET store/order/3 -> 200
+DELETE store/order/3 -> 200
+GET store/order/3 -> 404
+GET store/order/3 -> 404
+GET store/order/3 -> 404
+GET pet/239893180770690 -> 200
+DELETE pet/239893180770690 -> 200
+GET pet/239893180770690 -> 404
+
+  Passed GetMissingOrder [2 s]
+POST pet -> 200
+GET pet/157326422883417 -> 200
 GET store/order/1 -> 200
 GET store/order/2 -> 200
 GET store/order/3 -> 404
@@ -517,13 +526,13 @@ GET store/order/3 -> 200
 GET store/order/3 -> 200
 DELETE store/order/3 -> 200
 GET store/order/3 -> 404
-GET pet/100796182195498 -> 200
-DELETE pet/100796182195498 -> 200
-GET pet/100796182195498 -> 404
+GET pet/157326422883417 -> 200
+DELETE pet/157326422883417 -> 200
+GET pet/157326422883417 -> 404
 
   Passed GetOrder(False) [2 s]
 POST pet -> 200
-GET pet/279379577163959 -> 200
+GET pet/166187251217800 -> 200
 GET store/order/1 -> 200
 GET store/order/2 -> 200
 GET store/order/3 -> 404
@@ -533,9 +542,9 @@ GET store/order/wrong_id -> 404
 GET store/order/3 -> 200
 DELETE store/order/3 -> 200
 GET store/order/3 -> 404
-GET pet/279379577163959 -> 200
-DELETE pet/279379577163959 -> 200
-GET pet/279379577163959 -> 404
+GET pet/166187251217800 -> 200
+DELETE pet/166187251217800 -> 200
+GET pet/166187251217800 -> 404
 
   Failed GetOrder(True) [2 s]
   Error Message:
@@ -562,7 +571,7 @@ Assert.That(result.Status, Is.EqualTo(expected))
 
   Standard Output Messages:
  POST pet -> 200
- GET pet/279379577163959 -> 200
+ GET pet/166187251217800 -> 200
  GET store/order/1 -> 200
  GET store/order/2 -> 200
  GET store/order/3 -> 404
@@ -572,186 +581,91 @@ Assert.That(result.Status, Is.EqualTo(expected))
  GET store/order/3 -> 200
  DELETE store/order/3 -> 200
  GET store/order/3 -> 404
- GET pet/279379577163959 -> 200
- DELETE pet/279379577163959 -> 200
- GET pet/279379577163959 -> 404
+ GET pet/166187251217800 -> 200
+ DELETE pet/166187251217800 -> 200
+ GET pet/166187251217800 -> 404
 
 
 GET store/inventory -> 200
 
 POST user -> 200
-GET user/kt8_15f97768e958 -> 200
-GET user/kt8_15f97768e958 -> 200
-DELETE user/kt8_15f97768e958 -> 200
-GET user/kt8_15f97768e958 -> 404
+GET user/kt8_3b73c9b0cd97 -> 200
+GET user/kt8_3b73c9b0cd97 -> 200
+DELETE user/kt8_3b73c9b0cd97 -> 200
+GET user/kt8_3b73c9b0cd97 -> 404
 
-  Passed Inventory [385 ms]
-  Passed CreateUser(False) [1 s]
-POST user -> 500
-GET user/kt8_3bbba3fec152 -> 404
-
-  Failed CreateUser(True) [538 ms]
-  Error Message:
-     {"code":500,"type":"unknown","message":"something bad happened"}
-Assert.That(result.Status, Is.EqualTo(expected))
-  Expected: 400
-  But was:  500
-
-  Stack Trace:
-     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
-   at PetstoreTests.UserTests.CreateUser(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 14
-   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
-   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
-   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
-   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
-   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
-   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
-   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
-   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
-
-1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
-   at PetstoreTests.UserTests.CreateUser(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 14
-
-
-  Standard Output Messages:
- POST user -> 500
- GET user/kt8_3bbba3fec152 -> 404
-
-
+  Passed Inventory [549 ms]
+  Passed CreateUser [889 ms]
 POST user/createWithArray -> 200
-GET user/kt8_63eccbd53c34 -> 200
-GET user/kt8_63eccbd53c34 -> 200
-DELETE user/kt8_63eccbd53c34 -> 200
-GET user/kt8_63eccbd53c34 -> 404
+GET user/kt8_12cdd2a29814 -> 200
+GET user/kt8_12cdd2a29814 -> 200
+DELETE user/kt8_12cdd2a29814 -> 200
+GET user/kt8_12cdd2a29814 -> 404
 
-POST user/createWithArray -> 500
-GET user/kt8_91ed7b239b5a -> 404
-
-  Passed CreateUsersArray(False) [1 s]
-  Failed CreateUsersArray(True) [522 ms]
-  Error Message:
-     {"code":500,"type":"unknown","message":"something bad happened"}
-Assert.That(result.Status, Is.EqualTo(expected))
-  Expected: 400
-  But was:  500
-
-  Stack Trace:
-     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
-   at PetstoreTests.UserTests.CreateUsersArray(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 46
-   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
-   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
-   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
-   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
-   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
-   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
-   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
-   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
-
-1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
-   at PetstoreTests.UserTests.CreateUsersArray(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 46
-
-
-  Standard Output Messages:
- POST user/createWithArray -> 500
- GET user/kt8_91ed7b239b5a -> 404
-
-
+  Passed CreateUsersArray [1 s]
 POST user/createWithList -> 200
-GET user/kt8_f63eed2b5be2 -> 200
-GET user/kt8_f63eed2b5be2 -> 200
-DELETE user/kt8_f63eed2b5be2 -> 200
-GET user/kt8_f63eed2b5be2 -> 404
+GET user/kt8_939617e5b554 -> 200
+GET user/kt8_939617e5b554 -> 200
+DELETE user/kt8_939617e5b554 -> 200
+GET user/kt8_939617e5b554 -> 404
 
-POST user/createWithList -> 500
-GET user/kt8_fb2c92a73246 -> 404
-
-  Passed CreateUsersList(False) [1 s]
-  Failed CreateUsersList(True) [603 ms]
-  Error Message:
-     {"code":500,"type":"unknown","message":"something bad happened"}
-Assert.That(result.Status, Is.EqualTo(expected))
-  Expected: 400
-  But was:  500
-
-  Stack Trace:
-     at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
-   at PetstoreTests.UserTests.CreateUsersList(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 30
-   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
-   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
-   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
-   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
-   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
-   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
-   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
-   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
-
-1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
-   at PetstoreTests.UserTests.CreateUsersList(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 30
-
-
-  Standard Output Messages:
- POST user/createWithList -> 500
- GET user/kt8_fb2c92a73246 -> 404
-
+  Passed CreateUsersList [1 s]
+POST user -> 200
+GET user/kt8_fdb0565b47e0 -> 200
+DELETE user/kt8_fdb0565b47e0 -> 200
+GET user/kt8_fdb0565b47e0 -> 404
+GET user/kt8_fdb0565b47e0 -> 404
 
 POST user -> 200
-GET user/kt8_bea5fb3cf6ad -> 200
-DELETE user/kt8_bea5fb3cf6ad -> 200
-GET user/kt8_bea5fb3cf6ad -> 404
-GET user/kt8_bea5fb3cf6ad -> 404
+GET user/kt8_e21bb3e25e64 -> 200
+DELETE user/missing_6655cad8729749128c2133dc9ad208de -> 404
+GET user/kt8_e21bb3e25e64 -> 200
+DELETE user/kt8_e21bb3e25e64 -> 200
+GET user/kt8_e21bb3e25e64 -> 404
 
-POST user -> 200
-GET user/kt8_9c00b0c9364b -> 200
-DELETE user/missing_c1e9eb000a14453cb42e3d089cc44ad1 -> 404
-GET user/kt8_9c00b0c9364b -> 200
-DELETE user/kt8_9c00b0c9364b -> 200
-GET user/kt8_9c00b0c9364b -> 404
-
-  Passed DeleteUser(False) [939 ms]
+  Passed DeleteUser(False) [1 s]
   Passed DeleteUser(True) [1 s]
 POST user -> 200
-GET user/kt8_a7e0d0870186 -> 200
-GET user/kt8_a7e0d0870186 -> 200
-GET user/kt8_a7e0d0870186 -> 200
-DELETE user/kt8_a7e0d0870186 -> 200
-GET user/kt8_a7e0d0870186 -> 404
+GET user/kt8_7dbba727c1d9 -> 200
+GET user/kt8_7dbba727c1d9 -> 200
+GET user/kt8_7dbba727c1d9 -> 200
+DELETE user/kt8_7dbba727c1d9 -> 200
+GET user/kt8_7dbba727c1d9 -> 404
 
   Passed GetUser(False) [1 s]
 POST user -> 200
-GET user/kt8_d4f17be356a6 -> 200
-GET user/missing_596aedfe928942fa9a5f8b179f4dc1c4 -> 404
-GET user/kt8_d4f17be356a6 -> 200
-DELETE user/kt8_d4f17be356a6 -> 200
-GET user/kt8_d4f17be356a6 -> 404
+GET user/kt8_14ea13862942 -> 200
+GET user/missing_fd7e1c149c2d4cfb85c80dd6e49d0958 -> 404
+GET user/kt8_14ea13862942 -> 200
+DELETE user/kt8_14ea13862942 -> 200
+GET user/kt8_14ea13862942 -> 404
 
   Passed GetUser(True) [1 s]
 POST user -> 200
-GET user/kt8_14edcf712280 -> 200
-GET user/login?username=kt8_14edcf712280&password=Kt8Password -> 200
-GET user/kt8_14edcf712280 -> 200
-DELETE user/kt8_14edcf712280 -> 200
-GET user/kt8_14edcf712280 -> 404
+GET user/kt8_591adf66665f -> 200
+GET user/login?username=kt8_591adf66665f&password=Kt8Password -> 200
+GET user/kt8_591adf66665f -> 200
+DELETE user/kt8_591adf66665f -> 200
+GET user/kt8_591adf66665f -> 404
+
+POST user -> 200
+GET user/kt8_6f58c35b0b73 -> 200
+GET user/login?username=kt8_6f58c35b0b73&password=wrong_password -> 200
+GET user/kt8_6f58c35b0b73 -> 200
+DELETE user/kt8_6f58c35b0b73 -> 200
+GET user/kt8_6f58c35b0b73 -> 404
 
   Passed Login(False) [1 s]
-POST user -> 200
-GET user/kt8_804e135df4b0 -> 200
-GET user/login?username=kt8_804e135df4b0&password=wrong_password -> 200
-GET user/kt8_804e135df4b0 -> 200
-DELETE user/kt8_804e135df4b0 -> 200
-GET user/kt8_804e135df4b0 -> 404
-
-GET user/logout -> 200
-
   Failed Login(True) [1 s]
   Error Message:
-     {"code":200,"type":"unknown","message":"logged in user session:1794525422083"}
+     {"code":200,"type":"unknown","message":"logged in user session:1794526886096"}
 Assert.That(result.Status, Is.EqualTo(expected))
   Expected: 400
   But was:  200
 
   Stack Trace:
      at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
-   at PetstoreTests.UserTests.Login(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 106
+   at PetstoreTests.UserTests.Login(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 91
    at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
    at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
    at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
@@ -759,34 +673,36 @@ Assert.That(result.Status, Is.EqualTo(expected))
    at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
 
 1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
-   at PetstoreTests.UserTests.Login(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 106
+   at PetstoreTests.UserTests.Login(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 91
 
 
   Standard Output Messages:
  POST user -> 200
- GET user/kt8_804e135df4b0 -> 200
- GET user/login?username=kt8_804e135df4b0&password=wrong_password -> 200
- GET user/kt8_804e135df4b0 -> 200
- DELETE user/kt8_804e135df4b0 -> 200
- GET user/kt8_804e135df4b0 -> 404
+ GET user/kt8_6f58c35b0b73 -> 200
+ GET user/login?username=kt8_6f58c35b0b73&password=wrong_password -> 200
+ GET user/kt8_6f58c35b0b73 -> 200
+ DELETE user/kt8_6f58c35b0b73 -> 200
+ GET user/kt8_6f58c35b0b73 -> 404
 
 
-  Passed Logout [384 ms]
+GET user/logout -> 200
+
 POST user -> 200
-GET user/kt8_21efd73e6b25 -> 200
-PUT user/kt8_21efd73e6b25 -> 200
-GET user/kt8_21efd73e6b25 -> 200
-GET user/kt8_21efd73e6b25 -> 200
-DELETE user/kt8_21efd73e6b25 -> 200
-GET user/kt8_21efd73e6b25 -> 404
+GET user/kt8_b00c42ce3405 -> 200
+PUT user/kt8_b00c42ce3405 -> 200
+GET user/kt8_b00c42ce3405 -> 200
+GET user/kt8_b00c42ce3405 -> 200
+DELETE user/kt8_b00c42ce3405 -> 200
+GET user/kt8_b00c42ce3405 -> 404
 
+  Passed Logout [359 ms]
   Passed UpdateUser(False) [1 s]
 POST user -> 200
-GET user/kt8_b8c9b4f65102 -> 200
-PUT user/kt8_b8c9b4f65102 -> 500
-GET user/kt8_b8c9b4f65102 -> 200
-DELETE user/kt8_b8c9b4f65102 -> 200
-GET user/kt8_b8c9b4f65102 -> 404
+GET user/kt8_dec499d9df32 -> 200
+PUT user/kt8_dec499d9df32 -> 500
+GET user/kt8_dec499d9df32 -> 200
+DELETE user/kt8_dec499d9df32 -> 200
+GET user/kt8_dec499d9df32 -> 404
 
 NUnit Adapter 5.0.0.0: Test execution complete
   Failed UpdateUser(True) [1 s]
@@ -798,7 +714,7 @@ Assert.That(result.Status, Is.EqualTo(expected))
 
   Stack Trace:
      at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
-   at PetstoreTests.UserTests.UpdateUser(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 77
+   at PetstoreTests.UserTests.UpdateUser(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 62
    at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
    at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
    at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
@@ -806,22 +722,23 @@ Assert.That(result.Status, Is.EqualTo(expected))
    at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
 
 1)    at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/ApiTests.cs:line 13
-   at PetstoreTests.UserTests.UpdateUser(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 77
+   at PetstoreTests.UserTests.UpdateUser(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/UserTests.cs:line 62
 
 
   Standard Output Messages:
  POST user -> 200
- GET user/kt8_b8c9b4f65102 -> 200
- PUT user/kt8_b8c9b4f65102 -> 500
- GET user/kt8_b8c9b4f65102 -> 200
- DELETE user/kt8_b8c9b4f65102 -> 200
- GET user/kt8_b8c9b4f65102 -> 404
+ GET user/kt8_dec499d9df32 -> 200
+ PUT user/kt8_dec499d9df32 -> 500
+ GET user/kt8_dec499d9df32 -> 200
+ DELETE user/kt8_dec499d9df32 -> 200
+ GET user/kt8_dec499d9df32 -> 404
 
 
+WARNING: Overwriting results file: /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/results/run.trx
 Results File: /home/antisuffer/все/Документы/тесты Шпатович/кт№8/nunit-tests/results/run.trx
 
 Total tests: 38
-     Passed: 22
-     Failed: 16
- Total time: 48.9765 Seconds
+     Passed: 26
+     Failed: 12
+ Total time: 53.0540 Seconds
 Test Run Failed.

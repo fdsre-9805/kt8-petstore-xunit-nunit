@@ -1,31 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TestRun id="319ed489-18a3-4e40-b0aa-f1a8648be1de" name="@antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ 2026-11-13 02:15:30" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
-  <Times creation="2026-11-13T02:15:30.4347966+03:00" queuing="2026-11-13T02:15:30.4347967+03:00" start="2026-11-13T02:15:26.4741128+03:00" finish="2026-11-13T02:16:15.6377574+03:00" />
-  <TestSettings name="default" id="22ea6a15-17dd-4458-8c13-5b2927e64dc6">
-    <Deployment runDeploymentRoot="_antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ_2026-11-13_02_15_30" />
+<TestRun id="91dd4b55-2028-4c77-a4d5-2beae28813f8" name="@antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ 2026-11-13 02:39:45" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-13T02:39:45.2463890+03:00" queuing="2026-11-13T02:39:45.2463890+03:00" start="2026-11-13T02:39:41.6825301+03:00" finish="2026-11-13T02:40:35.4752103+03:00" />
+  <TestSettings name="default" id="4489a595-db33-4272-984d-34c52275fc35">
+    <Deployment runDeploymentRoot="_antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ_2026-11-13_02_39_45" />
   </TestSettings>
   <Results>
-    <UnitTestResult executionId="feda7181-f6df-4b0b-803b-32d0ebdd1d1c" testId="cc78ed2e-0354-4e8c-7c6e-4e879ae40c3c" testName="PetstoreTests.PetTests.FindByTags(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.6887950" startTime="2026-11-13T02:16:13.1950668+03:00" endTime="2026-11-13T02:16:14.3220916+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="feda7181-f6df-4b0b-803b-32d0ebdd1d1c" />
-    <UnitTestResult executionId="56d80c2d-782a-4432-911f-107ffa849b1b" testId="0563730b-e536-af08-4449-d7c7013b7ce6" testName="PetstoreTests.PetTests.FindByStatus(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.8733685" startTime="2026-11-13T02:15:56.9176425+03:00" endTime="2026-11-13T02:15:58.2229327+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="56d80c2d-782a-4432-911f-107ffa849b1b" />
-    <UnitTestResult executionId="c8687571-a821-482f-a117-3ffd2faa2694" testId="1b4f06bb-49cf-e6b0-0535-fe2a21f815f6" testName="PetstoreTests.StoreTests.GetOrder(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.5793763" startTime="2026-11-13T02:15:35.1904250+03:00" endTime="2026-11-13T02:15:37.6551074+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c8687571-a821-482f-a117-3ffd2faa2694">
-      <Output>
-        <ErrorInfo>
-          <Message>Ожидалось 400, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}</Message>
-          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
-   at PetstoreTests.StoreTests.GetOrder(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/StoreTests.cs:line 42
---- End of stack trace from previous location ---</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="110c96c0-e1c9-4547-81fb-d83a024cdccb" testId="94fccec1-a755-1703-3911-347f04eed606" testName="PetstoreTests.UserTests.CreateUsersList(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.5565288" startTime="2026-11-13T02:15:55.9109840+03:00" endTime="2026-11-13T02:15:56.9168468+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="110c96c0-e1c9-4547-81fb-d83a024cdccb" />
-    <UnitTestResult executionId="3a5f4ac1-a286-4c46-9f6c-6c33dd92052d" testId="a1d23687-2117-ed76-ccd6-8cf5263ce7ef" testName="PetstoreTests.PetTests.DeletePet(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.9421636" startTime="2026-11-13T02:16:04.4821996+03:00" endTime="2026-11-13T02:16:05.5652538+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3a5f4ac1-a286-4c46-9f6c-6c33dd92052d" />
-    <UnitTestResult executionId="13bbfb7c-0fb6-44b4-a855-3744a91dc4ec" testId="16c4c6d2-657f-439d-d0ae-c49b5252133b" testName="PetstoreTests.UserTests.GetUser(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.6685430" startTime="2026-11-13T02:15:42.8943560+03:00" endTime="2026-11-13T02:15:43.9893678+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="13bbfb7c-0fb6-44b4-a855-3744a91dc4ec" />
-    <UnitTestResult executionId="1269b454-3e2c-4ed8-8f9b-2dfd148cc7ea" testId="77615ab0-37ae-b827-b142-73d20e6e7703" testName="PetstoreTests.StoreTests.GetOrder(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.6040600" startTime="2026-11-13T02:15:32.7123263+03:00" endTime="2026-11-13T02:15:35.1891777+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1269b454-3e2c-4ed8-8f9b-2dfd148cc7ea" />
-    <UnitTestResult executionId="7cb31a6c-ed79-479c-b4be-f942534dec43" testId="8b7d6611-aa0d-b28d-6b45-7144c70f6bfd" testName="PetstoreTests.StoreTests.CreateOrder(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.2255521" startTime="2026-11-13T02:15:39.6914935+03:00" endTime="2026-11-13T02:15:41.7560088+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7cb31a6c-ed79-479c-b4be-f942534dec43" />
-    <UnitTestResult executionId="3d63ffe2-9b37-4613-a8ea-fa1108a2f101" testId="64c43473-1170-c86e-184c-34de0fbf3804" testName="PetstoreTests.PetTests.UpdatePetForm(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.8131874" startTime="2026-11-13T02:16:06.7788435+03:00" endTime="2026-11-13T02:16:08.0191621+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3d63ffe2-9b37-4613-a8ea-fa1108a2f101" />
-    <UnitTestResult executionId="c91c5cc6-e1a9-40cf-804a-debc83407a8f" testId="2ed53e49-a391-acc6-0bc3-8f648a046ed7" testName="PetstoreTests.StoreTests.DeleteOrder(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:02.4301206" startTime="2026-11-13T02:15:27.3309861+03:00" endTime="2026-11-13T02:15:30.3774509+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c91c5cc6-e1a9-40cf-804a-debc83407a8f" />
-    <UnitTestResult executionId="c1013421-b6b0-4fda-b253-feb49773087b" testId="36aa580e-3189-82a7-4bf8-92e79a639bcf" testName="PetstoreTests.PetTests.UpdatePet(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.9398220" startTime="2026-11-13T02:16:00.5184877+03:00" endTime="2026-11-13T02:16:01.8748803+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c1013421-b6b0-4fda-b253-feb49773087b" />
-    <UnitTestResult executionId="d3cbce7a-2a37-4b40-92d7-a5115209a8ef" testId="1aca0e9a-cb0e-2c42-fa16-13d94ea46ff5" testName="PetstoreTests.PetTests.CreatePet(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.5189383" startTime="2026-11-13T02:16:10.2441408+03:00" endTime="2026-11-13T02:16:10.9032155+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d3cbce7a-2a37-4b40-92d7-a5115209a8ef">
+    <UnitTestResult executionId="73965bc1-7d80-438e-aff2-cc937edc81bf" testId="36aa580e-3189-82a7-4bf8-92e79a639bcf" testName="PetstoreTests.PetTests.UpdatePet(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.9817755" startTime="2026-11-13T02:40:00.6052452+03:00" endTime="2026-11-13T02:40:02.0236015+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="73965bc1-7d80-438e-aff2-cc937edc81bf" />
+    <UnitTestResult executionId="3bebd52e-3dfd-4f96-a5cd-bea36740718e" testId="1aca0e9a-cb0e-2c42-fa16-13d94ea46ff5" testName="PetstoreTests.PetTests.CreatePet(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.3861097" startTime="2026-11-13T02:40:09.6156463+03:00" endTime="2026-11-13T02:40:10.1482788+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3bebd52e-3dfd-4f96-a5cd-bea36740718e">
       <Output>
         <ErrorInfo>
           <Message>Ожидалось 405, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}</Message>
@@ -35,118 +16,19 @@
         </ErrorInfo>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="8111c289-d3e6-4e65-a185-29a580b8ca26" testId="1e46ba3a-7f49-6cb0-f18f-64ce5586eb59" testName="PetstoreTests.UserTests.CreateUsersArray(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.4757947" startTime="2026-11-13T02:15:48.1007504+03:00" endTime="2026-11-13T02:15:48.7249402+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8111c289-d3e6-4e65-a185-29a580b8ca26">
+    <UnitTestResult executionId="896e1569-0a0f-474e-830d-d9534109fa6b" testId="460f2fc3-bff4-2d11-c7a4-2d08df21551b" testName="PetstoreTests.UserTests.UpdateUser(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.8223056" startTime="2026-11-13T02:39:51.7347884+03:00" endTime="2026-11-13T02:39:52.9861806+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="896e1569-0a0f-474e-830d-d9534109fa6b">
       <Output>
         <ErrorInfo>
           <Message>Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}</Message>
           <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
-   at PetstoreTests.UserTests.CreateUsersArray(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/UserTests.cs:line 49
+   at PetstoreTests.UserTests.UpdateUser(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/UserTests.cs:line 64
 --- End of stack trace from previous location ---</StackTrace>
         </ErrorInfo>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="f18d2cb4-4930-426c-99f1-f52c910de760" testId="1fb56376-7c21-b600-c366-0923e9c6a302" testName="PetstoreTests.UserTests.CreateUser(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.5137834" startTime="2026-11-13T02:15:46.4952592+03:00" endTime="2026-11-13T02:15:47.4257776+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f18d2cb4-4930-426c-99f1-f52c910de760" />
-    <UnitTestResult executionId="45ea2e99-6ef1-499f-98a2-48f85765cdd0" testId="052acf2e-a719-01e8-7245-3e0557f109c1" testName="PetstoreTests.UserTests.GetUser(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.6901771" startTime="2026-11-13T02:15:41.7647734+03:00" endTime="2026-11-13T02:15:42.8940835+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="45ea2e99-6ef1-499f-98a2-48f85765cdd0" />
-    <UnitTestResult executionId="4b555eb3-fc93-4c21-b710-d4c1a4e18bb3" testId="8ee5dd09-dc11-3b2b-5191-c39edc90510f" testName="PetstoreTests.UserTests.DeleteUser(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.8536181" startTime="2026-11-13T02:15:53.3948984+03:00" endTime="2026-11-13T02:15:54.6923034+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4b555eb3-fc93-4c21-b710-d4c1a4e18bb3" />
-    <UnitTestResult executionId="e44251b3-614c-43ef-a5ef-2a2d64aad7dd" testId="17711cd1-f734-0518-778a-79b240295742" testName="PetstoreTests.PetTests.UploadImage(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.8320463" startTime="2026-11-13T02:16:03.2142581+03:00" endTime="2026-11-13T02:16:04.4811999+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e44251b3-614c-43ef-a5ef-2a2d64aad7dd">
-      <Output>
-        <ErrorInfo>
-          <Message>Ожидалось 400, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}</Message>
-          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
-   at PetstoreTests.PetTests.UploadImage(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs:line 132
---- End of stack trace from previous location ---</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="51066c51-487d-425c-b8bf-ed65d8c78c6c" testId="0802b457-b0e5-0ef5-205c-8a515f110ce8" testName="PetstoreTests.PetTests.FindByStatus(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.7921238" startTime="2026-11-13T02:15:58.2231850+03:00" endTime="2026-11-13T02:15:59.4328335+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="51066c51-487d-425c-b8bf-ed65d8c78c6c">
-      <Output>
-        <ErrorInfo>
-          <Message>Ожидалось 400, получено 200: []</Message>
-          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
-   at PetstoreTests.PetTests.FindByStatus(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs:line 51
---- End of stack trace from previous location ---</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="b69c7bcf-c7e9-4ae5-9008-accdc76a6b6b" testId="55ee3c74-e457-4f41-40f1-252478df6d11" testName="PetstoreTests.UserTests.UpdateUser(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.8041819" startTime="2026-11-13T02:15:49.8607607+03:00" endTime="2026-11-13T02:15:51.0883880+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b69c7bcf-c7e9-4ae5-9008-accdc76a6b6b" />
-    <UnitTestResult executionId="b26be80d-cc6e-4d7b-8e12-445041a4b698" testId="cb1a4d23-aca0-fc1a-e3e5-e7f69a47504f" testName="PetstoreTests.UserTests.Logout" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.5152389" startTime="2026-11-13T02:15:54.6925996+03:00" endTime="2026-11-13T02:15:55.2088774+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b26be80d-cc6e-4d7b-8e12-445041a4b698" />
-    <UnitTestResult executionId="a3458cf2-2188-4637-a45e-f6e87e51bab8" testId="73c7d8fa-b13f-7cd6-b0c3-7df38af0faa9" testName="PetstoreTests.UserTests.CreateUsersList(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.5471912" startTime="2026-11-13T02:15:55.2092061+03:00" endTime="2026-11-13T02:15:55.9100380+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a3458cf2-2188-4637-a45e-f6e87e51bab8">
-      <Output>
-        <ErrorInfo>
-          <Message>Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}</Message>
-          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
-   at PetstoreTests.UserTests.CreateUsersList(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/UserTests.cs:line 32
---- End of stack trace from previous location ---</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="0612d088-dfb1-42ce-9e78-5ae3c62a8732" testId="471c4fe9-132f-f892-f6bc-b9611555fd33" testName="PetstoreTests.UserTests.Login(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.8169458" startTime="2026-11-13T02:15:43.9896193+03:00" endTime="2026-11-13T02:15:45.2340370+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0612d088-dfb1-42ce-9e78-5ae3c62a8732">
-      <Output>
-        <ErrorInfo>
-          <Message>Ожидалось 400, получено 200: {"code":200,"type":"unknown","message":"logged in user session:1794525344723"}</Message>
-          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
-   at PetstoreTests.UserTests.Login(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/UserTests.cs:line 113
---- End of stack trace from previous location ---</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="1c548a89-36f4-4895-9e3f-f905f71b7c22" testId="460f2fc3-bff4-2d11-c7a4-2d08df21551b" testName="PetstoreTests.UserTests.UpdateUser(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.8072287" startTime="2026-11-13T02:15:51.0891477+03:00" endTime="2026-11-13T02:15:52.3164665+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1c548a89-36f4-4895-9e3f-f905f71b7c22">
-      <Output>
-        <ErrorInfo>
-          <Message>Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}</Message>
-          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
-   at PetstoreTests.UserTests.UpdateUser(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/UserTests.cs:line 82
---- End of stack trace from previous location ---</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="df41f816-70c6-4d88-9293-8877d7ee2e31" testId="63c2fb82-8333-ad05-1938-2b7d07cd6050" testName="PetstoreTests.PetTests.UpdatePetForm(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.6682543" startTime="2026-11-13T02:16:08.0196432+03:00" endTime="2026-11-13T02:16:09.1102015+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="df41f816-70c6-4d88-9293-8877d7ee2e31">
-      <Output>
-        <ErrorInfo>
-          <Message>Ожидалось 405, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}</Message>
-          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
-   at PetstoreTests.PetTests.UpdatePetForm(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs:line 98
---- End of stack trace from previous location ---</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="d291f9ac-94bf-4d3e-8ed0-0a3b4a3a0db9" testId="17aae9b0-a37a-e70a-808e-1d59524e1737" testName="PetstoreTests.UserTests.CreateUser(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.5306429" startTime="2026-11-13T02:15:47.4259814+03:00" endTime="2026-11-13T02:15:48.1001095+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d291f9ac-94bf-4d3e-8ed0-0a3b4a3a0db9">
-      <Output>
-        <ErrorInfo>
-          <Message>Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}</Message>
-          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
-   at PetstoreTests.UserTests.CreateUser(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/UserTests.cs:line 15
---- End of stack trace from previous location ---</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="b7dd2ae1-8abc-44bf-a4b5-0d58da68691f" testId="0e29414b-1401-3f5f-4057-ca6d50c61d10" testName="PetstoreTests.PetTests.CreatePet(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.7321664" startTime="2026-11-13T02:16:09.1110787+03:00" endTime="2026-11-13T02:16:10.2438907+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b7dd2ae1-8abc-44bf-a4b5-0d58da68691f" />
-    <UnitTestResult executionId="60119a39-b66f-4508-82f8-5bc519f75d62" testId="91360ef0-6eaa-70a4-4ae5-4ad57c6096c7" testName="PetstoreTests.UserTests.Login(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.8262574" startTime="2026-11-13T02:15:45.2347177+03:00" endTime="2026-11-13T02:15:46.4948130+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="60119a39-b66f-4508-82f8-5bc519f75d62" />
-    <UnitTestResult executionId="71fb655c-09b5-4198-8f73-181ed59c2dbc" testId="bc913415-00ce-84a6-ace6-ed36e3c3889e" testName="PetstoreTests.PetTests.UpdatePet(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.6615480" startTime="2026-11-13T02:15:59.4338889+03:00" endTime="2026-11-13T02:16:00.5171470+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="71fb655c-09b5-4198-8f73-181ed59c2dbc">
-      <Output>
-        <ErrorInfo>
-          <Message>Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}</Message>
-          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
-   at PetstoreTests.PetTests.UpdatePet(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs:line 34
---- End of stack trace from previous location ---</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="3a78d353-46a4-47ac-919d-0c0064c584d7" testId="9426dada-0fbc-680b-1b36-58e73d8f71a6" testName="PetstoreTests.PetTests.UploadImage(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.9347271" startTime="2026-11-13T02:16:01.8751595+03:00" endTime="2026-11-13T02:16:03.2140419+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3a78d353-46a4-47ac-919d-0c0064c584d7" />
-    <UnitTestResult executionId="35d0c052-a63c-4cc4-a892-138092a6a346" testId="e11aeb43-4c62-8368-8a11-10d7cebcc3eb" testName="PetstoreTests.PetTests.DeletePet(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.7933735" startTime="2026-11-13T02:16:05.5654201+03:00" endTime="2026-11-13T02:16:06.7780332+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="35d0c052-a63c-4cc4-a892-138092a6a346">
-      <Output>
-        <ErrorInfo>
-          <Message>Ожидалось 400, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}</Message>
-          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
-   at PetstoreTests.PetTests.DeletePet(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs:line 115
---- End of stack trace from previous location ---</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="242a6d44-3518-4cf9-af60-77d427046791" testId="31de1c80-a425-2071-6367-438df04e0491" testName="PetstoreTests.UserTests.DeleteUser(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.9358487" startTime="2026-11-13T02:15:52.3173196+03:00" endTime="2026-11-13T02:15:53.3946369+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="242a6d44-3518-4cf9-af60-77d427046791" />
-    <UnitTestResult executionId="84ce6ff0-92d4-4b67-9e71-d5ee55f3f976" testId="70e668d1-4a37-5d56-77e7-965ba4571996" testName="PetstoreTests.UserTests.CreateUsersArray(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.6934818" startTime="2026-11-13T02:15:48.7256833+03:00" endTime="2026-11-13T02:15:49.8605142+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="84ce6ff0-92d4-4b67-9e71-d5ee55f3f976" />
-    <UnitTestResult executionId="0106ba78-5704-4f95-8b7f-9e3e7f91b456" testId="8c74b49c-0d99-26b3-499d-4d770fd50535" testName="PetstoreTests.StoreTests.Inventory" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.4779433" startTime="2026-11-13T02:15:37.6570400+03:00" endTime="2026-11-13T02:15:38.1344044+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0106ba78-5704-4f95-8b7f-9e3e7f91b456" />
-    <UnitTestResult executionId="a6033285-f6a8-48f6-8bc9-637a60302157" testId="41afc81f-933d-f6c3-64e1-4c485e1edada" testName="PetstoreTests.StoreTests.DeleteOrder(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.4234180" startTime="2026-11-13T02:15:30.4061533+03:00" endTime="2026-11-13T02:15:32.6922981+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a6033285-f6a8-48f6-8bc9-637a60302157">
+    <UnitTestResult executionId="89668983-e284-45b2-8c13-ea4e60cdd183" testId="3182af0d-c933-a954-8f68-340929cb9112" testName="PetstoreTests.UserTests.CreateUsersList" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.1604482" startTime="2026-11-13T02:39:47.8253323+03:00" endTime="2026-11-13T02:39:49.4272946+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="89668983-e284-45b2-8c13-ea4e60cdd183" />
+    <UnitTestResult executionId="9eedc7f6-8e14-4c1e-b933-bb4d2f94dcb0" testId="dec901c4-a8e2-9c53-fa47-debc29166fea" testName="PetstoreTests.PetTests.DeleteMissingPet" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.1386540" startTime="2026-11-13T02:40:07.2750429+03:00" endTime="2026-11-13T02:40:08.5625460+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9eedc7f6-8e14-4c1e-b933-bb4d2f94dcb0" />
+    <UnitTestResult executionId="34a7506b-7b94-448f-9918-d5165207209e" testId="41afc81f-933d-f6c3-64e1-4c485e1edada" testName="PetstoreTests.StoreTests.DeleteOrder(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.5054523" startTime="2026-11-13T02:40:19.6440654+03:00" endTime="2026-11-13T02:40:21.9922690+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="34a7506b-7b94-448f-9918-d5165207209e">
       <Output>
         <ErrorInfo>
           <Message>Ожидалось 400, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}</Message>
@@ -156,17 +38,9 @@
         </ErrorInfo>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="af8329b3-dca1-453f-999c-e941596e107e" testId="ebd09010-00ca-0d24-553a-30940b971b96" testName="PetstoreTests.StoreTests.CreateOrder(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.0253119" startTime="2026-11-13T02:15:38.1347842+03:00" endTime="2026-11-13T02:15:39.6904267+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="af8329b3-dca1-453f-999c-e941596e107e">
-      <Output>
-        <ErrorInfo>
-          <Message>Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}</Message>
-          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
-   at PetstoreTests.StoreTests.CreateOrder(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/StoreTests.cs:line 24
---- End of stack trace from previous location ---</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="dfa09db9-23fd-4c4e-8618-373143441c44" testId="bf226f32-7de2-5f17-7124-3ad3adad28f2" testName="PetstoreTests.PetTests.FindByTags(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.7665238" startTime="2026-11-13T02:16:14.3223786+03:00" endTime="2026-11-13T02:16:15.5301402+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dfa09db9-23fd-4c4e-8618-373143441c44">
+    <UnitTestResult executionId="864ebf80-ee50-43eb-9bd7-41f16fa08d07" testId="052acf2e-a719-01e8-7245-3e0557f109c1" testName="PetstoreTests.UserTests.GetUser(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.1054243" startTime="2026-11-13T02:39:42.5156705+03:00" endTime="2026-11-13T02:39:44.0621852+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="864ebf80-ee50-43eb-9bd7-41f16fa08d07" />
+    <UnitTestResult executionId="7dba55b7-6171-4f47-96a2-4e98e2e2310e" testId="2ed53e49-a391-acc6-0bc3-8f648a046ed7" testName="PetstoreTests.StoreTests.DeleteOrder(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.7482813" startTime="2026-11-13T02:40:17.3105877+03:00" endTime="2026-11-13T02:40:19.6438253+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7dba55b7-6171-4f47-96a2-4e98e2e2310e" />
+    <UnitTestResult executionId="faa3e794-51f4-4639-9d31-2fc7174dd514" testId="bf226f32-7de2-5f17-7124-3ad3adad28f2" testName="PetstoreTests.PetTests.FindByTags(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.8658148" startTime="2026-11-13T02:40:15.9983910+03:00" endTime="2026-11-13T02:40:17.3089742+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="faa3e794-51f4-4639-9d31-2fc7174dd514">
       <Output>
         <ErrorInfo>
           <Message>Ожидалось 400, получено 200: []</Message>
@@ -176,8 +50,96 @@
         </ErrorInfo>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="147e761a-6605-43f4-9ac6-84f01feb8303" testId="31d17efa-eb19-b1fd-e59e-99d8da2722f2" testName="PetstoreTests.PetTests.GetPet(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.6567063" startTime="2026-11-13T02:16:10.9038693+03:00" endTime="2026-11-13T02:16:12.0036030+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="147e761a-6605-43f4-9ac6-84f01feb8303" />
-    <UnitTestResult executionId="0878774f-88d8-4f74-967e-31c08ce7ec3c" testId="99a2e6dd-6c3b-c9fb-e956-a496cbb05025" testName="PetstoreTests.PetTests.GetPet(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.6937473" startTime="2026-11-13T02:16:12.0038327+03:00" endTime="2026-11-13T02:16:13.1943985+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0878774f-88d8-4f74-967e-31c08ce7ec3c">
+    <UnitTestResult executionId="86389970-cfd8-46bc-b1c3-ee9564eafc38" testId="69e6b1c0-b7fb-7999-cc41-b6cba0441302" testName="PetstoreTests.PetTests.UploadImage" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.8392621" startTime="2026-11-13T02:40:10.1491803+03:00" endTime="2026-11-13T02:40:11.4268320+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="86389970-cfd8-46bc-b1c3-ee9564eafc38" />
+    <UnitTestResult executionId="b9f7374c-ceb9-4525-89d9-710cdab8e515" testId="dc28c2d3-c56c-f56b-0c7c-15dc0aeb000b" testName="PetstoreTests.UserTests.CreateUser" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.6392223" startTime="2026-11-13T02:39:52.9989937+03:00" endTime="2026-11-13T02:39:54.0320664+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b9f7374c-ceb9-4525-89d9-710cdab8e515" />
+    <UnitTestResult executionId="7d2eac83-31dc-4ab6-9e7a-b347fc6b42bc" testId="cb1a4d23-aca0-fc1a-e3e5-e7f69a47504f" testName="PetstoreTests.UserTests.Logout" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.5469619" startTime="2026-11-13T02:39:56.4468858+03:00" endTime="2026-11-13T02:39:56.9949744+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7d2eac83-31dc-4ab6-9e7a-b347fc6b42bc" />
+    <UnitTestResult executionId="1dc31f01-ddfc-42ea-a797-77414453efd0" testId="a1d23687-2117-ed76-ccd6-8cf5263ce7ef" testName="PetstoreTests.PetTests.DeletePet(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.9953628" startTime="2026-11-13T02:40:02.0238688+03:00" endTime="2026-11-13T02:40:03.4713119+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1dc31f01-ddfc-42ea-a797-77414453efd0" />
+    <UnitTestResult executionId="5dc6aada-70b2-44b1-aeb5-0026428ec52e" testId="31de1c80-a425-2071-6367-438df04e0491" testName="PetstoreTests.UserTests.DeleteUser(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.9864168" startTime="2026-11-13T02:39:54.0323137+03:00" endTime="2026-11-13T02:39:55.1655853+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5dc6aada-70b2-44b1-aeb5-0026428ec52e" />
+    <UnitTestResult executionId="2dd933ff-067a-42e2-89cd-50dc45006c1a" testId="31d17efa-eb19-b1fd-e59e-99d8da2722f2" testName="PetstoreTests.PetTests.GetPet(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.6635098" startTime="2026-11-13T02:40:12.4981170+03:00" endTime="2026-11-13T02:40:13.5823985+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2dd933ff-067a-42e2-89cd-50dc45006c1a" />
+    <UnitTestResult executionId="a85e6420-da9e-4768-a8e0-a7beff6215bf" testId="8b7d6611-aa0d-b28d-6b45-7144c70f6bfd" testName="PetstoreTests.StoreTests.CreateOrder(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.2135329" startTime="2026-11-13T02:40:31.1290835+03:00" endTime="2026-11-13T02:40:33.1792757+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a85e6420-da9e-4768-a8e0-a7beff6215bf" />
+    <UnitTestResult executionId="1799ce39-57e4-4aec-a2b2-aaf5dfc5b568" testId="072345c4-4dab-869b-e9cc-bd1bf70a3009" testName="PetstoreTests.PetTests.GetMissingPet" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.9315628" startTime="2026-11-13T02:40:11.4271092+03:00" endTime="2026-11-13T02:40:12.4978073+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1799ce39-57e4-4aec-a2b2-aaf5dfc5b568" />
+    <UnitTestResult executionId="25218947-4ced-4523-9abf-3b9a622fa01d" testId="0563730b-e536-af08-4449-d7c7013b7ce6" testName="PetstoreTests.PetTests.FindByStatus(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.9408802" startTime="2026-11-13T02:39:57.0027957+03:00" endTime="2026-11-13T02:39:58.3417070+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="25218947-4ced-4523-9abf-3b9a622fa01d" />
+    <UnitTestResult executionId="12fc5fb3-f064-4b4d-a8cd-718f6fcaf351" testId="64c43473-1170-c86e-184c-34de0fbf3804" testName="PetstoreTests.PetTests.UpdatePetForm(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.9216298" startTime="2026-11-13T02:40:04.7553823+03:00" endTime="2026-11-13T02:40:06.1213516+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="12fc5fb3-f064-4b4d-a8cd-718f6fcaf351" />
+    <UnitTestResult executionId="cf96f4a5-4e1a-42e9-ba51-5a480b7a5e5e" testId="0e29414b-1401-3f5f-4057-ca6d50c61d10" testName="PetstoreTests.PetTests.CreatePet(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.6042187" startTime="2026-11-13T02:40:08.5627643+03:00" endTime="2026-11-13T02:40:09.6153938+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cf96f4a5-4e1a-42e9-ba51-5a480b7a5e5e" />
+    <UnitTestResult executionId="4cf54e4b-1ca2-4755-a086-069c18f8273f" testId="1b4f06bb-49cf-e6b0-0535-fe2a21f815f6" testName="PetstoreTests.StoreTests.GetOrder(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.5772454" startTime="2026-11-13T02:40:24.2034562+03:00" endTime="2026-11-13T02:40:26.6670091+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4cf54e4b-1ca2-4755-a086-069c18f8273f">
+      <Output>
+        <ErrorInfo>
+          <Message>Ожидалось 400, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}</Message>
+          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
+   at PetstoreTests.StoreTests.GetOrder(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/StoreTests.cs:line 42
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="29698ce8-341e-4bd8-b4fd-8975e1f0ad76" testId="63c2fb82-8333-ad05-1938-2b7d07cd6050" testName="PetstoreTests.PetTests.UpdatePetForm(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.7538820" startTime="2026-11-13T02:40:06.1215753+03:00" endTime="2026-11-13T02:40:07.2744090+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="29698ce8-341e-4bd8-b4fd-8975e1f0ad76">
+      <Output>
+        <ErrorInfo>
+          <Message>Ожидалось 405, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}</Message>
+          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
+   at PetstoreTests.PetTests.UpdatePetForm(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs:line 98
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="204fe6fd-9ed7-48a5-8df1-26aaf1056cc2" testId="0802b457-b0e5-0ef5-205c-8a515f110ce8" testName="PetstoreTests.PetTests.FindByStatus(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.6965732" startTime="2026-11-13T02:39:58.3419188+03:00" endTime="2026-11-13T02:39:59.4782344+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="204fe6fd-9ed7-48a5-8df1-26aaf1056cc2">
+      <Output>
+        <ErrorInfo>
+          <Message>Ожидалось 400, получено 200: []</Message>
+          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
+   at PetstoreTests.PetTests.FindByStatus(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs:line 51
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5814a96c-75ac-43c9-8c56-8ac64f5d1703" testId="0a610301-e4b1-c748-81b7-2e6ea65112b6" testName="PetstoreTests.StoreTests.DeleteMissingOrder" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.6350448" startTime="2026-11-13T02:40:33.1794884+03:00" endTime="2026-11-13T02:40:35.3752908+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5814a96c-75ac-43c9-8c56-8ac64f5d1703" />
+    <UnitTestResult executionId="2ee45e11-9745-4bb2-8e9c-af8349a87496" testId="ebd09010-00ca-0d24-553a-30940b971b96" testName="PetstoreTests.StoreTests.CreateOrder(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.1438425" startTime="2026-11-13T02:40:29.3968923+03:00" endTime="2026-11-13T02:40:31.1286435+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2ee45e11-9745-4bb2-8e9c-af8349a87496">
+      <Output>
+        <ErrorInfo>
+          <Message>Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}</Message>
+          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
+   at PetstoreTests.StoreTests.CreateOrder(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/StoreTests.cs:line 24
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="52814053-6d98-4a77-a015-97ea4030ac0b" testId="cc78ed2e-0354-4e8c-7c6e-4e879ae40c3c" testName="PetstoreTests.PetTests.FindByTags(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.7881081" startTime="2026-11-13T02:40:14.7707284+03:00" endTime="2026-11-13T02:40:15.9981403+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="52814053-6d98-4a77-a015-97ea4030ac0b" />
+    <UnitTestResult executionId="2d7d3456-a44d-4998-8a63-7cc14f6f5c75" testId="471c4fe9-132f-f892-f6bc-b9611555fd33" testName="PetstoreTests.UserTests.Login(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.8442039" startTime="2026-11-13T02:39:45.2952850+03:00" endTime="2026-11-13T02:39:46.5988094+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2d7d3456-a44d-4998-8a63-7cc14f6f5c75">
+      <Output>
+        <ErrorInfo>
+          <Message>Ожидалось 400, получено 200: {"code":200,"type":"unknown","message":"logged in user session:1794526786049"}</Message>
+          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
+   at PetstoreTests.UserTests.Login(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/UserTests.cs:line 95
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fa936da9-4b3c-4359-87b7-e15b0ec02f15" testId="9c75752e-0f3b-ebc7-b112-d48e1113d13e" testName="PetstoreTests.UserTests.CreateUsersArray" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.5898257" startTime="2026-11-13T02:39:49.4280271+03:00" endTime="2026-11-13T02:39:50.4574130+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fa936da9-4b3c-4359-87b7-e15b0ec02f15" />
+    <UnitTestResult executionId="63c51ea6-d061-4632-9a56-36a8dc04bc27" testId="16c4c6d2-657f-439d-d0ae-c49b5252133b" testName="PetstoreTests.UserTests.GetUser(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.7999406" startTime="2026-11-13T02:39:44.0754883+03:00" endTime="2026-11-13T02:39:45.2926377+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="63c51ea6-d061-4632-9a56-36a8dc04bc27" />
+    <UnitTestResult executionId="97f2ecdc-4aed-463b-a737-52ed94638b8b" testId="55ee3c74-e457-4f41-40f1-252478df6d11" testName="PetstoreTests.UserTests.UpdateUser(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.8377032" startTime="2026-11-13T02:39:50.4578236+03:00" endTime="2026-11-13T02:39:51.7325386+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="97f2ecdc-4aed-463b-a737-52ed94638b8b" />
+    <UnitTestResult executionId="ca3a20cb-7a79-44c9-8699-590fc3da7a58" testId="bc913415-00ce-84a6-ace6-ed36e3c3889e" testName="PetstoreTests.PetTests.UpdatePet(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.6881158" startTime="2026-11-13T02:39:59.4788262+03:00" endTime="2026-11-13T02:40:00.6044963+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ca3a20cb-7a79-44c9-8699-590fc3da7a58">
+      <Output>
+        <ErrorInfo>
+          <Message>Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}</Message>
+          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
+   at PetstoreTests.PetTests.UpdatePet(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs:line 34
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f4f82764-aa85-4bc0-948a-ff8efd750c6b" testId="8c74b49c-0d99-26b3-499d-4d770fd50535" testName="PetstoreTests.StoreTests.Inventory" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.5201661" startTime="2026-11-13T02:40:28.8760627+03:00" endTime="2026-11-13T02:40:29.3966838+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f4f82764-aa85-4bc0-948a-ff8efd750c6b" />
+    <UnitTestResult executionId="00419d92-2efa-4cb4-8b76-370099f29485" testId="8ee5dd09-dc11-3b2b-5191-c39edc90510f" testName="PetstoreTests.UserTests.DeleteUser(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.8376343" startTime="2026-11-13T02:39:55.1657823+03:00" endTime="2026-11-13T02:39:56.4466336+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="00419d92-2efa-4cb4-8b76-370099f29485" />
+    <UnitTestResult executionId="07d99527-60f9-44af-8ed4-5a2d7e9a68f4" testId="91360ef0-6eaa-70a4-4ae5-4ad57c6096c7" testName="PetstoreTests.UserTests.Login(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.8046706" startTime="2026-11-13T02:39:46.6078086+03:00" endTime="2026-11-13T02:39:47.8247006+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="07d99527-60f9-44af-8ed4-5a2d7e9a68f4" />
+    <UnitTestResult executionId="e5a64ee7-a072-4c63-b27c-9d976b75c5d9" testId="e11aeb43-4c62-8368-8a11-10d7cebcc3eb" testName="PetstoreTests.PetTests.DeletePet(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.8382349" startTime="2026-11-13T02:40:03.4715144+03:00" endTime="2026-11-13T02:40:04.7548197+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e5a64ee7-a072-4c63-b27c-9d976b75c5d9">
+      <Output>
+        <ErrorInfo>
+          <Message>Ожидалось 400, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}</Message>
+          <StackTrace>   at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs:line 11
+   at PetstoreTests.PetTests.DeletePet(Boolean negative) in /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs:line 115
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f866f4ff-d152-4600-ae67-f3280d571906" testId="99a2e6dd-6c3b-c9fb-e956-a496cbb05025" testName="PetstoreTests.PetTests.GetPet(negative: True)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:00.7468518" startTime="2026-11-13T02:40:13.5826631+03:00" endTime="2026-11-13T02:40:14.7697426+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f866f4ff-d152-4600-ae67-f3280d571906">
       <Output>
         <ErrorInfo>
           <Message>Ожидалось 400, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}</Message>
@@ -187,214 +149,423 @@
         </ErrorInfo>
       </Output>
     </UnitTestResult>
+    <UnitTestResult executionId="34f12416-efe0-4024-8681-1afb3f44c962" testId="69eb8373-f74f-5cc8-b2c6-3a7a8ab2158c" testName="PetstoreTests.StoreTests.GetMissingOrder" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.6460156" startTime="2026-11-13T02:40:26.6680259+03:00" endTime="2026-11-13T02:40:28.8756338+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="34f12416-efe0-4024-8681-1afb3f44c962" />
+    <UnitTestResult executionId="8760c0b7-ce8c-4cd0-85e8-d9c815cedf41" testId="77615ab0-37ae-b827-b142-73d20e6e7703" testName="PetstoreTests.StoreTests.GetOrder(negative: False)" computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" duration="00:00:01.3664084" startTime="2026-11-13T02:40:21.9934380+03:00" endTime="2026-11-13T02:40:24.2029400+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8760c0b7-ce8c-4cd0-85e8-d9c815cedf41" />
   </Results>
   <TestDefinitions>
-    <UnitTest name="PetstoreTests.UserTests.UpdateUser(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="460f2fc3-bff4-2d11-c7a4-2d08df21551b">
-      <Execution id="1c548a89-36f4-4895-9e3f-f905f71b7c22" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.UserTests" name="UpdateUser" />
-    </UnitTest>
-    <UnitTest name="PetstoreTests.UserTests.CreateUsersArray(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="1e46ba3a-7f49-6cb0-f18f-64ce5586eb59">
-      <Execution id="8111c289-d3e6-4e65-a185-29a580b8ca26" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.UserTests" name="CreateUsersArray" />
-    </UnitTest>
-    <UnitTest name="PetstoreTests.PetTests.DeletePet(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="e11aeb43-4c62-8368-8a11-10d7cebcc3eb">
-      <Execution id="35d0c052-a63c-4cc4-a892-138092a6a346" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="DeletePet" />
-    </UnitTest>
-    <UnitTest name="PetstoreTests.UserTests.CreateUsersList(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="94fccec1-a755-1703-3911-347f04eed606">
-      <Execution id="110c96c0-e1c9-4547-81fb-d83a024cdccb" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.UserTests" name="CreateUsersList" />
-    </UnitTest>
-    <UnitTest name="PetstoreTests.UserTests.CreateUser(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="1fb56376-7c21-b600-c366-0923e9c6a302">
-      <Execution id="f18d2cb4-4930-426c-99f1-f52c910de760" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.UserTests" name="CreateUser" />
-    </UnitTest>
-    <UnitTest name="PetstoreTests.UserTests.UpdateUser(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="55ee3c74-e457-4f41-40f1-252478df6d11">
-      <Execution id="b69c7bcf-c7e9-4ae5-9008-accdc76a6b6b" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.UserTests" name="UpdateUser" />
-    </UnitTest>
-    <UnitTest name="PetstoreTests.PetTests.UpdatePetForm(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="63c2fb82-8333-ad05-1938-2b7d07cd6050">
-      <Execution id="df41f816-70c6-4d88-9293-8877d7ee2e31" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="UpdatePetForm" />
-    </UnitTest>
-    <UnitTest name="PetstoreTests.PetTests.CreatePet(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="0e29414b-1401-3f5f-4057-ca6d50c61d10">
-      <Execution id="b7dd2ae1-8abc-44bf-a4b5-0d58da68691f" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="CreatePet" />
-    </UnitTest>
-    <UnitTest name="PetstoreTests.StoreTests.DeleteOrder(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="2ed53e49-a391-acc6-0bc3-8f648a046ed7">
-      <Execution id="c91c5cc6-e1a9-40cf-804a-debc83407a8f" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.StoreTests" name="DeleteOrder" />
-    </UnitTest>
-    <UnitTest name="PetstoreTests.PetTests.UploadImage(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="17711cd1-f734-0518-778a-79b240295742">
-      <Execution id="e44251b3-614c-43ef-a5ef-2a2d64aad7dd" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="UploadImage" />
-    </UnitTest>
-    <UnitTest name="PetstoreTests.PetTests.GetPet(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="99a2e6dd-6c3b-c9fb-e956-a496cbb05025">
-      <Execution id="0878774f-88d8-4f74-967e-31c08ce7ec3c" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="GetPet" />
-    </UnitTest>
-    <UnitTest name="PetstoreTests.UserTests.CreateUsersArray(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="70e668d1-4a37-5d56-77e7-965ba4571996">
-      <Execution id="84ce6ff0-92d4-4b67-9e71-d5ee55f3f976" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.UserTests" name="CreateUsersArray" />
-    </UnitTest>
-    <UnitTest name="PetstoreTests.PetTests.UploadImage(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="9426dada-0fbc-680b-1b36-58e73d8f71a6">
-      <Execution id="3a78d353-46a4-47ac-919d-0c0064c584d7" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="UploadImage" />
-    </UnitTest>
     <UnitTest name="PetstoreTests.StoreTests.CreateOrder(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="8b7d6611-aa0d-b28d-6b45-7144c70f6bfd">
-      <Execution id="7cb31a6c-ed79-479c-b4be-f942534dec43" />
+      <Execution id="a85e6420-da9e-4768-a8e0-a7beff6215bf" />
       <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.StoreTests" name="CreateOrder" />
     </UnitTest>
     <UnitTest name="PetstoreTests.UserTests.Login(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="471c4fe9-132f-f892-f6bc-b9611555fd33">
-      <Execution id="0612d088-dfb1-42ce-9e78-5ae3c62a8732" />
+      <Execution id="2d7d3456-a44d-4998-8a63-7cc14f6f5c75" />
       <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.UserTests" name="Login" />
     </UnitTest>
-    <UnitTest name="PetstoreTests.StoreTests.CreateOrder(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="ebd09010-00ca-0d24-553a-30940b971b96">
-      <Execution id="af8329b3-dca1-453f-999c-e941596e107e" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.StoreTests" name="CreateOrder" />
+    <UnitTest name="PetstoreTests.PetTests.UploadImage" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="69e6b1c0-b7fb-7999-cc41-b6cba0441302">
+      <Execution id="86389970-cfd8-46bc-b1c3-ee9564eafc38" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="UploadImage" />
     </UnitTest>
-    <UnitTest name="PetstoreTests.UserTests.DeleteUser(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="8ee5dd09-dc11-3b2b-5191-c39edc90510f">
-      <Execution id="4b555eb3-fc93-4c21-b710-d4c1a4e18bb3" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.UserTests" name="DeleteUser" />
-    </UnitTest>
-    <UnitTest name="PetstoreTests.PetTests.FindByTags(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="cc78ed2e-0354-4e8c-7c6e-4e879ae40c3c">
-      <Execution id="feda7181-f6df-4b0b-803b-32d0ebdd1d1c" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="FindByTags" />
-    </UnitTest>
-    <UnitTest name="PetstoreTests.PetTests.DeletePet(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="a1d23687-2117-ed76-ccd6-8cf5263ce7ef">
-      <Execution id="3a5f4ac1-a286-4c46-9f6c-6c33dd92052d" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="DeletePet" />
-    </UnitTest>
-    <UnitTest name="PetstoreTests.UserTests.CreateUser(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="17aae9b0-a37a-e70a-808e-1d59524e1737">
-      <Execution id="d291f9ac-94bf-4d3e-8ed0-0a3b4a3a0db9" />
+    <UnitTest name="PetstoreTests.UserTests.CreateUser" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="dc28c2d3-c56c-f56b-0c7c-15dc0aeb000b">
+      <Execution id="b9f7374c-ceb9-4525-89d9-710cdab8e515" />
       <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.UserTests" name="CreateUser" />
     </UnitTest>
-    <UnitTest name="PetstoreTests.PetTests.FindByStatus(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="0563730b-e536-af08-4449-d7c7013b7ce6">
-      <Execution id="56d80c2d-782a-4432-911f-107ffa849b1b" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="FindByStatus" />
+    <UnitTest name="PetstoreTests.PetTests.FindByTags(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="cc78ed2e-0354-4e8c-7c6e-4e879ae40c3c">
+      <Execution id="52814053-6d98-4a77-a015-97ea4030ac0b" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="FindByTags" />
     </UnitTest>
-    <UnitTest name="PetstoreTests.PetTests.FindByStatus(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="0802b457-b0e5-0ef5-205c-8a515f110ce8">
-      <Execution id="51066c51-487d-425c-b8bf-ed65d8c78c6c" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="FindByStatus" />
+    <UnitTest name="PetstoreTests.PetTests.GetPet(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="31d17efa-eb19-b1fd-e59e-99d8da2722f2">
+      <Execution id="2dd933ff-067a-42e2-89cd-50dc45006c1a" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="GetPet" />
     </UnitTest>
-    <UnitTest name="PetstoreTests.UserTests.CreateUsersList(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="73c7d8fa-b13f-7cd6-b0c3-7df38af0faa9">
-      <Execution id="a3458cf2-2188-4637-a45e-f6e87e51bab8" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.UserTests" name="CreateUsersList" />
+    <UnitTest name="PetstoreTests.UserTests.DeleteUser(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="31de1c80-a425-2071-6367-438df04e0491">
+      <Execution id="5dc6aada-70b2-44b1-aeb5-0026428ec52e" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.UserTests" name="DeleteUser" />
     </UnitTest>
-    <UnitTest name="PetstoreTests.PetTests.UpdatePet(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="36aa580e-3189-82a7-4bf8-92e79a639bcf">
-      <Execution id="c1013421-b6b0-4fda-b253-feb49773087b" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="UpdatePet" />
+    <UnitTest name="PetstoreTests.PetTests.GetMissingPet" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="072345c4-4dab-869b-e9cc-bd1bf70a3009">
+      <Execution id="1799ce39-57e4-4aec-a2b2-aaf5dfc5b568" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="GetMissingPet" />
+    </UnitTest>
+    <UnitTest name="PetstoreTests.PetTests.CreatePet(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="1aca0e9a-cb0e-2c42-fa16-13d94ea46ff5">
+      <Execution id="3bebd52e-3dfd-4f96-a5cd-bea36740718e" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="CreatePet" />
+    </UnitTest>
+    <UnitTest name="PetstoreTests.PetTests.GetPet(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="99a2e6dd-6c3b-c9fb-e956-a496cbb05025">
+      <Execution id="f866f4ff-d152-4600-ae67-f3280d571906" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="GetPet" />
+    </UnitTest>
+    <UnitTest name="PetstoreTests.PetTests.UpdatePetForm(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="64c43473-1170-c86e-184c-34de0fbf3804">
+      <Execution id="12fc5fb3-f064-4b4d-a8cd-718f6fcaf351" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="UpdatePetForm" />
+    </UnitTest>
+    <UnitTest name="PetstoreTests.StoreTests.DeleteMissingOrder" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="0a610301-e4b1-c748-81b7-2e6ea65112b6">
+      <Execution id="5814a96c-75ac-43c9-8c56-8ac64f5d1703" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.StoreTests" name="DeleteMissingOrder" />
     </UnitTest>
     <UnitTest name="PetstoreTests.StoreTests.GetOrder(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="1b4f06bb-49cf-e6b0-0535-fe2a21f815f6">
-      <Execution id="c8687571-a821-482f-a117-3ffd2faa2694" />
+      <Execution id="4cf54e4b-1ca2-4755-a086-069c18f8273f" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.StoreTests" name="GetOrder" />
+    </UnitTest>
+    <UnitTest name="PetstoreTests.UserTests.GetUser(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="16c4c6d2-657f-439d-d0ae-c49b5252133b">
+      <Execution id="63c51ea6-d061-4632-9a56-36a8dc04bc27" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.UserTests" name="GetUser" />
+    </UnitTest>
+    <UnitTest name="PetstoreTests.PetTests.FindByStatus(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="0802b457-b0e5-0ef5-205c-8a515f110ce8">
+      <Execution id="204fe6fd-9ed7-48a5-8df1-26aaf1056cc2" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="FindByStatus" />
+    </UnitTest>
+    <UnitTest name="PetstoreTests.UserTests.CreateUsersArray" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="9c75752e-0f3b-ebc7-b112-d48e1113d13e">
+      <Execution id="fa936da9-4b3c-4359-87b7-e15b0ec02f15" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.UserTests" name="CreateUsersArray" />
+    </UnitTest>
+    <UnitTest name="PetstoreTests.StoreTests.DeleteOrder(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="41afc81f-933d-f6c3-64e1-4c485e1edada">
+      <Execution id="34a7506b-7b94-448f-9918-d5165207209e" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.StoreTests" name="DeleteOrder" />
+    </UnitTest>
+    <UnitTest name="PetstoreTests.UserTests.GetUser(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="052acf2e-a719-01e8-7245-3e0557f109c1">
+      <Execution id="864ebf80-ee50-43eb-9bd7-41f16fa08d07" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.UserTests" name="GetUser" />
+    </UnitTest>
+    <UnitTest name="PetstoreTests.PetTests.FindByTags(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="bf226f32-7de2-5f17-7124-3ad3adad28f2">
+      <Execution id="faa3e794-51f4-4639-9d31-2fc7174dd514" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="FindByTags" />
+    </UnitTest>
+    <UnitTest name="PetstoreTests.PetTests.DeletePet(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="e11aeb43-4c62-8368-8a11-10d7cebcc3eb">
+      <Execution id="e5a64ee7-a072-4c63-b27c-9d976b75c5d9" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="DeletePet" />
+    </UnitTest>
+    <UnitTest name="PetstoreTests.StoreTests.GetOrder(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="77615ab0-37ae-b827-b142-73d20e6e7703">
+      <Execution id="8760c0b7-ce8c-4cd0-85e8-d9c815cedf41" />
       <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.StoreTests" name="GetOrder" />
     </UnitTest>
     <UnitTest name="PetstoreTests.PetTests.UpdatePet(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="bc913415-00ce-84a6-ace6-ed36e3c3889e">
-      <Execution id="71fb655c-09b5-4198-8f73-181ed59c2dbc" />
+      <Execution id="ca3a20cb-7a79-44c9-8699-590fc3da7a58" />
       <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="UpdatePet" />
     </UnitTest>
-    <UnitTest name="PetstoreTests.PetTests.CreatePet(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="1aca0e9a-cb0e-2c42-fa16-13d94ea46ff5">
-      <Execution id="d3cbce7a-2a37-4b40-92d7-a5115209a8ef" />
+    <UnitTest name="PetstoreTests.PetTests.CreatePet(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="0e29414b-1401-3f5f-4057-ca6d50c61d10">
+      <Execution id="cf96f4a5-4e1a-42e9-ba51-5a480b7a5e5e" />
       <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="CreatePet" />
     </UnitTest>
-    <UnitTest name="PetstoreTests.StoreTests.DeleteOrder(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="41afc81f-933d-f6c3-64e1-4c485e1edada">
-      <Execution id="a6033285-f6a8-48f6-8bc9-637a60302157" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.StoreTests" name="DeleteOrder" />
-    </UnitTest>
-    <UnitTest name="PetstoreTests.PetTests.FindByTags(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="bf226f32-7de2-5f17-7124-3ad3adad28f2">
-      <Execution id="dfa09db9-23fd-4c4e-8618-373143441c44" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="FindByTags" />
-    </UnitTest>
-    <UnitTest name="PetstoreTests.UserTests.DeleteUser(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="31de1c80-a425-2071-6367-438df04e0491">
-      <Execution id="242a6d44-3518-4cf9-af60-77d427046791" />
+    <UnitTest name="PetstoreTests.UserTests.DeleteUser(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="8ee5dd09-dc11-3b2b-5191-c39edc90510f">
+      <Execution id="00419d92-2efa-4cb4-8b76-370099f29485" />
       <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.UserTests" name="DeleteUser" />
     </UnitTest>
+    <UnitTest name="PetstoreTests.PetTests.FindByStatus(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="0563730b-e536-af08-4449-d7c7013b7ce6">
+      <Execution id="25218947-4ced-4523-9abf-3b9a622fa01d" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="FindByStatus" />
+    </UnitTest>
     <UnitTest name="PetstoreTests.UserTests.Logout" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="cb1a4d23-aca0-fc1a-e3e5-e7f69a47504f">
-      <Execution id="b26be80d-cc6e-4d7b-8e12-445041a4b698" />
+      <Execution id="7d2eac83-31dc-4ab6-9e7a-b347fc6b42bc" />
       <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.UserTests" name="Logout" />
     </UnitTest>
-    <UnitTest name="PetstoreTests.UserTests.GetUser(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="052acf2e-a719-01e8-7245-3e0557f109c1">
-      <Execution id="45ea2e99-6ef1-499f-98a2-48f85765cdd0" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.UserTests" name="GetUser" />
+    <UnitTest name="PetstoreTests.UserTests.UpdateUser(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="55ee3c74-e457-4f41-40f1-252478df6d11">
+      <Execution id="97f2ecdc-4aed-463b-a737-52ed94638b8b" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.UserTests" name="UpdateUser" />
     </UnitTest>
-    <UnitTest name="PetstoreTests.PetTests.UpdatePetForm(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="64c43473-1170-c86e-184c-34de0fbf3804">
-      <Execution id="3d63ffe2-9b37-4613-a8ea-fa1108a2f101" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="UpdatePetForm" />
+    <UnitTest name="PetstoreTests.UserTests.CreateUsersList" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="3182af0d-c933-a954-8f68-340929cb9112">
+      <Execution id="89668983-e284-45b2-8c13-ea4e60cdd183" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.UserTests" name="CreateUsersList" />
     </UnitTest>
-    <UnitTest name="PetstoreTests.StoreTests.Inventory" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="8c74b49c-0d99-26b3-499d-4d770fd50535">
-      <Execution id="0106ba78-5704-4f95-8b7f-9e3e7f91b456" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.StoreTests" name="Inventory" />
+    <UnitTest name="PetstoreTests.StoreTests.DeleteOrder(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="2ed53e49-a391-acc6-0bc3-8f648a046ed7">
+      <Execution id="7dba55b7-6171-4f47-96a2-4e98e2e2310e" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.StoreTests" name="DeleteOrder" />
     </UnitTest>
-    <UnitTest name="PetstoreTests.UserTests.GetUser(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="16c4c6d2-657f-439d-d0ae-c49b5252133b">
-      <Execution id="13bbfb7c-0fb6-44b4-a855-3744a91dc4ec" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.UserTests" name="GetUser" />
+    <UnitTest name="PetstoreTests.PetTests.UpdatePet(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="36aa580e-3189-82a7-4bf8-92e79a639bcf">
+      <Execution id="73965bc1-7d80-438e-aff2-cc937edc81bf" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="UpdatePet" />
     </UnitTest>
-    <UnitTest name="PetstoreTests.StoreTests.GetOrder(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="77615ab0-37ae-b827-b142-73d20e6e7703">
-      <Execution id="1269b454-3e2c-4ed8-8f9b-2dfd148cc7ea" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.StoreTests" name="GetOrder" />
+    <UnitTest name="PetstoreTests.UserTests.UpdateUser(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="460f2fc3-bff4-2d11-c7a4-2d08df21551b">
+      <Execution id="896e1569-0a0f-474e-830d-d9534109fa6b" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.UserTests" name="UpdateUser" />
+    </UnitTest>
+    <UnitTest name="PetstoreTests.StoreTests.CreateOrder(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="ebd09010-00ca-0d24-553a-30940b971b96">
+      <Execution id="2ee45e11-9745-4bb2-8e9c-af8349a87496" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.StoreTests" name="CreateOrder" />
     </UnitTest>
     <UnitTest name="PetstoreTests.UserTests.Login(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="91360ef0-6eaa-70a4-4ae5-4ad57c6096c7">
-      <Execution id="60119a39-b66f-4508-82f8-5bc519f75d62" />
+      <Execution id="07d99527-60f9-44af-8ed4-5a2d7e9a68f4" />
       <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.UserTests" name="Login" />
     </UnitTest>
-    <UnitTest name="PetstoreTests.PetTests.GetPet(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="31d17efa-eb19-b1fd-e59e-99d8da2722f2">
-      <Execution id="147e761a-6605-43f4-9ac6-84f01feb8303" />
-      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="GetPet" />
+    <UnitTest name="PetstoreTests.PetTests.UpdatePetForm(negative: True)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="63c2fb82-8333-ad05-1938-2b7d07cd6050">
+      <Execution id="29698ce8-341e-4bd8-b4fd-8975e1f0ad76" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="UpdatePetForm" />
+    </UnitTest>
+    <UnitTest name="PetstoreTests.PetTests.DeletePet(negative: False)" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="a1d23687-2117-ed76-ccd6-8cf5263ce7ef">
+      <Execution id="1dc31f01-ddfc-42ea-a797-77414453efd0" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="DeletePet" />
+    </UnitTest>
+    <UnitTest name="PetstoreTests.StoreTests.Inventory" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="8c74b49c-0d99-26b3-499d-4d770fd50535">
+      <Execution id="f4f82764-aa85-4bc0-948a-ff8efd750c6b" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.StoreTests" name="Inventory" />
+    </UnitTest>
+    <UnitTest name="PetstoreTests.PetTests.DeleteMissingPet" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="dec901c4-a8e2-9c53-fa47-debc29166fea">
+      <Execution id="9eedc7f6-8e14-4c1e-b933-bb4d2f94dcb0" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.PetTests" name="DeleteMissingPet" />
+    </UnitTest>
+    <UnitTest name="PetstoreTests.StoreTests.GetMissingOrder" storage="/home/antisuffer/все/документы/тесты шпатович/кт№8/xunit-tests/bin/debug/net10.0/petstore.xunit.dll" id="69eb8373-f74f-5cc8-b2c6-3a7a8ab2158c">
+      <Execution id="34f12416-efe0-4024-8681-1afb3f44c962" />
+      <TestMethod codeBase="/home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/bin/Debug/net10.0/Petstore.XUnit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreTests.StoreTests" name="GetMissingOrder" />
     </UnitTest>
   </TestDefinitions>
   <TestEntries>
-    <TestEntry testId="cc78ed2e-0354-4e8c-7c6e-4e879ae40c3c" executionId="feda7181-f6df-4b0b-803b-32d0ebdd1d1c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="0563730b-e536-af08-4449-d7c7013b7ce6" executionId="56d80c2d-782a-4432-911f-107ffa849b1b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="1b4f06bb-49cf-e6b0-0535-fe2a21f815f6" executionId="c8687571-a821-482f-a117-3ffd2faa2694" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="94fccec1-a755-1703-3911-347f04eed606" executionId="110c96c0-e1c9-4547-81fb-d83a024cdccb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="a1d23687-2117-ed76-ccd6-8cf5263ce7ef" executionId="3a5f4ac1-a286-4c46-9f6c-6c33dd92052d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="16c4c6d2-657f-439d-d0ae-c49b5252133b" executionId="13bbfb7c-0fb6-44b4-a855-3744a91dc4ec" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="77615ab0-37ae-b827-b142-73d20e6e7703" executionId="1269b454-3e2c-4ed8-8f9b-2dfd148cc7ea" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="8b7d6611-aa0d-b28d-6b45-7144c70f6bfd" executionId="7cb31a6c-ed79-479c-b4be-f942534dec43" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="64c43473-1170-c86e-184c-34de0fbf3804" executionId="3d63ffe2-9b37-4613-a8ea-fa1108a2f101" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="2ed53e49-a391-acc6-0bc3-8f648a046ed7" executionId="c91c5cc6-e1a9-40cf-804a-debc83407a8f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="36aa580e-3189-82a7-4bf8-92e79a639bcf" executionId="c1013421-b6b0-4fda-b253-feb49773087b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="1aca0e9a-cb0e-2c42-fa16-13d94ea46ff5" executionId="d3cbce7a-2a37-4b40-92d7-a5115209a8ef" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="1e46ba3a-7f49-6cb0-f18f-64ce5586eb59" executionId="8111c289-d3e6-4e65-a185-29a580b8ca26" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="1fb56376-7c21-b600-c366-0923e9c6a302" executionId="f18d2cb4-4930-426c-99f1-f52c910de760" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="052acf2e-a719-01e8-7245-3e0557f109c1" executionId="45ea2e99-6ef1-499f-98a2-48f85765cdd0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="8ee5dd09-dc11-3b2b-5191-c39edc90510f" executionId="4b555eb3-fc93-4c21-b710-d4c1a4e18bb3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="17711cd1-f734-0518-778a-79b240295742" executionId="e44251b3-614c-43ef-a5ef-2a2d64aad7dd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="0802b457-b0e5-0ef5-205c-8a515f110ce8" executionId="51066c51-487d-425c-b8bf-ed65d8c78c6c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="55ee3c74-e457-4f41-40f1-252478df6d11" executionId="b69c7bcf-c7e9-4ae5-9008-accdc76a6b6b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="cb1a4d23-aca0-fc1a-e3e5-e7f69a47504f" executionId="b26be80d-cc6e-4d7b-8e12-445041a4b698" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="73c7d8fa-b13f-7cd6-b0c3-7df38af0faa9" executionId="a3458cf2-2188-4637-a45e-f6e87e51bab8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="471c4fe9-132f-f892-f6bc-b9611555fd33" executionId="0612d088-dfb1-42ce-9e78-5ae3c62a8732" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="460f2fc3-bff4-2d11-c7a4-2d08df21551b" executionId="1c548a89-36f4-4895-9e3f-f905f71b7c22" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="63c2fb82-8333-ad05-1938-2b7d07cd6050" executionId="df41f816-70c6-4d88-9293-8877d7ee2e31" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="17aae9b0-a37a-e70a-808e-1d59524e1737" executionId="d291f9ac-94bf-4d3e-8ed0-0a3b4a3a0db9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="0e29414b-1401-3f5f-4057-ca6d50c61d10" executionId="b7dd2ae1-8abc-44bf-a4b5-0d58da68691f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="91360ef0-6eaa-70a4-4ae5-4ad57c6096c7" executionId="60119a39-b66f-4508-82f8-5bc519f75d62" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="bc913415-00ce-84a6-ace6-ed36e3c3889e" executionId="71fb655c-09b5-4198-8f73-181ed59c2dbc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="9426dada-0fbc-680b-1b36-58e73d8f71a6" executionId="3a78d353-46a4-47ac-919d-0c0064c584d7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="e11aeb43-4c62-8368-8a11-10d7cebcc3eb" executionId="35d0c052-a63c-4cc4-a892-138092a6a346" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="31de1c80-a425-2071-6367-438df04e0491" executionId="242a6d44-3518-4cf9-af60-77d427046791" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="70e668d1-4a37-5d56-77e7-965ba4571996" executionId="84ce6ff0-92d4-4b67-9e71-d5ee55f3f976" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="8c74b49c-0d99-26b3-499d-4d770fd50535" executionId="0106ba78-5704-4f95-8b7f-9e3e7f91b456" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="41afc81f-933d-f6c3-64e1-4c485e1edada" executionId="a6033285-f6a8-48f6-8bc9-637a60302157" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="ebd09010-00ca-0d24-553a-30940b971b96" executionId="af8329b3-dca1-453f-999c-e941596e107e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="bf226f32-7de2-5f17-7124-3ad3adad28f2" executionId="dfa09db9-23fd-4c4e-8618-373143441c44" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="31d17efa-eb19-b1fd-e59e-99d8da2722f2" executionId="147e761a-6605-43f4-9ac6-84f01feb8303" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="99a2e6dd-6c3b-c9fb-e956-a496cbb05025" executionId="0878774f-88d8-4f74-967e-31c08ce7ec3c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="36aa580e-3189-82a7-4bf8-92e79a639bcf" executionId="73965bc1-7d80-438e-aff2-cc937edc81bf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1aca0e9a-cb0e-2c42-fa16-13d94ea46ff5" executionId="3bebd52e-3dfd-4f96-a5cd-bea36740718e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="460f2fc3-bff4-2d11-c7a4-2d08df21551b" executionId="896e1569-0a0f-474e-830d-d9534109fa6b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3182af0d-c933-a954-8f68-340929cb9112" executionId="89668983-e284-45b2-8c13-ea4e60cdd183" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dec901c4-a8e2-9c53-fa47-debc29166fea" executionId="9eedc7f6-8e14-4c1e-b933-bb4d2f94dcb0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="41afc81f-933d-f6c3-64e1-4c485e1edada" executionId="34a7506b-7b94-448f-9918-d5165207209e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="052acf2e-a719-01e8-7245-3e0557f109c1" executionId="864ebf80-ee50-43eb-9bd7-41f16fa08d07" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2ed53e49-a391-acc6-0bc3-8f648a046ed7" executionId="7dba55b7-6171-4f47-96a2-4e98e2e2310e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bf226f32-7de2-5f17-7124-3ad3adad28f2" executionId="faa3e794-51f4-4639-9d31-2fc7174dd514" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="69e6b1c0-b7fb-7999-cc41-b6cba0441302" executionId="86389970-cfd8-46bc-b1c3-ee9564eafc38" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dc28c2d3-c56c-f56b-0c7c-15dc0aeb000b" executionId="b9f7374c-ceb9-4525-89d9-710cdab8e515" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cb1a4d23-aca0-fc1a-e3e5-e7f69a47504f" executionId="7d2eac83-31dc-4ab6-9e7a-b347fc6b42bc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a1d23687-2117-ed76-ccd6-8cf5263ce7ef" executionId="1dc31f01-ddfc-42ea-a797-77414453efd0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="31de1c80-a425-2071-6367-438df04e0491" executionId="5dc6aada-70b2-44b1-aeb5-0026428ec52e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="31d17efa-eb19-b1fd-e59e-99d8da2722f2" executionId="2dd933ff-067a-42e2-89cd-50dc45006c1a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8b7d6611-aa0d-b28d-6b45-7144c70f6bfd" executionId="a85e6420-da9e-4768-a8e0-a7beff6215bf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="072345c4-4dab-869b-e9cc-bd1bf70a3009" executionId="1799ce39-57e4-4aec-a2b2-aaf5dfc5b568" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0563730b-e536-af08-4449-d7c7013b7ce6" executionId="25218947-4ced-4523-9abf-3b9a622fa01d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="64c43473-1170-c86e-184c-34de0fbf3804" executionId="12fc5fb3-f064-4b4d-a8cd-718f6fcaf351" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0e29414b-1401-3f5f-4057-ca6d50c61d10" executionId="cf96f4a5-4e1a-42e9-ba51-5a480b7a5e5e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1b4f06bb-49cf-e6b0-0535-fe2a21f815f6" executionId="4cf54e4b-1ca2-4755-a086-069c18f8273f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="63c2fb82-8333-ad05-1938-2b7d07cd6050" executionId="29698ce8-341e-4bd8-b4fd-8975e1f0ad76" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0802b457-b0e5-0ef5-205c-8a515f110ce8" executionId="204fe6fd-9ed7-48a5-8df1-26aaf1056cc2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0a610301-e4b1-c748-81b7-2e6ea65112b6" executionId="5814a96c-75ac-43c9-8c56-8ac64f5d1703" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ebd09010-00ca-0d24-553a-30940b971b96" executionId="2ee45e11-9745-4bb2-8e9c-af8349a87496" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cc78ed2e-0354-4e8c-7c6e-4e879ae40c3c" executionId="52814053-6d98-4a77-a015-97ea4030ac0b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="471c4fe9-132f-f892-f6bc-b9611555fd33" executionId="2d7d3456-a44d-4998-8a63-7cc14f6f5c75" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9c75752e-0f3b-ebc7-b112-d48e1113d13e" executionId="fa936da9-4b3c-4359-87b7-e15b0ec02f15" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="16c4c6d2-657f-439d-d0ae-c49b5252133b" executionId="63c51ea6-d061-4632-9a56-36a8dc04bc27" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="55ee3c74-e457-4f41-40f1-252478df6d11" executionId="97f2ecdc-4aed-463b-a737-52ed94638b8b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bc913415-00ce-84a6-ace6-ed36e3c3889e" executionId="ca3a20cb-7a79-44c9-8699-590fc3da7a58" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8c74b49c-0d99-26b3-499d-4d770fd50535" executionId="f4f82764-aa85-4bc0-948a-ff8efd750c6b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8ee5dd09-dc11-3b2b-5191-c39edc90510f" executionId="00419d92-2efa-4cb4-8b76-370099f29485" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="91360ef0-6eaa-70a4-4ae5-4ad57c6096c7" executionId="07d99527-60f9-44af-8ed4-5a2d7e9a68f4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e11aeb43-4c62-8368-8a11-10d7cebcc3eb" executionId="e5a64ee7-a072-4c63-b27c-9d976b75c5d9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="99a2e6dd-6c3b-c9fb-e956-a496cbb05025" executionId="f866f4ff-d152-4600-ae67-f3280d571906" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="69eb8373-f74f-5cc8-b2c6-3a7a8ab2158c" executionId="34f12416-efe0-4024-8681-1afb3f44c962" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="77615ab0-37ae-b827-b142-73d20e6e7703" executionId="8760c0b7-ce8c-4cd0-85e8-d9c815cedf41" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
   </TestEntries>
   <TestLists>
     <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
     <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
   </TestLists>
   <ResultSummary outcome="Failed">
-    <Counters total="38" executed="38" passed="22" failed="16" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Counters total="38" executed="38" passed="26" failed="12" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
     <Output>
       <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.4+50e68bbb8b (64-bit .NET 10.0.14)
 [xUnit.net 00:00:00.12]   Discovering: Petstore.XUnit
-[xUnit.net 00:00:00.21]   Discovered:  Petstore.XUnit
-[xUnit.net 00:00:00.26]   Starting:    Petstore.XUnit
+[xUnit.net 00:00:00.20]   Discovered:  Petstore.XUnit
+[xUnit.net 00:00:00.25]   Starting:    Petstore.XUnit
+POST user -&gt; 200
+GET user/kt8_0336f6b9ceaf -&gt; 200
+GET user/missing_4a8038eea0fe4257a6f7c639e64f34d5 -&gt; 404
+GET user/kt8_0336f6b9ceaf -&gt; 200
+DELETE user/kt8_0336f6b9ceaf -&gt; 200
+GET user/kt8_0336f6b9ceaf -&gt; 404
+POST user -&gt; 200
+GET user/kt8_1aae1069114c -&gt; 200
+GET user/kt8_1aae1069114c -&gt; 200
+GET user/kt8_1aae1069114c -&gt; 200
+DELETE user/kt8_1aae1069114c -&gt; 200
+GET user/kt8_1aae1069114c -&gt; 404
+POST user -&gt; 200
+GET user/kt8_ba8ccc621a8d -&gt; 200
+GET user/login?username=kt8_ba8ccc621a8d&amp;password=wrong_password -&gt; 200
+GET user/kt8_ba8ccc621a8d -&gt; 200
+DELETE user/kt8_ba8ccc621a8d -&gt; 200
+GET user/kt8_ba8ccc621a8d -&gt; 404
+[xUnit.net 00:00:04.37]       Ожидалось 400, получено 200: {"code":200,"type":"unknown","message":"logged in user session:1794526786049"}
+[xUnit.net 00:00:04.37]       Stack Trace:
+[xUnit.net 00:00:04.37]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:04.37]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/UserTests.cs(95,0): at PetstoreTests.UserTests.Login(Boolean negative)
+[xUnit.net 00:00:04.37]         --- End of stack trace from previous location ---
+POST user -&gt; 200
+GET user/kt8_190b7bb2e29f -&gt; 200
+GET user/login?username=kt8_190b7bb2e29f&amp;password=Kt8Password -&gt; 200
+GET user/kt8_190b7bb2e29f -&gt; 200
+DELETE user/kt8_190b7bb2e29f -&gt; 200
+GET user/kt8_190b7bb2e29f -&gt; 404
+POST user/createWithList -&gt; 200
+GET user/kt8_a32adf2820b9 -&gt; 200
+GET user/kt8_a32adf2820b9 -&gt; 200
+DELETE user/kt8_a32adf2820b9 -&gt; 200
+GET user/kt8_a32adf2820b9 -&gt; 404
+POST user/createWithArray -&gt; 200
+GET user/kt8_2f5dfa538953 -&gt; 200
+GET user/kt8_2f5dfa538953 -&gt; 200
+DELETE user/kt8_2f5dfa538953 -&gt; 200
+GET user/kt8_2f5dfa538953 -&gt; 404
+POST user -&gt; 200
+GET user/kt8_9ae11d968d42 -&gt; 200
+PUT user/kt8_9ae11d968d42 -&gt; 200
+GET user/kt8_9ae11d968d42 -&gt; 200
+GET user/kt8_9ae11d968d42 -&gt; 200
+DELETE user/kt8_9ae11d968d42 -&gt; 200
+GET user/kt8_9ae11d968d42 -&gt; 404
+POST user -&gt; 200
+GET user/kt8_e06a8c99a00e -&gt; 200
+PUT user/kt8_e06a8c99a00e -&gt; 500
+GET user/kt8_e06a8c99a00e -&gt; 200
+DELETE user/kt8_e06a8c99a00e -&gt; 200
+GET user/kt8_e06a8c99a00e -&gt; 404
+[xUnit.net 00:00:10.75]       Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}
+[xUnit.net 00:00:10.75]       Stack Trace:
+[xUnit.net 00:00:10.75]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:10.75]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/UserTests.cs(64,0): at PetstoreTests.UserTests.UpdateUser(Boolean negative)
+[xUnit.net 00:00:10.75]         --- End of stack trace from previous location ---
+POST user -&gt; 200
+GET user/kt8_94af4dd05c79 -&gt; 200
+GET user/kt8_94af4dd05c79 -&gt; 200
+DELETE user/kt8_94af4dd05c79 -&gt; 200
+GET user/kt8_94af4dd05c79 -&gt; 404
+POST user -&gt; 200
+GET user/kt8_f700072f06e6 -&gt; 200
+DELETE user/kt8_f700072f06e6 -&gt; 200
+GET user/kt8_f700072f06e6 -&gt; 404
+GET user/kt8_f700072f06e6 -&gt; 404
+POST user -&gt; 200
+GET user/kt8_a0be9d1c600a -&gt; 200
+DELETE user/missing_d0e49dbb1a074b20b715352a7e446d00 -&gt; 404
+GET user/kt8_a0be9d1c600a -&gt; 200
+DELETE user/kt8_a0be9d1c600a -&gt; 200
+GET user/kt8_a0be9d1c600a -&gt; 404
+GET user/logout -&gt; 200
 POST pet -&gt; 200
-GET pet/137526807362847 -&gt; 200
+GET pet/200305434173380 -&gt; 200
+GET pet/findByStatus?status=available -&gt; 200
+GET pet/200305434173380 -&gt; 200
+DELETE pet/200305434173380 -&gt; 200
+GET pet/200305434173380 -&gt; 404
+POST pet -&gt; 200
+GET pet/264604263538661 -&gt; 200
+GET pet/findByStatus?status=wrong_status -&gt; 200
+GET pet/264604263538661 -&gt; 200
+DELETE pet/264604263538661 -&gt; 200
+GET pet/264604263538661 -&gt; 404
+[xUnit.net 00:00:17.24]       Ожидалось 400, получено 200: []
+[xUnit.net 00:00:17.24]       Stack Trace:
+[xUnit.net 00:00:17.24]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:17.24]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs(51,0): at PetstoreTests.PetTests.FindByStatus(Boolean negative)
+[xUnit.net 00:00:17.24]         --- End of stack trace from previous location ---
+POST pet -&gt; 200
+GET pet/265882643741528 -&gt; 200
+PUT pet -&gt; 500
+GET pet/265882643741528 -&gt; 200
+DELETE pet/265882643741528 -&gt; 200
+GET pet/265882643741528 -&gt; 404
+[xUnit.net 00:00:18.37]       Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}
+[xUnit.net 00:00:18.37]       Stack Trace:
+[xUnit.net 00:00:18.37]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:18.37]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs(34,0): at PetstoreTests.PetTests.UpdatePet(Boolean negative)
+[xUnit.net 00:00:18.37]         --- End of stack trace from previous location ---
+POST pet -&gt; 200
+GET pet/150649221218712 -&gt; 200
+PUT pet -&gt; 200
+GET pet/150649221218712 -&gt; 200
+GET pet/150649221218712 -&gt; 200
+DELETE pet/150649221218712 -&gt; 200
+GET pet/150649221218712 -&gt; 404
+POST pet -&gt; 200
+GET pet/123355864921111 -&gt; 200
+DELETE pet/123355864921111 -&gt; 200
+GET pet/123355864921111 -&gt; 404
+GET pet/123355864921111 -&gt; 404
+POST pet -&gt; 200
+GET pet/25673324646180 -&gt; 200
+DELETE pet/wrong_id -&gt; 404
+GET pet/25673324646180 -&gt; 200
+DELETE pet/25673324646180 -&gt; 200
+GET pet/25673324646180 -&gt; 404
+[xUnit.net 00:00:22.52]       Ожидалось 400, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+[xUnit.net 00:00:22.52]       Stack Trace:
+[xUnit.net 00:00:22.52]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:22.52]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs(115,0): at PetstoreTests.PetTests.DeletePet(Boolean negative)
+[xUnit.net 00:00:22.52]         --- End of stack trace from previous location ---
+POST pet -&gt; 200
+GET pet/249121589254081 -&gt; 200
+POST pet/249121589254081 -&gt; 200
+GET pet/249121589254081 -&gt; 200
+GET pet/249121589254081 -&gt; 200
+DELETE pet/249121589254081 -&gt; 200
+GET pet/249121589254081 -&gt; 404
+POST pet -&gt; 200
+GET pet/117471906372136 -&gt; 200
+POST pet/wrong_id -&gt; 404
+GET pet/117471906372136 -&gt; 200
+DELETE pet/117471906372136 -&gt; 200
+GET pet/117471906372136 -&gt; 404
+[xUnit.net 00:00:25.04]       Ожидалось 405, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+[xUnit.net 00:00:25.04]       Stack Trace:
+[xUnit.net 00:00:25.04]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:25.04]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs(98,0): at PetstoreTests.PetTests.UpdatePetForm(Boolean negative)
+[xUnit.net 00:00:25.04]         --- End of stack trace from previous location ---
+POST pet -&gt; 200
+GET pet/25640193334266 -&gt; 200
+DELETE pet/25640193334266 -&gt; 200
+GET pet/25640193334266 -&gt; 404
+DELETE pet/25640193334266 -&gt; 404
+GET pet/25640193334266 -&gt; 404
+POST pet -&gt; 200
+GET pet/99202642841877 -&gt; 200
+GET pet/99202642841877 -&gt; 200
+DELETE pet/99202642841877 -&gt; 200
+GET pet/99202642841877 -&gt; 404
+POST pet -&gt; 500
+GET pet/86490253764672 -&gt; 404
+[xUnit.net 00:00:27.91]       Ожидалось 405, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}
+[xUnit.net 00:00:27.91]       Stack Trace:
+[xUnit.net 00:00:27.91]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:27.91]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs(15,0): at PetstoreTests.PetTests.CreatePet(Boolean negative)
+[xUnit.net 00:00:27.91]         --- End of stack trace from previous location ---
+POST pet -&gt; 200
+GET pet/86548328973661 -&gt; 200
+POST pet/86548328973661/uploadImage -&gt; 200
+GET pet/86548328973661 -&gt; 200
+DELETE pet/86548328973661 -&gt; 200
+GET pet/86548328973661 -&gt; 404
+POST pet -&gt; 200
+GET pet/256265026548865 -&gt; 200
+DELETE pet/256265026548865 -&gt; 200
+GET pet/256265026548865 -&gt; 404
+GET pet/256265026548865 -&gt; 404
+GET pet/256265026548865 -&gt; 404
+POST pet -&gt; 200
+GET pet/130747475556511 -&gt; 200
+GET pet/130747475556511 -&gt; 200
+GET pet/130747475556511 -&gt; 200
+DELETE pet/130747475556511 -&gt; 200
+GET pet/130747475556511 -&gt; 404
+POST pet -&gt; 200
+GET pet/116946969058664 -&gt; 200
+GET pet/wrong_id -&gt; 404
+GET pet/116946969058664 -&gt; 200
+DELETE pet/116946969058664 -&gt; 200
+GET pet/116946969058664 -&gt; 404
+[xUnit.net 00:00:32.53]       Ожидалось 400, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+[xUnit.net 00:00:32.53]       Stack Trace:
+[xUnit.net 00:00:32.53]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:32.53]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs(85,0): at PetstoreTests.PetTests.GetPet(Boolean negative)
+[xUnit.net 00:00:32.53]         --- End of stack trace from previous location ---
+POST pet -&gt; 200
+GET pet/61294937033925 -&gt; 200
+GET pet/findByTags?tags=37bf56f2ccc5 -&gt; 200
+GET pet/61294937033925 -&gt; 200
+DELETE pet/61294937033925 -&gt; 200
+GET pet/61294937033925 -&gt; 404
+POST pet -&gt; 200
+GET pet/257683606718007 -&gt; 200
+GET pet/findByTags -&gt; 200
+GET pet/257683606718007 -&gt; 200
+DELETE pet/257683606718007 -&gt; 200
+GET pet/257683606718007 -&gt; 404
+[xUnit.net 00:00:35.07]       Ожидалось 400, получено 200: []
+[xUnit.net 00:00:35.07]       Stack Trace:
+[xUnit.net 00:00:35.07]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:35.07]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs(69,0): at PetstoreTests.PetTests.FindByTags(Boolean negative)
+[xUnit.net 00:00:35.07]         --- End of stack trace from previous location ---
+POST pet -&gt; 200
+GET pet/47840853139914 -&gt; 200
 GET store/order/1 -&gt; 200
 GET store/order/2 -&gt; 200
 GET store/order/3 -&gt; 404
@@ -403,11 +574,11 @@ GET store/order/3 -&gt; 200
 DELETE store/order/3 -&gt; 200
 GET store/order/3 -&gt; 404
 GET store/order/3 -&gt; 404
-GET pet/137526807362847 -&gt; 200
-DELETE pet/137526807362847 -&gt; 200
-GET pet/137526807362847 -&gt; 404
+GET pet/47840853139914 -&gt; 200
+DELETE pet/47840853139914 -&gt; 200
+GET pet/47840853139914 -&gt; 404
 POST pet -&gt; 200
-GET pet/111497066107235 -&gt; 200
+GET pet/34231592516728 -&gt; 200
 GET store/order/1 -&gt; 200
 GET store/order/2 -&gt; 200
 GET store/order/3 -&gt; 404
@@ -417,16 +588,16 @@ DELETE store/order/wrong_id -&gt; 404
 GET store/order/3 -&gt; 200
 DELETE store/order/3 -&gt; 200
 GET store/order/3 -&gt; 404
-GET pet/111497066107235 -&gt; 200
-DELETE pet/111497066107235 -&gt; 200
-GET pet/111497066107235 -&gt; 404
-[xUnit.net 00:00:05.66]       Ожидалось 400, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
-[xUnit.net 00:00:05.66]       Stack Trace:
-[xUnit.net 00:00:05.66]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
-[xUnit.net 00:00:05.66]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/StoreTests.cs(54,0): at PetstoreTests.StoreTests.DeleteOrder(Boolean negative)
-[xUnit.net 00:00:05.66]         --- End of stack trace from previous location ---
+GET pet/34231592516728 -&gt; 200
+DELETE pet/34231592516728 -&gt; 200
+GET pet/34231592516728 -&gt; 404
+[xUnit.net 00:00:39.76]       Ожидалось 400, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+[xUnit.net 00:00:39.76]       Stack Trace:
+[xUnit.net 00:00:39.76]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:39.76]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/StoreTests.cs(54,0): at PetstoreTests.StoreTests.DeleteOrder(Boolean negative)
+[xUnit.net 00:00:39.76]         --- End of stack trace from previous location ---
 POST pet -&gt; 200
-GET pet/264846319046858 -&gt; 200
+GET pet/89033638591602 -&gt; 200
 GET store/order/1 -&gt; 200
 GET store/order/2 -&gt; 200
 GET store/order/3 -&gt; 404
@@ -436,11 +607,11 @@ GET store/order/3 -&gt; 200
 GET store/order/3 -&gt; 200
 DELETE store/order/3 -&gt; 200
 GET store/order/3 -&gt; 404
-GET pet/264846319046858 -&gt; 200
-DELETE pet/264846319046858 -&gt; 200
-GET pet/264846319046858 -&gt; 404
+GET pet/89033638591602 -&gt; 200
+DELETE pet/89033638591602 -&gt; 200
+GET pet/89033638591602 -&gt; 404
 POST pet -&gt; 200
-GET pet/168963244178055 -&gt; 200
+GET pet/279742768774513 -&gt; 200
 GET store/order/1 -&gt; 200
 GET store/order/2 -&gt; 200
 GET store/order/3 -&gt; 404
@@ -450,32 +621,46 @@ GET store/order/wrong_id -&gt; 404
 GET store/order/3 -&gt; 200
 DELETE store/order/3 -&gt; 200
 GET store/order/3 -&gt; 404
-GET pet/168963244178055 -&gt; 200
-DELETE pet/168963244178055 -&gt; 200
-GET pet/168963244178055 -&gt; 404
-[xUnit.net 00:00:10.62]       Ожидалось 400, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
-[xUnit.net 00:00:10.62]       Stack Trace:
-[xUnit.net 00:00:10.62]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
-[xUnit.net 00:00:10.62]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/StoreTests.cs(42,0): at PetstoreTests.StoreTests.GetOrder(Boolean negative)
-[xUnit.net 00:00:10.62]         --- End of stack trace from previous location ---
+GET pet/279742768774513 -&gt; 200
+DELETE pet/279742768774513 -&gt; 200
+GET pet/279742768774513 -&gt; 404
+[xUnit.net 00:00:44.43]       Ожидалось 400, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
+[xUnit.net 00:00:44.43]       Stack Trace:
+[xUnit.net 00:00:44.43]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:44.43]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/StoreTests.cs(42,0): at PetstoreTests.StoreTests.GetOrder(Boolean negative)
+[xUnit.net 00:00:44.43]         --- End of stack trace from previous location ---
+POST pet -&gt; 200
+GET pet/182669753672410 -&gt; 200
+GET store/order/1 -&gt; 200
+GET store/order/2 -&gt; 200
+GET store/order/3 -&gt; 404
+POST store/order -&gt; 200
+GET store/order/3 -&gt; 200
+DELETE store/order/3 -&gt; 200
+GET store/order/3 -&gt; 404
+GET store/order/3 -&gt; 404
+GET store/order/3 -&gt; 404
+GET pet/182669753672410 -&gt; 200
+DELETE pet/182669753672410 -&gt; 200
+GET pet/182669753672410 -&gt; 404
 GET store/inventory -&gt; 200
 POST pet -&gt; 200
-GET pet/215947178718771 -&gt; 200
+GET pet/220764211854493 -&gt; 200
 GET store/order/1 -&gt; 200
 GET store/order/2 -&gt; 200
 GET store/order/3 -&gt; 404
 POST store/order -&gt; 500
 GET store/order/3 -&gt; 404
-GET pet/215947178718771 -&gt; 200
-DELETE pet/215947178718771 -&gt; 200
-GET pet/215947178718771 -&gt; 404
-[xUnit.net 00:00:12.65]       Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}
-[xUnit.net 00:00:12.65]       Stack Trace:
-[xUnit.net 00:00:12.65]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
-[xUnit.net 00:00:12.65]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/StoreTests.cs(24,0): at PetstoreTests.StoreTests.CreateOrder(Boolean negative)
-[xUnit.net 00:00:12.65]         --- End of stack trace from previous location ---
+GET pet/220764211854493 -&gt; 200
+DELETE pet/220764211854493 -&gt; 200
+GET pet/220764211854493 -&gt; 404
+[xUnit.net 00:00:48.89]       Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}
+[xUnit.net 00:00:48.89]       Stack Trace:
+[xUnit.net 00:00:48.89]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
+[xUnit.net 00:00:48.89]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/StoreTests.cs(24,0): at PetstoreTests.StoreTests.CreateOrder(Boolean negative)
+[xUnit.net 00:00:48.89]         --- End of stack trace from previous location ---
 POST pet -&gt; 200
-GET pet/213809587608264 -&gt; 200
+GET pet/270698839136128 -&gt; 200
 GET store/order/1 -&gt; 200
 GET store/order/2 -&gt; 200
 GET store/order/3 -&gt; 404
@@ -484,287 +669,62 @@ GET store/order/3 -&gt; 200
 GET store/order/3 -&gt; 200
 DELETE store/order/3 -&gt; 200
 GET store/order/3 -&gt; 404
-GET pet/213809587608264 -&gt; 200
-DELETE pet/213809587608264 -&gt; 200
-GET pet/213809587608264 -&gt; 404
-POST user -&gt; 200
-GET user/kt8_a1d5bb88a7cd -&gt; 200
-GET user/missing_938998690eb949f59d33c57eb5baf8f1 -&gt; 404
-GET user/kt8_a1d5bb88a7cd -&gt; 200
-DELETE user/kt8_a1d5bb88a7cd -&gt; 200
-GET user/kt8_a1d5bb88a7cd -&gt; 404
-POST user -&gt; 200
-GET user/kt8_f46a54a4391b -&gt; 200
-GET user/kt8_f46a54a4391b -&gt; 200
-GET user/kt8_f46a54a4391b -&gt; 200
-DELETE user/kt8_f46a54a4391b -&gt; 200
-GET user/kt8_f46a54a4391b -&gt; 404
-POST user -&gt; 200
-GET user/kt8_dce9d6b44a11 -&gt; 200
-GET user/login?username=kt8_dce9d6b44a11&amp;password=wrong_password -&gt; 200
-GET user/kt8_dce9d6b44a11 -&gt; 200
-DELETE user/kt8_dce9d6b44a11 -&gt; 200
-GET user/kt8_dce9d6b44a11 -&gt; 404
-[xUnit.net 00:00:18.19]       Ожидалось 400, получено 200: {"code":200,"type":"unknown","message":"logged in user session:1794525344723"}
-[xUnit.net 00:00:18.19]       Stack Trace:
-[xUnit.net 00:00:18.19]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
-[xUnit.net 00:00:18.19]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/UserTests.cs(113,0): at PetstoreTests.UserTests.Login(Boolean negative)
-[xUnit.net 00:00:18.19]         --- End of stack trace from previous location ---
-POST user -&gt; 200
-GET user/kt8_751d0a4d62be -&gt; 200
-GET user/login?username=kt8_751d0a4d62be&amp;password=Kt8Password -&gt; 200
-GET user/kt8_751d0a4d62be -&gt; 200
-DELETE user/kt8_751d0a4d62be -&gt; 200
-GET user/kt8_751d0a4d62be -&gt; 404
-POST user -&gt; 200
-GET user/kt8_35cbe3bca8ae -&gt; 200
-GET user/kt8_35cbe3bca8ae -&gt; 200
-DELETE user/kt8_35cbe3bca8ae -&gt; 200
-GET user/kt8_35cbe3bca8ae -&gt; 404
-POST user -&gt; 500
-GET user/kt8_3a186d0e4602 -&gt; 404
-[xUnit.net 00:00:21.06]       Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}
-[xUnit.net 00:00:21.06]       Stack Trace:
-[xUnit.net 00:00:21.06]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
-[xUnit.net 00:00:21.06]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/UserTests.cs(15,0): at PetstoreTests.UserTests.CreateUser(Boolean negative)
-[xUnit.net 00:00:21.06]         --- End of stack trace from previous location ---
-POST user/createWithArray -&gt; 500
-GET user/kt8_62cccd6044dc -&gt; 404
-[xUnit.net 00:00:21.69]       Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}
-[xUnit.net 00:00:21.69]       Stack Trace:
-[xUnit.net 00:00:21.69]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
-[xUnit.net 00:00:21.69]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/UserTests.cs(49,0): at PetstoreTests.UserTests.CreateUsersArray(Boolean negative)
-[xUnit.net 00:00:21.69]         --- End of stack trace from previous location ---
-POST user/createWithArray -&gt; 200
-GET user/kt8_18ac3967fe17 -&gt; 200
-GET user/kt8_18ac3967fe17 -&gt; 200
-DELETE user/kt8_18ac3967fe17 -&gt; 200
-GET user/kt8_18ac3967fe17 -&gt; 404
-POST user -&gt; 200
-GET user/kt8_d6adeeeb16bb -&gt; 200
-PUT user/kt8_d6adeeeb16bb -&gt; 200
-GET user/kt8_d6adeeeb16bb -&gt; 200
-GET user/kt8_d6adeeeb16bb -&gt; 200
-DELETE user/kt8_d6adeeeb16bb -&gt; 200
-GET user/kt8_d6adeeeb16bb -&gt; 404
-POST user -&gt; 200
-GET user/kt8_a7a0ca38678b -&gt; 200
-PUT user/kt8_a7a0ca38678b -&gt; 500
-GET user/kt8_a7a0ca38678b -&gt; 200
-DELETE user/kt8_a7a0ca38678b -&gt; 200
-GET user/kt8_a7a0ca38678b -&gt; 404
-[xUnit.net 00:00:25.28]       Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}
-[xUnit.net 00:00:25.28]       Stack Trace:
-[xUnit.net 00:00:25.28]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
-[xUnit.net 00:00:25.28]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/UserTests.cs(82,0): at PetstoreTests.UserTests.UpdateUser(Boolean negative)
-[xUnit.net 00:00:25.28]         --- End of stack trace from previous location ---
-POST user -&gt; 200
-GET user/kt8_e926f7a94833 -&gt; 200
-DELETE user/kt8_e926f7a94833 -&gt; 200
-GET user/kt8_e926f7a94833 -&gt; 404
-GET user/kt8_e926f7a94833 -&gt; 404
-POST user -&gt; 200
-GET user/kt8_fb448a937d90 -&gt; 200
-DELETE user/missing_7bcbf703c83c401bbea215d410da5ad9 -&gt; 404
-GET user/kt8_fb448a937d90 -&gt; 200
-DELETE user/kt8_fb448a937d90 -&gt; 200
-GET user/kt8_fb448a937d90 -&gt; 404
-GET user/logout -&gt; 200
-POST user/createWithList -&gt; 500
-GET user/kt8_83c080295fc7 -&gt; 404
-[xUnit.net 00:00:28.87]       Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}
-[xUnit.net 00:00:28.87]       Stack Trace:
-[xUnit.net 00:00:28.87]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
-[xUnit.net 00:00:28.87]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/UserTests.cs(32,0): at PetstoreTests.UserTests.CreateUsersList(Boolean negative)
-[xUnit.net 00:00:28.87]         --- End of stack trace from previous location ---
-POST user/createWithList -&gt; 200
-GET user/kt8_381d1ee42014 -&gt; 200
-GET user/kt8_381d1ee42014 -&gt; 200
-DELETE user/kt8_381d1ee42014 -&gt; 200
-GET user/kt8_381d1ee42014 -&gt; 404
+GET pet/270698839136128 -&gt; 200
+DELETE pet/270698839136128 -&gt; 200
+GET pet/270698839136128 -&gt; 404
 POST pet -&gt; 200
-GET pet/115294629802779 -&gt; 200
-GET pet/findByStatus?status=available -&gt; 200
-GET pet/115294629802779 -&gt; 200
-DELETE pet/115294629802779 -&gt; 200
-GET pet/115294629802779 -&gt; 404
-POST pet -&gt; 200
-GET pet/2717658544852 -&gt; 200
-GET pet/findByStatus?status=wrong_status -&gt; 200
-GET pet/2717658544852 -&gt; 200
-DELETE pet/2717658544852 -&gt; 200
-GET pet/2717658544852 -&gt; 404
-[xUnit.net 00:00:32.39]       Ожидалось 400, получено 200: []
-[xUnit.net 00:00:32.39]       Stack Trace:
-[xUnit.net 00:00:32.39]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
-[xUnit.net 00:00:32.39]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs(51,0): at PetstoreTests.PetTests.FindByStatus(Boolean negative)
-[xUnit.net 00:00:32.39]         --- End of stack trace from previous location ---
-POST pet -&gt; 200
-GET pet/185397702345317 -&gt; 200
-PUT pet -&gt; 500
-GET pet/185397702345317 -&gt; 200
-DELETE pet/185397702345317 -&gt; 200
-GET pet/185397702345317 -&gt; 404
-[xUnit.net 00:00:33.48]       Ожидалось 400, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}
-[xUnit.net 00:00:33.48]       Stack Trace:
-[xUnit.net 00:00:33.48]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
-[xUnit.net 00:00:33.48]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs(34,0): at PetstoreTests.PetTests.UpdatePet(Boolean negative)
-[xUnit.net 00:00:33.48]         --- End of stack trace from previous location ---
-POST pet -&gt; 200
-GET pet/119994900431590 -&gt; 200
-PUT pet -&gt; 200
-GET pet/119994900431590 -&gt; 200
-GET pet/119994900431590 -&gt; 200
-DELETE pet/119994900431590 -&gt; 200
-GET pet/119994900431590 -&gt; 404
-POST pet -&gt; 200
-GET pet/263748303962169 -&gt; 200
-POST pet/263748303962169/uploadImage -&gt; 200
-GET pet/263748303962169 -&gt; 200
-DELETE pet/263748303962169 -&gt; 200
-GET pet/263748303962169 -&gt; 404
-POST pet -&gt; 200
-GET pet/197392250725635 -&gt; 200
-POST pet/wrong_id/uploadImage -&gt; 404
-GET pet/197392250725635 -&gt; 200
-DELETE pet/197392250725635 -&gt; 200
-GET pet/197392250725635 -&gt; 404
-[xUnit.net 00:00:37.44]       Ожидалось 400, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
-[xUnit.net 00:00:37.44]       Stack Trace:
-[xUnit.net 00:00:37.44]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
-[xUnit.net 00:00:37.44]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs(132,0): at PetstoreTests.PetTests.UploadImage(Boolean negative)
-[xUnit.net 00:00:37.44]         --- End of stack trace from previous location ---
-POST pet -&gt; 200
-GET pet/240468485321080 -&gt; 200
-DELETE pet/240468485321080 -&gt; 200
-GET pet/240468485321080 -&gt; 404
-GET pet/240468485321080 -&gt; 404
-POST pet -&gt; 200
-GET pet/266572329044692 -&gt; 200
-DELETE pet/wrong_id -&gt; 404
-GET pet/266572329044692 -&gt; 200
-DELETE pet/266572329044692 -&gt; 200
-GET pet/266572329044692 -&gt; 404
-[xUnit.net 00:00:39.74]       Ожидалось 400, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
-[xUnit.net 00:00:39.74]       Stack Trace:
-[xUnit.net 00:00:39.74]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
-[xUnit.net 00:00:39.74]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs(115,0): at PetstoreTests.PetTests.DeletePet(Boolean negative)
-[xUnit.net 00:00:39.74]         --- End of stack trace from previous location ---
-POST pet -&gt; 200
-GET pet/202516869360298 -&gt; 200
-POST pet/202516869360298 -&gt; 200
-GET pet/202516869360298 -&gt; 200
-GET pet/202516869360298 -&gt; 200
-DELETE pet/202516869360298 -&gt; 200
-GET pet/202516869360298 -&gt; 404
-POST pet -&gt; 200
-GET pet/7695734583909 -&gt; 200
-POST pet/wrong_id -&gt; 404
-GET pet/7695734583909 -&gt; 200
-DELETE pet/7695734583909 -&gt; 200
-GET pet/7695734583909 -&gt; 404
-[xUnit.net 00:00:42.07]       Ожидалось 405, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
-[xUnit.net 00:00:42.07]       Stack Trace:
-[xUnit.net 00:00:42.07]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
-[xUnit.net 00:00:42.07]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs(98,0): at PetstoreTests.PetTests.UpdatePetForm(Boolean negative)
-[xUnit.net 00:00:42.07]         --- End of stack trace from previous location ---
-POST pet -&gt; 200
-GET pet/39245203512823 -&gt; 200
-GET pet/39245203512823 -&gt; 200
-DELETE pet/39245203512823 -&gt; 200
-GET pet/39245203512823 -&gt; 404
-POST pet -&gt; 500
-GET pet/193737485998971 -&gt; 404
-[xUnit.net 00:00:43.86]       Ожидалось 405, получено 500: {"code":500,"type":"unknown","message":"something bad happened"}
-[xUnit.net 00:00:43.86]       Stack Trace:
-[xUnit.net 00:00:43.86]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
-[xUnit.net 00:00:43.86]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs(15,0): at PetstoreTests.PetTests.CreatePet(Boolean negative)
-[xUnit.net 00:00:43.86]         --- End of stack trace from previous location ---
-POST pet -&gt; 200
-GET pet/135756338041441 -&gt; 200
-GET pet/135756338041441 -&gt; 200
-GET pet/135756338041441 -&gt; 200
-DELETE pet/135756338041441 -&gt; 200
-GET pet/135756338041441 -&gt; 404
-POST pet -&gt; 200
-GET pet/61935902054115 -&gt; 200
-GET pet/wrong_id -&gt; 404
-GET pet/61935902054115 -&gt; 200
-DELETE pet/61935902054115 -&gt; 200
-GET pet/61935902054115 -&gt; 404
-[xUnit.net 00:00:46.15]       Ожидалось 400, получено 404: {"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"wrong_id\""}
-[xUnit.net 00:00:46.15]       Stack Trace:
-[xUnit.net 00:00:46.16]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
-[xUnit.net 00:00:46.16]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs(85,0): at PetstoreTests.PetTests.GetPet(Boolean negative)
-[xUnit.net 00:00:46.16]         --- End of stack trace from previous location ---
-POST pet -&gt; 200
-GET pet/144982540699057 -&gt; 200
-GET pet/findByTags?tags=83dc60d645b1 -&gt; 200
-GET pet/144982540699057 -&gt; 200
-DELETE pet/144982540699057 -&gt; 200
-GET pet/144982540699057 -&gt; 404
-POST pet -&gt; 200
-GET pet/154259779360572 -&gt; 200
-GET pet/findByTags -&gt; 200
-GET pet/154259779360572 -&gt; 200
-DELETE pet/154259779360572 -&gt; 200
-GET pet/154259779360572 -&gt; 404
-[xUnit.net 00:00:48.49]       Ожидалось 400, получено 200: []
-[xUnit.net 00:00:48.49]       Stack Trace:
-[xUnit.net 00:00:48.49]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/ApiTests.cs(11,0): at PetstoreTests.ApiTests.Status(Int32 expected, ValueTuple`2 result)
-[xUnit.net 00:00:48.49]         /home/antisuffer/все/Документы/тесты Шпатович/кт№8/xunit-tests/PetTests.cs(69,0): at PetstoreTests.PetTests.FindByTags(Boolean negative)
-[xUnit.net 00:00:48.49]         --- End of stack trace from previous location ---
-[xUnit.net 00:00:48.50]   Finished:    Petstore.XUnit
+GET pet/27901259627198 -&gt; 200
+GET store/order/1 -&gt; 200
+GET store/order/2 -&gt; 200
+GET store/order/3 -&gt; 404
+POST store/order -&gt; 200
+GET store/order/3 -&gt; 200
+DELETE store/order/3 -&gt; 200
+GET store/order/3 -&gt; 404
+DELETE store/order/3 -&gt; 404
+GET store/order/3 -&gt; 404
+GET pet/27901259627198 -&gt; 200
+DELETE pet/27901259627198 -&gt; 200
+GET pet/27901259627198 -&gt; 404
+[xUnit.net 00:00:53.14]   Finished:    Petstore.XUnit
 </StdOut>
     </Output>
     <RunInfos>
-      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:15:32.6974944+03:00">
-        <Text>[xUnit.net 00:00:05.66]     PetstoreTests.StoreTests.DeleteOrder(negative: True) [FAIL]</Text>
+      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:39:46.6037137+03:00">
+        <Text>[xUnit.net 00:00:04.37]     PetstoreTests.UserTests.Login(negative: True) [FAIL]</Text>
       </RunInfo>
-      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:15:37.6558655+03:00">
-        <Text>[xUnit.net 00:00:10.62]     PetstoreTests.StoreTests.GetOrder(negative: True) [FAIL]</Text>
+      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:39:52.9869451+03:00">
+        <Text>[xUnit.net 00:00:10.75]     PetstoreTests.UserTests.UpdateUser(negative: True) [FAIL]</Text>
       </RunInfo>
-      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:15:39.6910903+03:00">
-        <Text>[xUnit.net 00:00:12.65]     PetstoreTests.StoreTests.CreateOrder(negative: True) [FAIL]</Text>
+      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:39:59.4788265+03:00">
+        <Text>[xUnit.net 00:00:17.24]     PetstoreTests.PetTests.FindByStatus(negative: True) [FAIL]</Text>
       </RunInfo>
-      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:15:45.2345514+03:00">
-        <Text>[xUnit.net 00:00:18.19]     PetstoreTests.UserTests.Login(negative: True) [FAIL]</Text>
+      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:40:00.6049804+03:00">
+        <Text>[xUnit.net 00:00:18.37]     PetstoreTests.PetTests.UpdatePet(negative: True) [FAIL]</Text>
       </RunInfo>
-      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:15:48.1009542+03:00">
-        <Text>[xUnit.net 00:00:21.06]     PetstoreTests.UserTests.CreateUser(negative: True) [FAIL]</Text>
+      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:40:04.7552387+03:00">
+        <Text>[xUnit.net 00:00:22.52]     PetstoreTests.PetTests.DeletePet(negative: True) [FAIL]</Text>
       </RunInfo>
-      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:15:48.7253628+03:00">
-        <Text>[xUnit.net 00:00:21.69]     PetstoreTests.UserTests.CreateUsersArray(negative: True) [FAIL]</Text>
+      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:40:07.2752119+03:00">
+        <Text>[xUnit.net 00:00:25.04]     PetstoreTests.PetTests.UpdatePetForm(negative: True) [FAIL]</Text>
       </RunInfo>
-      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:15:52.3169244+03:00">
-        <Text>[xUnit.net 00:00:25.28]     PetstoreTests.UserTests.UpdateUser(negative: True) [FAIL]</Text>
+      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:40:10.1489007+03:00">
+        <Text>[xUnit.net 00:00:27.91]     PetstoreTests.PetTests.CreatePet(negative: True) [FAIL]</Text>
       </RunInfo>
-      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:15:55.9106703+03:00">
-        <Text>[xUnit.net 00:00:28.87]     PetstoreTests.UserTests.CreateUsersList(negative: True) [FAIL]</Text>
+      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:40:14.7702070+03:00">
+        <Text>[xUnit.net 00:00:32.53]     PetstoreTests.PetTests.GetPet(negative: True) [FAIL]</Text>
       </RunInfo>
-      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:15:59.4332679+03:00">
-        <Text>[xUnit.net 00:00:32.39]     PetstoreTests.PetTests.FindByStatus(negative: True) [FAIL]</Text>
+      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:40:17.3094020+03:00">
+        <Text>[xUnit.net 00:00:35.07]     PetstoreTests.PetTests.FindByTags(negative: True) [FAIL]</Text>
       </RunInfo>
-      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:16:00.5177627+03:00">
-        <Text>[xUnit.net 00:00:33.48]     PetstoreTests.PetTests.UpdatePet(negative: True) [FAIL]</Text>
+      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:40:21.9926936+03:00">
+        <Text>[xUnit.net 00:00:39.75]     PetstoreTests.StoreTests.DeleteOrder(negative: True) [FAIL]</Text>
       </RunInfo>
-      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:16:04.4818473+03:00">
-        <Text>[xUnit.net 00:00:37.44]     PetstoreTests.PetTests.UploadImage(negative: True) [FAIL]</Text>
+      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:40:26.6674522+03:00">
+        <Text>[xUnit.net 00:00:44.43]     PetstoreTests.StoreTests.GetOrder(negative: True) [FAIL]</Text>
       </RunInfo>
-      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:16:06.7783627+03:00">
-        <Text>[xUnit.net 00:00:39.74]     PetstoreTests.PetTests.DeletePet(negative: True) [FAIL]</Text>
-      </RunInfo>
-      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:16:09.1109246+03:00">
-        <Text>[xUnit.net 00:00:42.07]     PetstoreTests.PetTests.UpdatePetForm(negative: True) [FAIL]</Text>
-      </RunInfo>
-      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:16:10.9036553+03:00">
-        <Text>[xUnit.net 00:00:43.86]     PetstoreTests.PetTests.CreatePet(negative: True) [FAIL]</Text>
-      </RunInfo>
-      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:16:13.1947872+03:00">
-        <Text>[xUnit.net 00:00:46.15]     PetstoreTests.PetTests.GetPet(negative: True) [FAIL]</Text>
-      </RunInfo>
-      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:16:15.5305255+03:00">
-        <Text>[xUnit.net 00:00:48.49]     PetstoreTests.PetTests.FindByTags(negative: True) [FAIL]</Text>
+      <RunInfo computerName="antisuffer-ROG-Zephyrus-G16-GU605MZ-GU605MZ" outcome="Error" timestamp="2026-11-13T02:40:31.1291721+03:00">
+        <Text>[xUnit.net 00:00:48.89]     PetstoreTests.StoreTests.CreateOrder(negative: True) [FAIL]</Text>
       </RunInfo>
     </RunInfos>
   </ResultSummary>

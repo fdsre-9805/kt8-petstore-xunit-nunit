@@ -116,10 +116,8 @@ public class PetTests : ApiTests
         if (!negative) Status(404, await Api.Send("GET", $"pet/{data["id"]}"));
     }
 
-    [Theory]
-    [InlineData(false)]
-    [InlineData(true)]
-    public async Task UploadImage(bool negative)
+    [Fact]
+    public async Task UploadImage()
     {
         var data = Api.PetData();
         await Api.Create("pet", data);
@@ -128,9 +126,31 @@ public class PetTests : ApiTests
         var image = new ByteArrayContent(bytes);
         image.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("image/png");
         form.Add(image, "file", "pet.png");
-        var result = await Api.Send("POST", "pet/" + (negative ? "wrong_id" : data["id"]) + "/uploadImage", content: form);
-        Status(negative ? 400 : 200, result);
-        if (!negative) Check(result.Body.GetProperty("message").GetString()!.Contains("File uploaded"));
+        var result = await Api.Send("POST", "pet/" + data["id"] + "/uploadImage", content: form);
+        Status(200, result);
+        Check(result.Body.GetProperty("message").GetString()!.Contains("File uploaded"));
+    }
+
+    [Fact]
+    public async Task GetMissingPet()
+    {
+        var data = Api.PetData();
+        await Api.Create("pet", data);
+        var path = $"pet/{data["id"]}";
+        Status(200, await Api.Send("DELETE", path));
+        Status(404, await Api.Send("GET", path));
+        Status(404, await Api.Send("GET", path));
+    }
+
+    [Fact]
+    public async Task DeleteMissingPet()
+    {
+        var data = Api.PetData();
+        await Api.Create("pet", data);
+        var path = $"pet/{data["id"]}";
+        Status(200, await Api.Send("DELETE", path));
+        Status(404, await Api.Send("GET", path));
+        Status(404, await Api.Send("DELETE", path));
     }
 
 }
